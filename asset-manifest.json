@@ -1,16 +1,29 @@
 {
   "files": {
-    "main.css": "/sub-biomon-ro-project/static/css/main.f855e6bc.css",
-    "main.js": "/sub-biomon-ro-project/static/js/main.76afb7fb.js",
+    "main.css": "/sub-biomon-ro-project/static/css/main.0d42026e.css",
+    "main.js": "/sub-biomon-ro-project/static/js/main.2c491f2c.js",
     "static/js/453.f875c2d9.chunk.js": "/sub-biomon-ro-project/static/js/453.f875c2d9.chunk.js",
-    "static/media/logo.svg": "/sub-biomon-ro-project/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/homeImg.jpg": "/sub-biomon-ro-project/static/media/homeImg.79ad59db09636c435712.jpg",
+    "static/media/orest-sambor.jpeg": "/sub-biomon-ro-project/static/media/orest-sambor.db8a34c1e4ed0d21b88c.jpeg",
+    "static/media/cristian-sitar.jpg": "/sub-biomon-ro-project/static/media/cristian-sitar.b7012543198cebb08a44.jpg",
+    "static/media/dragos-coada.jpg": "/sub-biomon-ro-project/static/media/dragos-coada.d7a28fffd97a494c66e9.jpg",
+    "static/media/news1.1.jpg": "/sub-biomon-ro-project/static/media/news1.1.d7a28fffd97a494c66e9.jpg",
+    "static/media/news2.1.jpg": "/sub-biomon-ro-project/static/media/news2.1.4bf10f09ed83a82c410d.jpg",
+    "static/media/news2.3.jpg": "/sub-biomon-ro-project/static/media/news2.3.27f020c8a5da485c767b.jpg",
+    "static/media/dragos-stefan.jpg": "/sub-biomon-ro-project/static/media/dragos-stefan.7d22bb711ac80640fb23.jpg",
+    "static/media/news2.2.jpg": "/sub-biomon-ro-project/static/media/news2.2.660fc71757eaa982f136.jpg",
+    "static/media/catalina-haidau.jpg": "/sub-biomon-ro-project/static/media/catalina-haidau.ca1fe4336ffd2248f435.jpg",
+    "static/media/sanda-iepure.jpg": "/sub-biomon-ro-project/static/media/sanda-iepure.5ffeb3e9ee49c9d3501b.jpg",
+    "static/media/ruxandra bucur.jpg": "/sub-biomon-ro-project/static/media/ruxandra bucur.47190b17a0738f318da2.jpg",
+    "static/media/news1.2.jpg": "/sub-biomon-ro-project/static/media/news1.2.c45417be907a2f117835.jpg",
+    "static/media/homeMap.avif": "/sub-biomon-ro-project/static/media/homeMap.f5eff6c987b487cb0d0f.avif",
     "index.html": "/sub-biomon-ro-project/index.html",
-    "main.f855e6bc.css.map": "/sub-biomon-ro-project/static/css/main.f855e6bc.css.map",
-    "main.76afb7fb.js.map": "/sub-biomon-ro-project/static/js/main.76afb7fb.js.map",
+    "main.0d42026e.css.map": "/sub-biomon-ro-project/static/css/main.0d42026e.css.map",
+    "main.2c491f2c.js.map": "/sub-biomon-ro-project/static/js/main.2c491f2c.js.map",
     "453.f875c2d9.chunk.js.map": "/sub-biomon-ro-project/static/js/453.f875c2d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.76afb7fb.js"
+    "static/css/main.0d42026e.css",
+    "static/js/main.2c491f2c.js"
   ]
 }
