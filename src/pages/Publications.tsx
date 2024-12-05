@@ -43,8 +43,8 @@ export default function Publications() {
                 marginBottom: { xs: 5, sm: 15, md: 30 },
 
             }}>
-                <Typography variant="h4" textAlign="center" gutterBottom>
-                    Publications
+                <Typography variant="h6" textAlign="center" gutterBottom>
+                    Symposium Publications
                 </Typography>
                 <Box display="flex" flexDirection="column" gap={2}>
                     {citations.map((citation, index) => (

@@ -82,11 +82,11 @@ export default function Home() {
                             </Box>
 
                             <Box padding={1}>
-                                <Typography variant="body2">
+                                <Typography variant="body2" fontSize={"0.7rem"}>
                                     The subterranean species of karst regions in Europe represent a unique and indispensable part of European biodiversity. Numerous specialized species are rare and highly endemic, bound to narrow geographical areas. At the same time, subterranean habitats are among the most challenging for biodiversity monitoring, due to difficult accessibility and the complexity of its exploration, which requires expertise and specialized equipment. Caves are rare points where humans can enter the subterranean domain and are often considered to be the main habitat for the subterranean species. They are protected as a special habitat type (8310 “Caves not open to the public”) in the EU Habitats Directive, which demands their monitoring at national and international level.
                                 </Typography>
                                 <br></br>
-                                <Typography variant="body2">
+                                <Typography variant="body2" fontSize={"0.7rem"}>
                                     However, up to now, there is no standardized sampling method for monitoring subterranean species and habitats. The <b>Sub-BioMon</b> will reconsider the role of caves as either habitats or simply windows into an extensive subterranean habitat in a fractured rock, consisting of cavities and crevices inaccessible to humans. The project will provide a scientific basis for monitoring, which is relevant to a variety of stakeholders, such as governmental and conservation institutions, management authorities of natural parks and show caves, as well as the general public, all of which will be involved in the project.
                                 </Typography>
                             </Box>
@@ -129,7 +129,7 @@ export default function Home() {
                                                 }}
                                             />
                                             <CardContent>
-                                                <Typography variant="h6">
+                                                <Typography variant="h6" fontSize={12}>
                                                     <Link
                                                         href={item.link}
                                                         color="inherit"

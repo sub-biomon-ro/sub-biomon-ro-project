@@ -69,7 +69,7 @@ export default function Team() {
                 marginTop: 5,
                 marginLeft: { xs: 5, sm: 15, md: 30 },
                 marginRight: { xs: 5, sm: 15, md: 30 },
-
+                zoom: "75%"
 
             }}>
                 <Grid2 container spacing={2}>

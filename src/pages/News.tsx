@@ -68,7 +68,7 @@ export default function News() {
                     </Paper>
 
                     <Paper elevation={5} sx={{ padding: 1 }}>
-                        <Grid2 container spacing={{
+                        <Grid2 container direction={"row"} spacing={{
                             xs: 1,
                             sm: 2,
                             md: 3,
@@ -104,10 +104,11 @@ export default function News() {
                                     The Sub-BioMon project has been launched during the 2nd edition of Karst Science Days Symposium (KSD) that took place in November 15th, 2024 in Bucharest at the Romania at the Institute of Speleology Emil Racovita. The first results of karst springs monitoring have been also presented by Alexandra Olaru, a MSc Student at the University Babes Bolyai, Cluj Napoca.
                                 </Typography>
                             </Grid2>
-                            <Grid2 size={{ xs: 12, md: 8}} sx={{
+                            <Grid2 offset={{md: 4}} size={{ xs: 12, md: 8}} sx={{
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 display: 'flex',
+                                
                             }}>
                             <Typography>
                                     KSD is a scientific event created to support young researchers on site and in hybrid format <a>(https://www.ksd.iser.ro/ )</a>. The symposium is designed to showcase the scientific contributions of outstanding students (undergraduate, graduate, and postgraduate) in the fields of biospeleology and geology of karst landscapes. KSD aims to provide the opportunity to share information about current studies of young researcher’s, to discuss and exchange ideas, to debate theoretical and practical topics related to their scientific work, and to analyze perspectives and experiences in their research field
