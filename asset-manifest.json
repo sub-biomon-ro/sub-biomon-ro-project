@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sub-biomon-ro-project/home/static/css/main.1b6fad4f.css",
-    "main.js": "/sub-biomon-ro-project/home/static/js/main.c0bd993c.js",
+    "main.js": "/sub-biomon-ro-project/home/static/js/main.015913d2.js",
     "static/js/453.f875c2d9.chunk.js": "/sub-biomon-ro-project/home/static/js/453.f875c2d9.chunk.js",
     "static/media/1000008595.jpg": "/sub-biomon-ro-project/home/static/media/1000008595.47b17bea748fc3cd3978.jpg",
     "static/media/1000010548.jpg": "/sub-biomon-ro-project/home/static/media/1000010548.79ad59db09636c435712.jpg",
@@ -32,11 +32,11 @@
     "static/media/homeMap.avif": "/sub-biomon-ro-project/home/static/media/homeMap.f5eff6c987b487cb0d0f.avif",
     "index.html": "/sub-biomon-ro-project/home/index.html",
     "main.1b6fad4f.css.map": "/sub-biomon-ro-project/home/static/css/main.1b6fad4f.css.map",
-    "main.c0bd993c.js.map": "/sub-biomon-ro-project/home/static/js/main.c0bd993c.js.map",
+    "main.015913d2.js.map": "/sub-biomon-ro-project/home/static/js/main.015913d2.js.map",
     "453.f875c2d9.chunk.js.map": "/sub-biomon-ro-project/home/static/js/453.f875c2d9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1b6fad4f.css",
-    "static/js/main.c0bd993c.js"
+    "static/js/main.015913d2.js"
   ]
 }
