@@ -38,7 +38,7 @@ export default function News() {
                             <Grid2 size={12}>
                                 <Typography variant="h5" textAlign={"center"}>A role for everyone</Typography>
                             </Grid2>
-                            <Grid2 size={{ xs: 12, md: 6 }}>
+                            <Grid2 size={{ xs: 12, md: 4 }}>
                                 <ImageList variant="woven" cols={news1Imgs.length} gap={8}>
                                     {news1Imgs.map((item, index) => (
                                         <ImageListItem>
@@ -55,7 +55,7 @@ export default function News() {
                                     ))}
                                 </ImageList>
                             </Grid2>
-                            <Grid2 size={{ xs: 12, md: 6 }} sx={{
+                            <Grid2 size={{ xs: 12, md: 8 }} sx={{
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 display: 'flex',
@@ -77,7 +77,7 @@ export default function News() {
                             <Grid2 size={12}>
                                 <Typography variant="h5" textAlign={"center"}>2nd edition of Karst Science Days Symposium (KSD)</Typography>
                             </Grid2>
-                            <Grid2 size={{ xs: 12, md: 6 }}>
+                            <Grid2 size={{ xs: 12, md: 4 }}>
                                 <ImageList variant="woven" cols={news2Imgs.length - 1} gap={8}>
                                     {news2Imgs.map((item, index) => (
                                         <ImageListItem>
@@ -94,7 +94,7 @@ export default function News() {
                                     ))}
                                 </ImageList>
                             </Grid2>
-                            <Grid2 size={{ xs: 12, md: 6 }} sx={{
+                            <Grid2 size={{ xs: 12, md: 8 }} sx={{
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 display: 'flex',
@@ -103,9 +103,15 @@ export default function News() {
                                 <Typography alignItems={"center"} alignContent={"center"}>
                                     The Sub-BioMon project has been launched during the 2nd edition of Karst Science Days Symposium (KSD) that took place in November 15th, 2024 in Bucharest at the Romania at the Institute of Speleology Emil Racovita. The first results of karst springs monitoring have been also presented by Alexandra Olaru, a MSc Student at the University Babes Bolyai, Cluj Napoca.
                                 </Typography>
-                                <Typography>
+                            </Grid2>
+                            <Grid2 size={{ xs: 12, md: 8}} sx={{
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                display: 'flex',
+                            }}>
+                            <Typography>
                                     KSD is a scientific event created to support young researchers on site and in hybrid format <a>(https://www.ksd.iser.ro/ )</a>. The symposium is designed to showcase the scientific contributions of outstanding students (undergraduate, graduate, and postgraduate) in the fields of biospeleology and geology of karst landscapes. KSD aims to provide the opportunity to share information about current studies of young researcher’s, to discuss and exchange ideas, to debate theoretical and practical topics related to their scientific work, and to analyze perspectives and experiences in their research field
-                                </Typography>
+                            </Typography>
                             </Grid2>
                         </Grid2>
                     </Paper>
