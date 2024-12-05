@@ -1,0 +1,16 @@
+{
+"news": [
+    {
+        "title": "News 1",
+        "link": "#",
+        "imgrc": ["./news1.1", "./news1.2"],
+        "text": ""
+    },
+    {
+        "title": "News 2",
+        "link": "#",
+        "imgSrc": ["./news2.1", "./news2.2"],
+        "text": ""
+    }
+    ]
+}
