@@ -18,11 +18,12 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/home' element={<Home></Home>}></Route>
-          <Route path='/team' element={<Team></Team>}></Route>
-          <Route path='/publications' element={<Publications></Publications>}></Route>
-          <Route path='/news-and-activities' element={<News></News>}></Route>
-          <Route path='/gallery' element={<Gallery></Gallery>}></Route>
+          <Route path='sub-biomon-ro-project/home' element={<Home></Home>}></Route>
+          <Route path='sub-biomon-ro-project/' element={<Home></Home>}></Route>
+          <Route path='sub-biomon-ro-project/team' element={<Team></Team>}></Route>
+          <Route path='sub-biomon-ro-project/publications' element={<Publications></Publications>}></Route>
+          <Route path='sub-biomon-ro-project/news-and-activities' element={<News></News>}></Route>
+          <Route path='sub-biomon-ro-project/gallery' element={<Gallery></Gallery>}></Route>
         </Routes>
       </Router>
     </div>

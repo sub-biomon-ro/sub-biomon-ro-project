@@ -16,9 +16,9 @@ export default function Navbar() {
         color: "white"
     }));
 
-    const pages = [["/home", "Home"], ["/team", "Team"], ["/publications", "Publications"], ["/news-and-activities", "News & Activities"],
+    const pages = [["/sub-biomon-ro-project/home", "Home"], ["/sub-biomon-ro-project/team", "Team"], ["/sub-biomon-ro-project/publications", "Publications"], ["/sub-biomon-ro-project/news-and-activities", "News & Activities"],
     ["https://docs.google.com/forms/d/e/1FAIpQLScav_rZVm3sBFHHfp2t2nu-iHuYQpqZyWb3IggOSces8iU1kA/viewform?usp=sharing", "Citizen Science"],
-    ["gallery", "Gallery"]]
+    ["/sub-biomon-ro-project/gallery", "Gallery"]]
 
     return (
         <div className="Navbar">
