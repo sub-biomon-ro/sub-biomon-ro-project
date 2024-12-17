@@ -262,7 +262,12 @@ export default function Home() {
                                     }}
                                     
                                 >
-                                    A Biodiversa+ project Sub-BioMon co-funded by the European Commission.(Ctr. 26/2024)
+                                    Biodiversa+ call: <a target="_blank"
+                                            rel="noopener noreferrer"
+                                            href="https://www.biodiversa.eu/2024/04/15/sub-
+biomon/"
+                                             style={{ color: "inherit" }}
+                                            >2022 – 2023 BiodivMon</a>
                                 </Typography>
                             
                             <Typography marginTop={"5%"}
