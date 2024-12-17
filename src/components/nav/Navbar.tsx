@@ -29,7 +29,7 @@ export default function Navbar() {
                 <Grid2 container direction="row">
                     <Grid2 container size={12} sx={{
                         // maxHeight: "50px",
-                        height: "50px",
+                        height: "45px",
                         //marginBottom: "auto",
                         backgroundColor: "#548235",
                     }}>
@@ -51,7 +51,7 @@ export default function Navbar() {
                                     alt="Left Logo"
                                     style={{
                                         //width: "100%",
-                                        maxHeight: "60px", 
+                                        maxHeight: "55px", 
 
                                         //height: "100px",
                                         //objectFit: "contain",
@@ -76,7 +76,7 @@ export default function Navbar() {
                                     //noWrap
                                     sx={{
                                         color: "#dea712",
-                                        fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem" },
+                                        fontSize: { xs: "1rem", sm: "1.25rem", md: "1.3rem" },
                                         letterSpacing: { xs: "0.1rem", sm: "0.1rem", md: "0.1rem" },
                                     }}
                                 >
@@ -111,7 +111,7 @@ export default function Navbar() {
                                     src={logoBioMon}
                                     alt="BioMon logo"
                                     sx={{
-                                     maxHeight: "50px",  
+                                     maxHeight: "45px",  
                                      float: "right"
                                     }}
                                 ></Box>
