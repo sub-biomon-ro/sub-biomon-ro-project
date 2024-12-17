@@ -29,7 +29,7 @@ export default function Navbar() {
                 <Grid2 container direction="row">
                     <Grid2 container size={12} sx={{
                         // maxHeight: "50px",
-                        height: "60px",
+                        height: "50px",
                         //marginBottom: "auto",
                         backgroundColor: "#548235",
                     }}>
@@ -51,7 +51,7 @@ export default function Navbar() {
                                     alt="Left Logo"
                                     style={{
                                         //width: "100%",
-                                        maxHeight: "65px", 
+                                        maxHeight: "60px", 
 
                                         //height: "100px",
                                         //objectFit: "contain",
@@ -89,7 +89,7 @@ export default function Navbar() {
                                     sx={{
                                         color: "white",
                                         fontSize: { xs: "0.75rem", sm: "1rem" },
-                                        marginTop: '-5px'
+                                        marginTop: '-10px'
                                     }}
                                 >
                                     Developing and testing approaches to monitor subterranean biodiversity in karst
@@ -111,7 +111,7 @@ export default function Navbar() {
                                     src={logoBioMon}
                                     alt="BioMon logo"
                                     sx={{
-                                     maxHeight: "60px",  
+                                     maxHeight: "50px",  
                                      float: "right"
                                     }}
                                 ></Box>

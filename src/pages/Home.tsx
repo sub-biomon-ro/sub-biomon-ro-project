@@ -70,7 +70,7 @@ export default function Home() {
     return (
         <div className="Home">
             <Box sx={{
-                marginTop: 5,
+                marginTop: 0,
                 marginLeft: { xs: 5, sm: 15, md: 30 },
                 marginRight: { xs: 5, sm: 15, md: 30 },
                 marginBottom: { xs: 5, sm: 15, md: 20 },
@@ -208,9 +208,10 @@ export default function Home() {
                                                     image={item.images[0]}
                                                     alt={item.title}
                                                     sx={{
-                                                        width: 100,
-                                                        maxHeight: 100,
-                                                        objectFit: "cover",
+                                                        //width: 100,
+                                                        maxWidth: 70,
+                                                        height: 100,
+                                                        //objectFit: "cover",
                                                     }}
                                                 />
                                                 <CardContent>
@@ -261,7 +262,7 @@ export default function Home() {
                                     }}
                                     
                                 >
-                                    A Biodiversa+ PROJECT co-funded by the European Commission (April 2024 - March 2027)
+                                    A Biodiversa+ project Sub-BioMon co-funded by the European Commission.(Ctr. 26/2024)
                                 </Typography>
                             
                             <Typography marginTop={"5%"}
@@ -316,11 +317,12 @@ export default function Home() {
                             gap: 1,
                         }}
                     >
-                        <Grid2 container spacing={-5} sx={{ marginTop: 2 }}>
+                        <Grid2 container spacing={-5} sx={{ marginTop: -1 }}>
                             <Typography variant="h6" component="div">Partners of the project</Typography>
                             {partnersData.map((partner, index) => (
                                 <Grid2 size={12} key={index}>
-                                    <Box display="flex" alignItems="center">
+                                    {/* <Box display="flex" alignItems="center"> */}
+                                        <Grid2 size={{xs: 12, sm: 4}}>
                                         <CardMedia
                                             component="img"
                                             image={partner.logo}
@@ -332,11 +334,12 @@ export default function Home() {
                                                 objectFit: "contain"
                                             }}
                                         />
+                                        </Grid2>
                                         <Box>
                                             {/* <Typography variant="body1" fontWeight="bold" fontSize={"0.7rem"}>{partner.name}</Typography>
                                             <Typography variant="body2">{partner.country}</Typography> */}
                                         </Box>
-                                    </Box>
+                                    {/* </Box> */}
                                 </Grid2>
                             ))}
                         </Grid2>
@@ -374,7 +377,7 @@ export default function Home() {
                                 
                                     sx={{
                                         
-                                        maxHeight: "150px"
+                                        maxHeight: "75px"
                                     }}
                                 ></Box>
                             </Grid2>
@@ -386,7 +389,7 @@ export default function Home() {
                                 
                                     sx={{
                                         
-                                        maxHeight: "150px"
+                                        maxHeight: "75px"
                                     }}
                                 ></Box>
                             </Grid2>
