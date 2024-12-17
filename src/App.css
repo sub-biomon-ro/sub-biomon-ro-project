@@ -1,5 +1,15 @@
 .App {
   zoom: 125%;
+  text-align: justify;
+  /* text-justify: distribute; */
+  hyphens: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the App takes full height of the viewport */
+}
+
+main {
+  flex-grow: 1; /* This ensures the main content grows and pushes the footer down */
 }
 
 /* .App-logo {

@@ -42,9 +42,6 @@ export default function Gallery() {
 
     const images = [
         {
-            img: img1,
-        },
-        {
             img: img2,
         },
         {
@@ -65,9 +62,9 @@ export default function Gallery() {
         {
             img: img8,
         },
-        {
-            img: img9,
-        },
+        // {
+        //     img: img9,
+        // },
         {
             img: img10,
         },
@@ -84,7 +81,7 @@ export default function Gallery() {
                 marginTop: 5,
                 marginLeft: { xs: 5, sm: 15, md: 30 },
                 marginRight: { xs: 5, sm: 15, md: 30 },
-                marginBottom: { xs: 5, sm: 15, md: 60 },
+                marginBottom: { xs: 5, sm: 15, md: 30 },
                 display: "flex",
                 justifyContent: "center",
             }}>
@@ -95,6 +92,7 @@ export default function Gallery() {
                                 srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                                 src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
                                 loading="lazy"
+                                style={{maxHeight: '300px'}}
                             >
                             </img>
                         </ImageListItem>

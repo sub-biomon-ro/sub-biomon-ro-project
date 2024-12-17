@@ -36,30 +36,31 @@ export default function Publications() {
 
     return (
         <div className="Publications">
-            <Box sx={{
-                marginTop: 5,
-                marginLeft: { xs: 5, sm: 15, md: 30 },
-                marginRight: { xs: 5, sm: 15, md: 30 },
-                marginBottom: { xs: 5, sm: 15, md: 30 },
-
-            }}>
-                <Typography variant="h6" textAlign="center" gutterBottom>
-                    Symposium Publications
-                </Typography>
+            <Box
+                sx={{
+                    marginTop: 5,
+                    marginLeft: { xs: 5, sm: 15, md: 30 },
+                    marginRight: { xs: 5, sm: 15, md: 30 },
+                    marginBottom: { xs: 5, sm: 15, md: 30 },
+                }}
+            >
+                {/* Title Box with same maxWidth and alignment */}
+                <Box sx={{ maxWidth: "600px", margin: "auto", textAlign: "left", marginBottom: 2 }}>
+                    <Typography variant="h5" gutterBottom>
+                        Symposium Publications
+                    </Typography>
+                </Box>
+    
                 <Box display="flex" flexDirection="column" gap={2}>
                     {citations.map((citation, index) => (
                         <Card key={index} variant="outlined" sx={{ maxWidth: "600px", margin: "auto" }}>
                             <CardContent>
                                 {/* Author and Year */}
-                                <Typography variant="body1" gutterBottom>
-                                    <strong>{citation.author}</strong> ({citation.year}).
-                                </Typography>
-
-                                {/* Title with optional link */}
-                                <Typography variant="body1" gutterBottom>
+                                <Typography variant="body2" gutterBottom fontSize={"0.7rem"} sx={{color:"GrayText"}}>
+                                    {citation.author}({citation.year}).
+                                    <> </>
                                     <em>
                                         {citation.link ? (
-
                                             <a
                                                 href={citation.link}
                                                 target="_blank"
@@ -72,12 +73,32 @@ export default function Publications() {
                                             citation.title
                                         )}
                                     </em>
-                                </Typography>
-
-                                {/* Source */}
-                                <Typography variant="body2" color="textSecondary">
+                                    <> </>
                                     {citation.source}
                                 </Typography>
+    
+                                {/* Title with optional link
+                                <Typography variant="body1" gutterBottom>
+                                    <em>
+                                        {citation.link ? (
+                                            <a
+                                                href={citation.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                style={{ textDecoration: "none", color: "inherit" }}
+                                            >
+                                                {citation.title}
+                                            </a>
+                                        ) : (
+                                            citation.title
+                                        )}
+                                    </em>
+                                </Typography> */}
+    
+                                {/* Source */}
+                                {/* <Typography variant="body2" color="textSecondary">
+                                    {citation.source}
+                                </Typography> */}
                             </CardContent>
                         </Card>
                     ))}

@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="tt" a:separator=" :: " a:localId="tt" a:p="1">uefiscdi.gov.ro :: Home Module</title>
+  <!-- Bootstrap -->
+  <!--<link id="bs" href="css/bootstrap.css" type="text/css" rel="stylesheet" remove="yes">-->
+
+  <!-- <link id="bs"  href="css/index.css" type="text/css" rel="stylesheet" remove="yes">-->
+
+  <!-- Material -->
+  <!-- <link type="text/css" rel="stylesheet" href="css/mdl/material.min.css">-->
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+          <script language="JavaScript" type="text/javascript" id="jas/JAS.js">var jas=function jas(){}
+var JAS=jas;jas.lang=function(){}
+jas.lang.Object=function(cN){this.className=cN;this.whoami=function(){if(typeof(this.className)=="Object"){this.className="Object";}
+return this.className;}}
+jas.cacheClassesLoaded=new Array();jas.buffers=new Array();jas.node={};jas.configScrollWait=10;jas.scrollActive=false;jas.configScrollSteps=5;jas.configScrollWaitBetweenSteps=50;jas.isDebug=("0"==""?0:parseInt("0"));jas.node.domain=("uefiscdi.gov.ro"==""?null:"uefiscdi.gov.ro");jas.defaultVariables=new Array();jas.loadingIntervalHandler=null;jas.loadingIntervalTimer=20;jas.loadingIntervalHandlerRunning=false;jas.iCallOnLoad=null;jas.iCallOnLoaded=null;JAS.prototype=new jas.lang.Object("JAS");JAS.isLoaded=function(cN){cN=cN.split(".").join('/')+".js";var list=document.getElementsByTagName('script');for(var idx in list){var o=list[idx];try{if((typeof o==='object')&&(o.hasAttribute)){}
+if((typeof o==='object')&&(o.hasAttribute)&&o.hasAttribute('id')&&o.getAttribute('id')==cN){return true;}}catch(e){}}
+return false;}
+JAS.load=function(cN,as,doneHandler){cN=cN.trim();JAS.debug("[Normal] Loading "+cN);if(!as)as=false;if(cN=='jas.external.jquery.jquery'){if(window["$"]!=null&&typeof $=='function'&&typeof jQuery=='function'){return;}}
+if(typeof $!='function'&&typeof jQuery!='function'){JAS.loadBasic('jas.external.jquery.jquery');}
+if(JAS.isClassLoaded(cN)){if(doneHandler){doneHandler(cN,'already loaded',0);}
+JAS.debug("[Normal] Already loaded "+cN);return;}
+if(!doneHandler){doneHandler=function(){};}
+jQuery.ajaxSetup({async:as});var t=$.getScript("?mtx=ui.output.jas&t=f&cN="+cN.trim()).done(function(script,textStatus){JAS.debug("Loaded "+cN+" [Success]");JAS.registerClass(cN);doneHandler(cN,script,textStatus);}).fail(function(jqxhr,settings,exception){JAS.debug("Loaded "+cN+" [Failed]");JAS.error("[.] Failed loading "+cN);JAS.error(exception);});if(t.error){t.error(function(jqXHR,textStatus,errorThrown){JAS.error("[.] Error :"+textStatus+","+errorThrown);JAS.log("Source Code:\n"+jqXHR.responseText);})};if(!doneHandler){$.Deferred(function(deferred){$(deferred.resolve);});}
+jQuery.ajaxSetup({async:true});}
+JAS.createClass=function(cN,classBody){var code=null;if(classBody){code=cN+'='+classBody;window[cN]=eval(code);}else{code=cN+'=function(){this.prototype= new jas.lang.Object("'+cN+'"); };';window[cN]=eval(code);}
+return window[cN];}
+JAS.package=function(cN,createPrototype){var s=cN.split(".");var sN=new Array();var code=null;for(var x in s){sN[x]=s[x];cN=sN.join(".");if(window[cN]){}
+else{code=cN+'=function(){ this.getPackageName=function(){ return "'+cN+'"}};';window[cN]=eval(code);if(createPrototype){eval(cN+'.prototype=new jas.lang.Object("'+cN+'");');}}}}
+JAS.script=function(depts,script,handlerLoading){var classes=new Array();if(depts instanceof Array)classes=depts
+else
+classes=depts.split(",");for(var iCN in classes){var cN=classes[iCN];JAS.include(cN,true,handlerLoading);}
+hh=function(classes,script){var all=true;for(var iCN in classes){var cN=classes[iCN];if(JAS.isClassLoaded(cN)){all=false;break;}else{}}
+var kk="X";if(!jas.buffers[kk])jas.buffers[kk]=0;jas.buffers[kk]=jas.buffers[kk]+1;if(!all){setTimeout(function(){hh(classes,script)},200);}else{if(!script){JAS.error("Include class loaded but no script provided");return;}
+setTimeout(function(){script()},50);}}
+setTimeout(function(){hh(classes,script)},200);}
+JAS.include=function(classes,async,handler){if(!async){async=false;}
+var s=classes.split(",");for(var x in s){var c=s[x];if(c.charAt(0)=="&"){c=c.substring(1);JAS.load(c,true,handler);}else{JAS.load(c,async,handler);}}
+$.Deferred(function(deferred){$(deferred.resolve);});}
+JAS.import=function(className,async,handler){JAS.include(className,async,handler);return eval(className);}
+JAS.create=function(cN,code){window[cN]=code;}
+JAS.log=function(message){if(JAS.isDebug==0){return;}
+if(console)console.log(message);else alert(message);}
+JAS.debug=function(message){if(JAS.isDebug==1){console.error("[DEBUG-JAS] "+message);}}
+JAS.error=function(message,stop){if(stop){throw(message);}
+message="[ERROR] "+message;if(console)console.error(message);else alert(message);}
+JAS.logStackTrace=function(){var err=new Error();JAS.log(err.stack);}
+JAS.warning=function(message){message="[WARNING] "+message;if(console)console.log(message);else alert(message);}
+JAS.isClassLoaded=function(cN){cN=decodeURIComponent(cN);cN=cN.replace(".js","");cN=cN.split('/').join(".");if(cN.charAt(0)=='&')cN=cN.substring(1);if(cN=='jas.external.jquery.jquery'){if(window["$"]!=null&&typeof $=='function'&&typeof jQuery=='function'){return true;}}
+if(jas.cacheClassesLoaded[cN]){return true;}
+if(JAS.isLoaded(cN)){return true;}
+return false;}
+JAS.registerClass=function(cN){var oldCN=cN;cN=decodeURIComponent(cN);if(cN.charAt(0)=='&')cN=cN.substring(1);cN=cN.replace(".js","");cN=cN.split('/').join(".");JAS.debug("[RC] Registering "+oldCN+" => "+cN);jas.cacheClassesLoaded[cN]=1;}
+JAS.loadBasic=function(cN,wait){JAS.debug("[Basic] Loading "+cN);if(JAS.isClassLoaded(cN)){JAS.debug("[Basic] already loaded "+cN);return;}
+JAS.registerClass(cN);var xReq=null;if(window.XMLHttpRequest)
+xReq=new XMLHttpRequest();else if(window.ActiveXObject)
+xReq=new ActiveXObject("MsXml2.XmlHttp");if(xReq==null)throw("no ajax support");xReq.onreadystatechange=function(){if(xReq.readyState==4){if(xReq.status==200||xReq.status==304){JAS.registerClass(cN);var oHead=document.getElementsByTagName('HEAD').item(0);if(oHead==null){throw("Cannot load "+cN+". Head Element is null");}
+var oScript=document.createElement("script");oScript.type="text/javascript";oScript.id="id-"+cN;oScript.defer=true;oScript.text=xReq.responseText;JAS.debug("[.] Loaded (JAS.loadBasic): "+cN);try{oHead.appendChild(oScript);}catch(e){JAS.error("request answer: "+xReq.responseText);}}
+else{throw("class cannot be included:"+cN);}}}
+JAS.debug("Loading(JAS.loadBasic): "+cN);xReq.open('GET',"?mtx=ui.output.jas&t=b&cN="+cN,false);xReq.send(null);JAS.registerClass(cN);}
+JAS.package('jas');var Boot=jas.Boot=function(){this.loadingStarted=false;}
+jas.Boot.prototype=new jas.lang.Object('jas.Boot');jas.Boot.onLoadingHandler=null;jas.Boot.onLoadedHandler=null;jas.Boot.onLoadingAjaxHandler=null;jas.Boot.loadingStarted=false;jas.Boot.allowActions=false;jas.Boot.location=window.location;jas.Boot.attach=function(event,functionHandler){if(typeof window.addEventListener=='function'){window.addEventListener(event,functionHandler,true);}else{window.attachEvent('on'+event,functionHandler);}}
+jas.Boot.getEventSource=function(event){var source=event.target||event.srcElement;return source;}
+jas.Boot.attachEvent=function(obj,event,functionHandler){if(obj==null){return;}
+if(typeof obj.addEventListener=='function'){obj.addEventListener(event,functionHandler,true);}else{obj.attachEvent('on'+event,functionHandler);}}
+jas.Boot.removeEvent=function(obj,event,functionHandler){if(typeof obj.addEventListener=='function'){obj.removeEventListener(event,functionHandler,true);}else{obj.detachEvent('on'+event,functionHandler);}}
+jas.Boot.acquirreScreenInfo=function(){var one={dpi:96,dpcm:96 / 2.54}
+function ie(){return Math.sqrt(screen.deviceXDPI*screen.deviceYDPI)/ one.dpi}
+function dppx(){return typeof window=='undefined'?0:+window.devicePixelRatio||ie()||0}
+function dpcm(){return dppx()*one.dpcm}
+function dpi(){return dppx()*one.dpi}
+function o(){return Math.abs(window.orientation)-90==0?"l":"p";};function w(){return[window.innerWidth,window.innerHeight];return(o()=="p")?[window.innerHeight,window.innerWidth]:[window.innerWidth,window.innerHeight];}
+function m(){return[window.screen.width,window.screen.height];return(o()=="p")?[window.screen.height,window.screen.width]:[window.screen.width,window.screen.height];}
+return'dppx:'+dppx()+";"+'dpi:'+dpi()+";"+'dpcm:'+dpcm()+";"+'o:'+o()+";"+'w:'+w()+";"+'s:'+m();}
+jas.Boot.init=function(){jas.defaultVariables['wes']=jas.Boot.acquirreScreenInfo();}
+jas.Boot.onLoad=function(functionHandler){this.attach("load",functionHandler);}
+jas.Boot.onLoaded=function(functionHandler){jas.Boot.onLoadedHandler=functionHandler;this.attach("load",functionHandler);}
+jas.Boot.onLoading=function(functionHandler){jas.Boot.onLoadingHandler=functionHandler;functionHandler();}
+jas.Boot.onLoadAjaxInit=function(){jas.Boot.onLoadingAjaxHandler=new Array();}
+jas.Boot.onLoadAjax=function(functionHandler){if(jas.Boot.onLoadingAjaxHandler==null){jas.Boot.onLoadAjaxInit();}
+jas.Boot.onLoadingAjaxHandler.push(functionHandler);}
+jas.Boot.onLoadedAjax=function(){if(jas.Boot.onLoadingAjaxHandler==null){JAS.error("ajaxa handlers are null, call onLoadAjaxInit first");}
+for(var idx in jas.Boot.onLoadingAjaxHandler){var functionHandler=jas.Boot.onLoadingAjaxHandler[idx];functionHandler();}}
+jas.Boot.loading=function(){if(!jas.Boot.allowActions){return;}
+jas.Boot.loadingStarted=true;if(jas.Boot.onLoadingHandler){jas.Boot.onLoadingHandler();}}
+jas.Boot.loaded=function(){if(jas.Boot.onLoadedHandler)
+jas.Boot.onLoadedHandler();else{JAS.error("not onLoadedHandler found...");}}
+jas.Boot.loaderChecker=function(t){if((document.body)&&(document.readyState=='complete')&&(!jas.Boot.loadingStarted)){jas.Boot.loaded();console.log("Error: Something went wrong, a loading event stared very fast in the same DOM as the first one. Usually an IE issue. Recovering");}else{console.log(document.readyState);console.log(jas.Boot.loadingStarted);}}
+jas.Events=function(){}
+jas.Events.prototype=new jas.lang.Object('jas.Events');jas.Events.keyHandlers=null;jas.Events.isAltKeyPressed=false;jas.Events.isCtrlKeyPressed=false;jas.Events.isShiftKeyPressed=false;jas.Events.keyCode=null;jas.Events.ALL=65535;jas.Events.objectFocused=null;jas.Events.objectFocusedId=null;jas.Events.objectAction=null;jas.Events.objectActionHasLoader=true;jas.Events.eventsHandlers=new Array();jas.Events.mouseObjectFocused=0;jas.Events.pageX=0;jas.Events.pageY=0;jas.Events.relativeX=0;jas.Events.relativeY=0;jas.Events.collectEventFocusBody=function(){}
+jas.Events.collectEventAction=function(e){var o=jas.Boot.getEventSource(e);if(o.hasAttribute('target')){var d=document.getElementById(o.getAttribute('target'));if(d){o=d;}}
+jas.Events.objectAction=o;jas.Events.objectFocused=o;}
+jas.Events.pasteAction=function(event){jas.Events.issueAction("paste",jas.Events.objectFocused,event);}
+jas.Events.mousePosition=function(e){var evtobj=window.event?event:e;var obj=evtobj.target||evtobj.srcElement;jas.Events.mouseObjectFocused=obj;jas.Events.pageX=e.pageX;jas.Events.pageY=e.pageY;if(obj.hasAttribute("a:position")){var a=jas.UI.getPosition(obj);jas.Events.relativeX=e.pageX-a[0];jas.Events.relativeY=e.pageY-a[1];}else{jas.Events.relativeX=null
+jas.Events.relativeY=null;}}
+jas.Events.keyboardSpecialKeys=function(e){var evtobj=window.event?event:e;var keyCode=evtobj.keyCode;jas.Events.keyCode=keyCode;if(evtobj.altKey||evtobj.ctrlKey||evtobj.shiftKey){if(evtobj.altKey){jas.Events.isAltKeyPressed=true;}
+if(evtobj.ctrlKey){jas.Events.isCtrlKeyPressed=true;}
+if(evtobj.shiftKey){jas.Events.isShiftKeyPressed=true;}}else{jas.Events.isAltKeyPressed=false;jas.Events.isCtrlKeyPressed=false;jas.Events.isShiftKeyPressed=false;}}
+jas.Events.keyboardKeys=function(e){var evtobj=window.event?event:e;var keyCode=evtobj.keyCode;jas.Events.keyCode=keyCode;if(jas.Events.keyHandlers!=null&&jas.Events.keyHandlers[keyCode]){var handler=jas.Events.keyHandlers[keyCode];var source=evtobj.target||evtobj.srcElement;handler(source,keyCode);}
+if(jas.Events.keyHandlers!=null&&jas.Events.keyHandlers[jas.Events.ALL]){var handler=jas.Events.keyHandlers[jas.Events.ALL];var source=evtobj.target||evtobj.srcElement;handler(source,keyCode);}
+return true;}
+jas.Events.keyboardObject=function(e){var o=jas.Boot.getEventSource(e);if(o.hasAttribute('target')){var d=document.getElementById(o.getAttribute('target'));if(d){o=d;}}
+jas.Events.objectFocused=o;return true;}
+jas.Events.register=function(keyCode,handler){if(jas.Events.keyHandlers==null){jas.Events.keyHandlers=new Array();}
+jas.Events.keyHandlers[keyCode]=handler;}
+jas.Events.registerAction=function(eventName,obj,handler){if(jas.Events.eventsHandlers==null){jas.Events.eventsHandlers=new Array();}
+if(jas.Events.eventsHandlers[eventName]==null){jas.Events.eventsHandlers[eventName]=new Array();}
+jas.Events.eventsHandlers[eventName][obj.getAttribute("id")]={'handler':handler,'object':obj};}
+jas.Events.issueAction=function(eventName,object,event){if(jas.Events.eventsHandlers[eventName]){for(var id in jas.Events.eventsHandlers[eventName]){if(id==object.getAttribute("id")){var f=jas.Events.eventsHandlers[eventName][id]['handler'];f(event);}}}}
+var Core=jas.Core=function(){}
+jas.Core.prototype=new jas.lang.Object('jas.Core');jas.Core.getElementsByTagName=function(obj,tag){var tagArr=obj.getElementsByTagName(tag);var elements=[];for(var i=0;i<tagArr.length;i++){elements[i]=tagArr[i];}
+return elements;}
+jas.Core.setDOMChangeCallback=function(obj,callback){var MutationObserver=window.MutationObserver||window.WebKitMutationObserver;if(MutationObserver){var mutationObserver=new MutationObserver(callback)
+mutationObserver.observe(obj,{childList:true,subtree:true})
+return mutationObserver;}
+else if(window.addEventListener){obj.addEventListener('DOMNodeInserted',callback,false)
+obj.addEventListener('DOMNodeRemoved',callback,false)}}
+jas.Core.getParentElementByTagName=function(obj,tagName){return this.detectParent(obj,tagName,true);}
+jas.Core.detectParent=function(obj,tagNameType,checkSource){var at=tagNameType.split("#");var tagName=at[0];var tagAType=null;if(at[1]!=null){tagAType=at[1];tagAType=tagAType.toUpperCase();}
+if((checkSource)&&(obj.tagName)&&(obj.tagName==tagName))return obj;if(obj){var n=64;var o=obj.parentNode;var i=0;for(i=0;i<n;i++){if(o==null)break;var id=o.id+"";if((o.tagName)&&(o.tagName==tagName||(tagName=='*'&&o.hasAttribute('a:type')))&&((!id)||((id)&&(id.indexOf("_fake")==-1)))){if(tagAType!=null){var localType="";if(o.hasAttribute('a:type')){localType=o.getAttribute("a:type").toUpperCase();}
+if(localType!=tagAType){o=o.parentNode;continue;}}
+return o;}
+o=o.parentNode;}
+return null;}
+return null;}
+jas.Core.removeVariables=function(obj,array){var oForm=jas.Core.detectParent(obj,"FORM",true);if(!oForm)throw("createVariables: Cannot find FORM tag using this context "+obj);for(var varName in array){var newObj=document.getElementById(oForm.getAttribute("id")+"_"+varName);if(newObj!=null){if(newObj.hasAttribute("a:created")){newObj.parentNode.removeChild(newObj);}
+var attrName=jas.Core.attrTransformName2Attribute(varName);if(oForm.hasAttribute(attrName)){oForm.removeAttribute(attrName);}}}
+return jas.Core;}
+jas.Core.attrTransformName2Attribute=function(name){return"s:"+name.split("[").join("-_").split("]").join("_-").split("@").join("AT--_");}
+jas.Core.attrTransformAttribute2Name=function(name){return name.split("-_").join("[").split("_-").join("]").split("AT--_").join("@").substring(2);}
+jas.Core.createVariables=function(obj,array){var oForm=jas.Core.detectParent(obj,"FORM",true);if(array==null)array=new Array();for(var x in jas.defaultVariables){var vv=jas.defaultVariables[x];array[x]=vv;}
+if(!oForm)throw("createVariables: Cannot find FORM tag using this context "+obj);for(var varName in array){var addCreated=false;var varIdName=oForm.getAttribute("id")+"_"+varName;var newObj=document.getElementById(varIdName);if(newObj!=null){newObj.parentNode.removeChild(newObj);}else{addCreated=true;}
+newObj=null;if(newObj==null){newObj=document.createElement("input");newObj.setAttribute("type","hidden");oForm.appendChild(newObj);}
+try{if(newObj.getAttribute("type")!="hidden")
+newObj.setAttribute("type",'text');}catch(err){alert("cannot set type to "+newObj+":"+newObj.id);}{newObj.setAttribute('a:created',"1");}
+newObj.value=array[varName];newObj.name=varName;newObj.setAttribute("id",varIdName);JAS.log("creating variable : "+varName+"="+array[varName]);oForm.setAttribute(jas.Core.attrTransformName2Attribute(varName),array[varName]);}
+return jas.Core;}
+jas.Core.imerge=function(){var out=[];var outIndex=0;for(var i=0;i<arguments.length;i++){var argument=arguments[i];for(var index=0;index<argument.length;index++){out[outIndex]=argument[index];outIndex++;}}
+return out;}
+jas.Core.kmerge=function(){var out=new Array();for(var i=0;i<arguments.length;i++){for(var index in arguments[i])out[index]=arguments[i][index];}
+return out;}
+jas.Core.rmerge=function(array1,array2,prefix){var p;for(p in array2){if(array2.hasOwnProperty(p)){var k=prefix?prefix+"["+p+"]":p,v=array2[p];if(v!==null&&typeof v==="object"){array1[k]=jas.Core.rmerge([],v,k);}else{array1[k]=v;}}}
+return array1;}
+jas.Core.createTemplateVariables=function(obj,vars,searchDomain){var variables=jas.Core.getTemplateVariables(obj,vars,searchDomain);jas.Core.createVariables(obj,variables);return this;}
+jas.Core.getTemplateVariables=function(obj,vars,searchDomain){if(!searchDomain)searchDomain="DIV#template";else{searchDomain=searchDomain.toUpperCase();}
+var objTR=jas.Core.detectParent(obj,searchDomain,true);var allObjects=jas.Core.imerge(jas.Core.getElementsByTagName(objTR,"SELECT"),jas.Core.getElementsByTagName(objTR,"INPUT"),jas.Core.getElementsByTagName(objTR,"TEXTAREA"));var variables=new Array();var varsArray=vars.split(",");for(var o in allObjects){var objCurent=allObjects[o];if((objCurent)&&(objCurent.tagName)){var id=objCurent.getAttribute("id");var value=objCurent.value;if(!id)continue;for(var i in varsArray){var idC=varsArray[i];var idCTarget=idC;if(idC.indexOf("=")!=-1){var idC2=idC.split("=");idCTarget=idC2[0];idC=idC2[1];if(idC.charAt(0)=='#'){value=idC.substring(1);variables[idCTarget]=value;continue;}
+if(idC.charAt(0)=='&'){value=idC.substring(1);variables[idCTarget]=value;continue;}}
+var len=(""+idC).length+1;var newS=id.substring(id.length-len);if((id.indexOf(idC+"@")!=-1)||(newS=="_"+idC)){variables[idCTarget]=value;}}}}
+return variables;}
+jas.Core.ld=function(obj,event){if(jas.Events.isCtrlKeyPressed){return;}
+if((event)&&(event.srcElement)&&(event.srcElement.tagName.toUpperCase()=='LABEL')){if(obj.hasAttribute('href')){var link=obj.getAttribute("href")+"";if(link.charAt(0)!="#"){window.location=obj.getAttribute("href");}}}
+Boot.loading(event);return;}
+jas.Core.ldStart=function(auto){var o=jas.Events.objectAction
+if(o==null)return;if(auto){if(o.parentNode.tagName=='A'){o=o.parentNode;}
+if(o.tagName=='A'){if(o.hasAttribute("href")){var href=o.getAttribute("href");if(href.substring(0,1)=="#")o=null;if(href=="")o=null;}else{o=null;}
+if(o!=null&&typeof o.onclick=="function"){o=null;}
+if(o!=null&&o.hasAttribute('target')&&o.getAttribute('target')=='_blank'){o=null;}}else{o=null;}}
+if(o==null){return;}
+var objectActionHasLoader=true;if(o!=null){var loader='1';if(o.hasAttribute('loader')){loader=o.getAttribute('loader');}else if(o.hasAttribute('a:loader')){loader=o.getAttribute('a:loader');}
+if(o.tagName=='A'&&o.hasAttribute("href")&&o.getAttribute("href").indexOf("javascript:")!=-1){loader="0";}
+if(loader=='off'||loader=='no'||loader=='false'||loader=='0'){objectActionHasLoader=false;}
+if(!objectActionHasLoader){if(o.tagName=='INPUT'){}}}
+if(!objectActionHasLoader){return;}
+jas.Core.ldProgressStart();jas.Core.ld();}
+jas.Core.ldProgressStop=function(){if(jas.loadingIntervalHandler!=null){clearInterval(jas.loadingIntervalHandler);jas.loadingIntervalHandler=null;}
+var o=document.getElementById('ld-progress');if(o!=null){o.style.width="100%";}
+setTimeout(function(){var o=document.getElementById('ld-progress');if(o!=null)o.parentNode.removeChild(o);},jas.loadingIntervalTimer*10);}
+jas.Core.ldProgressStart=function(){var o=null;o=document.getElementById('ld-progress');if(o!=null){o.style.width="0%";}
+jas.Core.ldProgress(null,null);jas.loadingIntervalHandler=setInterval(jas.Core.ldProgress,jas.loadingIntervalTimer);}
+jas.Core.ldProgress=function(obj,event){if(jas.loadingIntervalHandlerRunning){return;}
+jas.loadingIntervalHandlerRunning=true;var o=null;o=document.getElementById('ld-progress');if(o==null){o=document.createElement('div');o.setAttribute("id","ld-progress");document.body.appendChild(o);o.style.top="0";o.style.left="0";o.style.height="2px";o.style.backgroundColor="#b71c1c";o.style.borderBottom="1px solid #7f0000";o.style.position="fixed";}
+if(jas.Core.classExists('.athon-overlay-wait')||jas.Core.classExists('.athon-progress')){if(jas.Core.classExists('.athon-overlay-wait'))
+o.className="athon-overlay-wait";if(jas.Core.classExists('.athon-progress'))
+o.className="athon-progress";}
+var w=parseFloat(o.style.width);var oldW=w;if(isNaN(w))w=0;if(w<0)w=0;if(w>=100)w=0;else w+=(100-w)/(jas.loadingIntervalTimer*2);if(w>100)w=100;if(Math.round(oldW*1000)==Math.round(w*1000)){if(jas.loadingIntervalHandler!=null){clearInterval(jas.loadingIntervalHandler);jas.loadingIntervalHandler=null;}}
+o.style.width=w+"%";jas.loadingIntervalHandlerRunning=false;}
+jas.Core.ldLocal=function(){}
+jas.Core.setCookie=function(name,value,expires,path,domain,secure){var today=new Date();today.setTime(today.getTime());if(expires){expires=expires*1000*60*60*24;}
+var expires_date=new Date(today.getTime()+(expires));if(!value)value="";var cookie=name+"="+escape(value)+
+((expires)?";expires="+expires_date.toGMTString():"")+
+((path)?";path="+path:"")+
+((domain)?";domain="+domain:"")+
+((secure)?";secure":"")+"; SameSite=Strict";document.cookie=cookie;}
+jas.Core.removeCookie=function(name){jas.Core.setCookie(name,null,-10000,"/","",true);}
+jas.Core.getCookie=function(check_name){var a_all_cookies=document.cookie.split(';');var a_temp_cookie='';var cookie_name='';var cookie_value='';var b_cookie_found=false;var i;for(i=0;i<a_all_cookies.length;i++){a_temp_cookie=a_all_cookies[i].split('=');cookie_name=a_temp_cookie[0].replace(/^\s+|\s+$/g,'');if(cookie_name==check_name){b_cookie_found=true;if(a_temp_cookie.length>1){cookie_value=unescape(a_temp_cookie[1].replace(/^\s+|\s+$/g,''));}
+return cookie_value;break;}
+a_temp_cookie=null;cookie_name='';}
+if(!b_cookie_found){return null;}}
+jas.Core.setAnchor=function(anchor){console.log('setting '+anchor);if(anchor){if(anchor=="scroll"){anchor="scroll:"+(document.body.scrollTop||document.documentElement.scrollTop);}
+jas.Core.setCookie("anchor",anchor,0);}
+else{jas.Core.setCookie("anchor",anchor,-1);}
+return jas.Core;}
+jas.Core.gotoAnchor=function(step){if(!step){if(!jas.scrollActive){jas.scrollActive=true;var t=jas.configScrollWait;setTimeout('jas.Core.gotoAnchor(1)',t);}else{JAS.log("aborting, already launched");}
+return;}
+var anchor=this.getCookie("anchor");if(anchor!=null){if(anchor.indexOf('search')!=-1){var objId=anchor.substring(anchor.indexOf('search')+7);var obj=document.getElementById(objId);console.log(obj);if(obj){var offset=obj.offsetTop;anchor="scroll:"+offset;jas.Core.setCookie("anchor",anchor,0);}}
+if(anchor.indexOf('scroll')!=-1){var steps=jas.configScrollSteps;var s=anchor.split(":");if(!step)step=0;if(step<steps){var f=s[1]/steps;document.body.scrollTop=document.documentElement.scrollTop=f*step;step++;setTimeout('jas.Core.gotoAnchor('+step+')',jas.configScrollWaitBetweenSteps);return;}else{document.body.scrollTop=document.documentElement.scrollTop=s[1];}}else{window.location.hash=anchor;}
+jas.Core.setAnchor(null);}}
+jas.Core.call=function(obj,f,msg,array){if(!array){array=new Array();}
+if(obj.hasAttribute&&(obj.hasAttribute("a:ddpN"))){if(!array)array=new Array();array["ddpN"]=obj.getAttribute("a:ddpN");}else{var params=jas.Core.getQueryParams();if(params["ddpN"])array["ddpN"]=params["ddpN"];}
+if(array){jas.Core.createVariables(obj,array);}
+var form=jas.Core.detectParent(obj,"FORM");array=jas.Core.getFormVariables(form);console.log(array);return jas.Core.initGFCall(obj,f,null,msg,array);}
+jas.Core.aCall=function(obj,method,vars,returnVar,onFail){JAS.include("jas.ddp.UI");if(!vars){vars=new Array();}
+var aFormVars=null;var oForm=jas.Core.detectParent(obj,"FORM",true);var oFormA=null;if(oFormA!=null){aFormVars=oFormA.parentNode;}else{aFormVars=oForm;}
+var localFormVars=this.getFormVariables(aFormVars,false);for(var kk in localFormVars){if(!vars[kk]){vars[kk]=localFormVars[kk];}}
+if(vars["a:cv"]===undefined){vars['a:cv']=1;}
+var ret=null;if(obj.attributes){for(var k in obj.attributes){var vv=obj.attributes[k];if(vv.name&&vv.name.substring&&vv.name.substring(0,2)=='s:'){vars[vv.name]=vv.value;}}}
+if(aFormVars.attributes){for(var k in aFormVars.attributes){var vv=aFormVars.attributes[k];if(vv.name&&vv.name.substring&&vv.name.substring(0,2)=='s:'){vars[jas.Core.attrTransformAttribute2Name(vv.name)]=vv.value;}}}
+if(oForm.hasAttribute('a:tform')){vars['a:form']=oForm.getAttribute('a:tform');oForm.removeAttribute('a:tform');}else{vars['a:form']=oForm.getAttribute('id');}
+vars['a:sender']=obj.getAttribute('id');if(obj.hasAttribute("a:row")){vars['a:row']=obj.getAttribute('a:row');}
+vars["wf"]='aGFCall';vars["igfm"]=method;vars["ddpN"]=obj.getAttribute("a:ddpN");if(returnVar){vars["igfmV"]=returnVar;}else{vars["igfmV"]="aCall:data";}
+if(obj.hasAttribute("a:ddpN"))vars["ddpN"]=obj.getAttribute("a:ddpN");vars["igfm_sa"]=obj.getAttribute("a:sa");vars["oS"]=obj.getAttribute("a:sa");var rDebug=null;if(obj.getAttribute("a:debug")=="1"){rDebug=document.getElementById("aDebug");if(!rDebug){rDebug=document.createElement("DIV");rDebug.setAttribute("id","aDebug");obj.parentNode.appendChild(rDebug,obj);}else{obj.parentNode.appendChild(rDebug,obj);}}
+var onDone=obj.onACall;var dataSerialized=jas.Core.formSerializeArray(aFormVars,vars);$.ajax({type:"POST",url:"a.php",data:dataSerialized,dataType:"html"}).done(function(msg){if(obj.getAttribute("a:debug")=="1"){rDebug.innerHTML=msg;}
+if(obj.onACall){var data=null;try{data=$.parseJSON(msg)}catch(e){data=null;JAS.error("call returned null or invalid json ");JAS.error("Output"+msg);}
+onDone(obj,data,vars);}else{JAS.error("Error `onACall` event not defined");}}).fail(function(e){if(onFail){onFail();}
+jas.Boot.allowActions=true;});}
+jas.Core.getFormVariables=function(form,onlyCreated){var out={};var allObjects=jas.Core.imerge(Core.getElementsByTagName(form,"SELECT"),Core.getElementsByTagName(form,"INPUT"),Core.getElementsByTagName(form,"TEXTAREA"));var filesCount=0;for(var o in allObjects){var objCurent=allObjects[o];if((objCurent)&&(objCurent.tagName)){var value=null;var name=objCurent.name;if(objCurent.tagName=="SELECT"){try{value=objCurent.options[objCurent.selectedIndex].value;}catch(e){value=0;}}else if(objCurent.tagName=="TEXTAREA"){value=objCurent.value;}else if(objCurent.tagName=="INPUT"){var ttype=objCurent.getAttribute("type");value=objCurent.value;if((ttype=='submit')||(ttype=='button')){continue;}
+if(ttype=='file'){error=-90;var fc=null;if((objCurent.files.length==0)){continue;}
+var selectedFile=objCurent.files[0];if(objCurent.hasAttribute("data-filecontents")){fc=objCurent.getAttribute("data-filecontents");error=0;}
+value={'field':name,'name':selectedFile.name,'error':error,'size':selectedFile.size,'type':selectedFile.type,'data':fc}
+if(!("_FILES"in out)){out['_FILES']={}}
+out['_FILES'][filesCount]=value;filesCount++;continue;}
+if((ttype=='radio')||(ttype=='checkbox')){if(objCurent.checked){value=objCurent.value;}else{continue;}}}else{value=objCurent.value;}
+if(onlyCreated){if(objCurent.hasAttribute("a:created")){out[name]=value;}}else{out[name]=value;}}}
+return out;}
+jas.Core.arraySerializeURI=function(obj,prefix){var str=[],p;for(p in obj){if(obj.hasOwnProperty(p)){var k=prefix?prefix+"["+p+"]":p,v=obj[p];str.push((v!==null&&typeof v==="object")?jas.Core.arraySerializeURI(v,k):encodeURIComponent(k)+"="+encodeURIComponent(v));}}
+return str.join("&");}
+jas.Core.formSerializeArray=function(form,optionalVars){var query=[];var params=jas.Core.getFormVariables(form);if(optionalVars!==null){params=jas.Core.kmerge(params,optionalVars);}
+var ss=jas.Core.arraySerializeURI(params);return ss;}
+jas.Core.aCall2=function(obj,method,vars,returnVar){jas.Core.aCall(obj,method,vars,returnVar);}
+jas.Core.aCallUIDefaultHandler=function(master,overlay,action){action.style.padding="5px";}
+jas.Core.aCallUIWheelHandler=function(event){event.preventDefault(this);}
+jas.Core.aCallUI=function(obj,method,vars,handler){var API=JAS.import("jas.ui.API",false);if(!handler){handler=jas.Core.aCallUIDefaultHandler;}
+var form=jas.Core.detectParent(obj,"FORM");form.setAttribute('a:tform','ajaxHolder');if(!vars){vars=new Array();}
+var holder=API.createOverlay(handler);if(!obj.onACall){obj.onACall=function(lobj,data){jas.Boot.allowActions=true;var holder=API.createOverlay(function(o1,o2,o3,objWait){objWait.parentNode.removeChild(objWait);});var form=jas.Core.detectParent(lobj,"FORM");var objForm=null;if(form){var mode=1;if(form.hasAttribute("a:ainline")){mode=0;}
+if(document.getElementById("ajaxHolder")!=null){form=document.getElementById("ajaxHolder");mode=0;}
+if(mode==0){var objRefresh=null;var ddpn=lobj.getAttribute("a:ddpn")
+if(lobj.hasAttribute("a:arefreshelement")){var idRefresh=ddpn+"_"+lobj.getAttribute("a:arefreshelement");objRefresh=document.getElementById(idRefresh);if(objRefresh==null){throw("cannot find refresh object "+idRefresh);}
+objRefresh.onclick.apply(objRefresh);}
+if(lobj.hasAttribute("a:aclose")&&(lobj.getAttribute("a:aclose")=="true")){setTimeout('var obj=document.getElementById("overlayMaster"); obj.parentNode.removeChild(obj);',700);}
+form.innerHTML=data;objForm=form;}
+if(mode==1){objForm=form.cloneNode(false);objForm.setAttribute("a:ainline",1);objForm.setAttribute("a:cloned",form.getAttribute('id'));objForm.setAttribute("id","ajaxHolder");objForm.innerHTML=data;holder.appendChild(objForm);}
+jas.Boot.onLoadAjaxInit();var aScripts=objForm.getElementsByTagName("script");if(aScripts){for(var idx in aScripts){var o=aScripts[idx]
+if((typeof o==='object')&&(o.hasAttribute)){var je=aScripts[idx].innerHTML;eval(je);}}}
+jas.Boot.onLoadedAjax();}};}
+jas.Core.aCall(obj,method,vars,"@");form.removeAttribute('a:tform');}
+jas.Core.aCallUI2S=function(obj,method,vars){jas.Core.aCallUI2(obj,method,vars,function(o1,o2,o3,o4){if(o2)o2.style='';});}
+jas.Core.aCallUI2=function(obj,method,vars,handler){jas.Core.aCallUI(obj,method,vars,handler);}
+jas.Core.aCallRefresh=function(obj,method,target,vars){var API=JAS.import("jas.ui.API",false);if(!obj.onACall){obj.onACall=function(lobj,data){var ddpn=lobj.getAttribute("a:ddpn");var targetObj=document.getElementById(ddpn+"_"+target);if(targetObj==null){targetObj=document.getElementById(target);if(targetObj==null){JAS.log("[ERROR] target object "+ddpn+"_"+target+"("+target+") is null");return;}}
+targetObj.innerHTML=data;};}
+jas.Core.aCall(obj,method,vars,"@");}
+jas.Core.iCallData=function(obj,method,onDone){if(!jas.Boot.allowActions){JAS.debug("Call in progress...");return;}
+jas.Boot.allowActions=false;var vars=new Array();if(!obj.onACall){obj.onACall=function(lobj,data){jas.Boot.allowActions=true;var ddpn=lobj.getAttribute("a:ddpn");var n=64;if(onDone){onDone(lobj,data);}}}
+jas.Core.aCall(obj,method,vars,"*");}
+jas.Core.iCall=function(obj,method,msg){if(!jas.Boot.allowActions){jas.Core.blink(obj,800);JAS.log("Actions are not allowed. Wait for page to be loaded");return;}
+jas.Boot.allowActions=false;if(msg){var c=confirm(msg);if(!c)return false;}
+var targetId=null;if(obj.hasAttribute('a:target')){targetId=obj.getAttribute('a:target');document.getElementById(targetId).style.opacity="0.8";}
+if(obj.hasAttribute('a:targetlocal')){targetId=obj.getAttribute('id').replace(obj.getAttribute('a:localid'),obj.getAttribute('a:targetlocal'));document.getElementById(targetId).style.opacity="0.8";}
+var oForm=this.detectParent(obj,"FORM");jas.UI.saveFocusedElement();var vars=new Array();if(targetId!==null){vars["a:target"]=targetId;var oo=document.getElementById(targetId);if(oo===null){JAS.error("Cannot find `"+targetId+"`");return;}
+var ll=['we','wtok','wlist','wtvnl','wtkps'];for(var ii in ll){var kk=ll[ii];if(oo.hasAttribute("a:"+kk)){vars[kk]=oo.getAttribute("a:"+kk);}else{}}}
+vars["a:cv"]=0;var API=JAS.import("jas.ui.API",false);if(!obj.onACall){obj.onACall=function(lobj,data){if(jas.iCallOnLoad!=null){jas.iCallOnLoad();}
+var ddpn=lobj.getAttribute("a:ddpn");var n=64;var targetObj=null;if(lobj.hasAttribute('a:target')||lobj.hasAttribute("a:targetlocal")){var targetId=null;if(lobj.hasAttribute('a:target')){targetId=lobj.getAttribute('a:target');}
+if(lobj.hasAttribute('a:targetlocal')){targetId=lobj.getAttribute('id').replace(lobj.getAttribute('a:localid'),lobj.getAttribute('a:targetlocal'));}
+targetObj=document.getElementById(targetId);if(targetObj==null){JAS.error(targetObj+" is null or non exitent");}
+var targetOperation="";if(lobj.hasAttribute('a:targetoperation')){targetOperation=lobj.getAttribute('a:targetoperation');}
+if(targetOperation=="*+")
+targetObj.innerHTML+=data;else if(targetOperation=="+*")
+targetObj.innerHTML=data+targetObj.innerHTML;else if(targetOperation=="+")
+targetObj.innerHTML+=data;else
+targetObj.innerHTML=data;targetObj.style.opacity=null;}else{var o=lobj;for(i=0;i<n;i++){if(o==null){break;}
+if((typeof o==='object')&&(o.hasAttribute)&&o.tagName.toUpperCase()=='DDPS'){targetObj=o.parentNode;break;}
+if((typeof o==='object')&&(o.hasAttribute)&&o.tagName.toUpperCase()=='FORM'&&o.getAttribute('a:ainline')=='1'){targetObj=o;break;}
+if((typeof o==='object')&&(o.hasAttribute)&&o.hasAttribute("a:ddpn")&&o.getAttribute("a:ddpn")!=ddpn){targetObj=o;break;}
+o=o.parentNode;}
+if(targetObj!=null){JAS.debug("Commit content to");JAS.debug(targetObj);if(data.substring(0,5)!="<ddps"){targetObj.innerHTML="<ddps>"+data+"";}else{targetObj.innerHTML=data;}}else{JAS.error("Target object is null");jas.Boot.allowActions=true;return;}}
+jas.Boot.onLoadAjaxInit();var aScripts=targetObj.getElementsByTagName("script");if(aScripts){for(var idx in aScripts){var o=aScripts[idx]
+if((typeof o==='object')){var je=aScripts[idx].innerHTML;eval(je);}}}
+jas.Boot.onLoadedAjax();jas.UI.restoreFocusedElement();if(jas.iCallOnLoaded!=null){jas.iCallOnLoaded();}
+jas.Boot.allowActions=true;}}
+jas.Core.aCall(obj,method,vars,"@");}
+jas.Core.mCall=function(obj,method,msg){if(!jas.Boot.allowActions){jas.Core.blink(obj,800);JAS.log("Actions are not allowed. Wait for page to be loaded");return;}
+if(msg){var c=confirm(msg);if(!c)return false;}
+jas.Boot.allowActions=false;return jas.Core.aCallUI(obj,method);}
+jas.Core.callInline=function(obj,f,msg,array){return jas.Core.callConsole(obj,f,msg,array);}
+jas.Core.callConsole=function(obj,f,msg,array){var iframeName="ifrinline";var divIframeName="div-"+iframeName;var objDiv=document.getElementById(divIframeName);var objFrame=document.getElementById(iframeName);var cmd=f.split(":");var className=cmd[1];f=cmd[0];if(array==null)array=new Array();array["class"]=className;array["srcObject"]=obj.id;if(!objFrame){JAS.include("jas.ddp.UI");var div=document.createElement("div");div.setAttribute("id",divIframeName);if(jas.Core.classExists(".athon-call-system")){div.className=".athon-call-system";}else{div.style.backgroundColor="lightgray";div.style.border="1px solid darkred";div.style.borderRadius="3px";div.style.position="fixed";div.style.left="50%";div.style.top="10%";div.style.width="75%";div.style.height="60%";div.style.marginLeft="-37.5%";}
+var divTitle=document.createElement("div");divTitle.setAttribute("id",divIframeName+'-status');if(jas.Core.classExists(".athon-call-system-title")){divTitle.className=".athon-call-system-title";}else{divTitle.style.padding="3px";divTitle.style.paddingLeft="10px";divTitle.style.borderBottom="2px solid gray";}
+div.appendChild(divTitle);div.innerHTML+='<'+'ifr'+'ame id="'+iframeName+'" name="'+iframeName+'" ><'+'/if'+'ram'+'e>';document.body.appendChild(div);objFrame=document.getElementById(iframeName);objFrame.style.border="0px solid";objFrame.scrolling="yes";objFrame.style.width="100%";objFrame.style.height="95%";}
+jas.ddp.UI.blinkText(document.getElementById(divIframeName+'-status'),'red','black',1000);array["statusObject"]=divIframeName+'-status';var oForm=this.detectParent(obj,"FORM");var oldSrc=oForm.action;oForm.action="./execute.php";oForm.target=iframeName;this.call(obj,f,msg,array);oForm.target="_self";oForm.action=oldSrc;}
+jas.Core.blink=function(obj,t){var step=80;if(t>0){setTimeout(function(){if(!obj.hasAttribute("a:a")||!obj.hasAttribute("a:i")){obj.setAttribute("a:a",obj.style.backgroundColor);obj.setAttribute("a:i","#222222");}
+if(Math.round(t/step)%2==0){obj.style.backgroundColor=obj.getAttribute("a:i");}else{obj.style.backgroundColor=obj.getAttribute("a:a");}
+jas.Core.blink(obj,t-step);},step);}else{obj.style.backgroundColor=obj.getAttribute("a:a");obj.removeAttribute("a:a");obj.removeAttribute("a:i");}}
+jas.Core.initCall=function(obj,wf,msg){if(msg){var c=confirm(msg);if(!c)return false;}
+if(!jas.Boot.allowActions){jas.Core.blink(obj,800);JAS.log("Actions are not allowed. Wait for page to be loaded");return;}
+var oForm=this.detectParent(obj,"FORM");if(oForm){if(!oForm.wf){var oWF=document.createElement("input");oWF.setAttribute("type","hidden");oWF.id="wf";oWF.name="wf";oWF.value=wf;oForm.appendChild(oWF);}else{oForm.wf.value=wf;}
+if(oForm.checkValidity&&!oForm.checkValidity()){oForm.reportValidity();JAS.error("ERROR: form check validity");}else{jas.Core.ldStart();jas.Boot.allowActions=false;setTimeout(function(){jas.Boot.allowActions=true;},3000);oForm.submit();}
+return true;}else{throw("initCall: Cannot fine FORM using this context "+this);}}
+jas.Core.initGFCall=function(obj,igfm,igf,msg,data){var vars=new Array();if(igfm){vars["igfm"]=igfm;vars["igfm_sa"]=obj.getAttribute("a:sa");}
+if(igf){vars["igf"]=igf;vars["igf_sa"]=obj.getAttribute("a:sa");}
+vars["oS"]=obj.getAttribute("id");if(data){data=jas.Core.rmerge(data,vars);console.log(data);}
+jas.Core.createVariables(obj,vars);return jas.Core.initCall(obj,"dGFCall",msg,data);}
+jas.Core.confirmLink=function(obj,msg){var r=confirm(msg)
+if(r){link=obj.getAttribute("link");window.location=link;}}
+jas.Core.confirmIfrLink=function(obj,msg,target){var r=confirm(msg)
+if(r){link=obj.getAttribute("link");var obj=document.getElementById(target);if(!obj)alert("Error");obj.frameborder="yes";obj.scrolling="yes";obj.style.display="inline";window.open(link,target);}}
+jas.Core.aJSON=function(url,handler,parameters){var method="GET";var formData=new FormData();if(parameters){method="POST";for(var x in parameters){formData.append(x,parameters[x]);}}
+JAS.loadBasic('jas.external.jquery.jquery');$.ajax({type:method,url:url,dataType:"html",data:formData,processData:false,contentType:false,success:function(dataSent,status,jhr){var data=null;if(jhr.getResponseHeader('content-type')=='application/json'){var dataJSON=$.parseJSON(dataSent);if(dataJSON['@data']!=null){data=dataJSON["@data"];}}
+if(jhr.getResponseHeader('content-type')=='text/html'){data={'form':dataSent};}
+if(data){handler(data,dataSent);}else{handler(null,dataSent);}},error:function(request,status,errorThrown){console.error("aJSON:"+errorThrown);}});}
+jas.Core.getUniqueId=function(){return Math.random()*78902;}
+jas.Core.print=function(obj,id,addPrefix){this.printByIfr(id,addPrefix);}
+jas.Core.printByIfr=function(id,addPrefix){var obj=document.getElementById("printIFR");if(!obj){obj=document.createElement("IFRAME");document.body.appendChild(obj);}
+obj.frameborder="no";obj.scrolling="no";obj.style.width="1px";obj.style.height="1px";if(addPrefix)
+obj.src="print.php?print_"+id+"&"+Math.random();else
+obj.src="print.php?"+id+"&"+Math.random();}
+jas.Core.setSize=function(parentFrameId){var obj=document.getElementById("bdy");var h=obj.offsetHeight+133;var objFrame=parent.document.getElementById(parentFrameId);if(objFrame){objFrame.height=h;objFrame.focus();}}
+jas.Core.getQueryParams=function(){var $_GET=new Array();document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g,function(){function decode(s){return decodeURIComponent(s.split("+").join(" "));}
+if(decode(arguments[1]).indexOf("[]")>0){var newName=decode(arguments[1]).substring(0,decode(arguments[1]).length-2);if(typeof $_GET[newName]=='undefined'){$_GET[newName]=new Array();}
+$_GET[newName].push(decode(arguments[2]));}else{$_GET[decode(arguments[1])]=decode(arguments[2]);}});return $_GET;}
+jas.Core.selectText=function(obj){var sel,range;var el=obj
+if(window.getSelection&&document.createRange){sel=window.getSelection();if(sel.toString()==''){window.setTimeout(function(){range=document.createRange();range.selectNodeContents(el);sel.removeAllRanges();sel.addRange(range);},1);}}else if(document.selection){sel=document.selection.createRange();if(sel.text==''){range=document.body.createTextRange();range.moveToElementText(el);range.select();}}}
+jas.Core.stopEventPropagation=function(event){if(!event)
+event=window.event;if(event.stopPropagation){event.stopPropagation();}
+else{event.cancelBubble=true;}}
+jas.Core.onPageLoad=function(f){jas.Boot.attach("load",f);}
+jas.Core.classExists=function(className){var ret=[];var kk='cached.classes';if(jas.buffers[kk]){ret=jas.buffers[kk];}
+else{for(var i=0;i<document.styleSheets.length;i++){try{var rules=document.styleSheets[i].rules||document.styleSheets[i].cssRules;for(var x in rules){if(typeof rules[x].selectorText=='string'){var splitted=rules[x].selectorText.split(",");for(var y in splitted){ret.push(splitted[y].trim());}}}}catch(e){}}
+jas.buffers[kk]=ret;}
+for(var i=0;i<ret.length;i++){if(ret[i]==className)return true;}
+return false;}
+jas.Boot.attach("load",function(){if(typeof $!='function'&&typeof jQuery!='function'){JAS.loadBasic('jas.external.jquery.jquery');}
+jas.Boot.init();jas.Core.ldProgress(null,null);jas.Core.ldProgressStop();Core.gotoAnchor();jas.Boot.attachEvent(document,"keydown",jas.Events.keyboardSpecialKeys);jas.Boot.attachEvent(document,"keydown",jas.Events.keyboardKeys);jas.Boot.attachEvent(document,"keyup",jas.Events.keyboardObject);jas.Boot.attachEvent(document,"mousemove",jas.Events.keyboardSpecialKeys);jas.Boot.attachEvent(document,"mousemove",jas.Events.mousePosition);jas.Boot.attach("click",jas.Events.collectEventAction);jas.Boot.attach("change",jas.Events.collectEventAction);jas.Boot.attach("focus",function(){setTimeout(function(){jas.Core.ldProgressStop();},10000);if(jas.Boot.location==null){jas.Boot.location=window.location;jas.Boot.allowActions=true;}});jas.Boot.attach("paste",jas.Events.pasteAction);jas.Boot.allowActions=true;jas.Boot.attach("click",function(a,b){if(jas.Events.isCtrlKeyPressed){return;}
+jas.Core.ldStart(true);});jas.Boot.attach("pageshow",function(a,b){});jas.Boot.attach("pagehide",function(a,b){});if(document.layers){document.captureEvents(Event.KEYDOWN|Event.MOUSEMOVE);}
+jas.Core.removeCookie("WTpd");jas.Core.removeCookie("WTla");});jas.UI=function(){}
+jas.UI.saveFocusedElement=function(){}
+jas.UI.restoreFocusedElement=function(){setTimeout(function(){if(jas.Events.objectFocused!=null){var d=document.getElementById(jas.Events.objectFocused.id);if(d){if(d.onCustomFocus){d.onCustomFocus();}
+d.focus();jas.UI.moveCaret(d);}else{}
+jas.Events.objectFocused=null;}},100);}
+jas.UI.checkAll=function(obj,groupId){var objs=jas.Core.getElementsByTagName(document.body,"input");var s=obj.checked;var t="";if(objs){for(var key in objs){var o=objs[key];if(o){if((o.id)&&(o.id.indexOf(groupId)!=-1))o.checked=s;}}}}
+jas.UI.moveCaret=function(el){if(typeof el.selectionStart=="number"){el.selectionStart=el.selectionEnd=el.value.length;}else if(typeof el.createTextRange!="undefined"){el.focus();var range=el.createTextRange();range.collapse(false);range.select();}}
+jas.UI.getPosition=function(obj){if(obj.offsetX!=null&&obj.offsetY!=null){return[obj.offsetX,obj.offsetY]}
+var o=obj;var curleft=0;var curtop=0;if(obj.offsetParent){do{curleft+=obj.offsetLeft;curtop+=obj.offsetTop;}while(obj=obj.offsetParent);}
+o.offsetX=curleft;o.offsetY=curtop;return[curleft,curtop];}
+jas.Boot.attach("unload",function(){jas.Core.ldProgressStop();});</script><script language="JavaScript" type="text/javascript" id="jphp/consent/Consent.js">JAS.package("jas.Consent");jas.Consent=function(){}
+jas.Consent.prototype=new jas.lang.Object("jas.Consent");jas.Consent.load=function(){var consent=jas.Core.getCookie('ath-consent');var isIframe=false;try{if(window.frameElement!=null){isIframe=true;}}catch(e){}
+if("https://uefiscdi.gov.ro/~/rest/consent?apikey=c8cd2a49ce7678f43a916eb6eadf7c3e"!=""&&!isIframe){JAS.loadBasic('jas.external.jquery.jquery');if(consent!='accept'){jas.Core.aJSON("https://uefiscdi.gov.ro/~/rest/consent?apikey=c8cd2a49ce7678f43a916eb6eadf7c3e",function(data){if(data['hasForm']){var o=document.createElement('div');o.setAttribute('id','athConsent');o.innerHTML=data['form'];document.body.appendChild(o);}});}else{}}}
+jas.Consent.accept=function(token){if(token=='request-token'){if("https://uefiscdi.gov.ro/~/rest/consent?apikey=c8cd2a49ce7678f43a916eb6eadf7c3e"!=""){jas.Core.aJSON("https://uefiscdi.gov.ro/~/rest/consent?apikey=c8cd2a49ce7678f43a916eb6eadf7c3e",function(data){var token=null;if((data!=null)&&data['token']!=null){token=data['token'];}
+if(token==null){console.error("Token is null");}
+var o=document.getElementById('athConsent')
+if(o!=null){o.parentNode.removeChild(o);}
+jas.Core.setCookie('ath-consent','accept',1);jas.Core.setCookie('ath-consent-accepted',token,1);},{'operation':'accept'});}else{}}else{jas.Core.setCookie('ath-consent','accept',1);jas.Core.setCookie('ath-consent-accepted',new Date(),1);var o=document.getElementById('athConsent')
+if(o!=null){o.parentNode.removeChild(o);}}}</script><script type="text/javascript" language="JavaScript">jas.Boot.onLoad(function(){  jas.Consent.load(); })</script><style type="text/css">.L296430876_hideOnPrint{display: none;}.L296430876_showOnPrint{display: block;}.L296430876_showOnPrint{display: none;}</style><style type="text/css">.L67800849_hideOnPrint{display: none;}.L67800849_showOnPrint{display: block;}.L67800849_showOnPrint{display: none;}</style><style type="text/css">.L3819760301_hideOnPrint{display: none;}.L3819760301_showOnPrint{display: block;}.L3819760301_showOnPrint{display: none;}</style><style type="text/css">.L2652362171_hideOnPrint{display: none;}.L2652362171_showOnPrint{display: block;}.L2652362171_showOnPrint{display: none;}</style><style type="text/css">.L408639079_hideOnPrint{display: none;}.L408639079_showOnPrint{display: block;}.L408639079_showOnPrint{display: none;}</style><style type="text/css">.L2966198471_hideOnPrint{display: none;}.L2966198471_showOnPrint{display: block;}.L2966198471_showOnPrint{display: none;}</style><style type="text/css">.L1942195907_hideOnPrint{display: none;}.L1942195907_showOnPrint{display: block;}.L1942195907_showOnPrint{display: none;}</style><style type="text/css">.L851870527_hideOnPrint{display: none;}.L851870527_showOnPrint{display: block;}.L851870527_showOnPrint{display: none;}</style><style type="text/css">.L4215972072_hideOnPrint{display: none;}.L4215972072_showOnPrint{display: block;}.L4215972072_showOnPrint{display: none;}</style><style type="text/css">.L4274988656_hideOnPrint{display: none;}.L4274988656_showOnPrint{display: block;}.L4274988656_showOnPrint{display: none;}</style><style type="text/css">.L240354671_hideOnPrint{display: none;}.L240354671_showOnPrint{display: block;}.L240354671_showOnPrint{display: none;}</style><style type="text/css">.L945008838_hideOnPrint{display: none;}.L945008838_showOnPrint{display: block;}.L945008838_showOnPrint{display: none;}</style><style type="text/css">.L2424998736_hideOnPrint{display: none;}.L2424998736_showOnPrint{display: block;}.L2424998736_showOnPrint{display: none;}</style><style type="text/css">.L3060269661_hideOnPrint{display: none;}.L3060269661_showOnPrint{display: block;}.L3060269661_showOnPrint{display: none;}</style><link href="tmp/.bin/fpm/91c1a9e4d1e3c41e469f02749b17670a/jphp/ui/form/handler/collapse/Collapsable.css?t=1731592824.1393" rel="stylesheet" type="text/css" id="jphp/ui/form/handler/collapse/Collapsable.css"><style type="text/css">.L2641148612_hideOnPrint{display: none;}.L2641148612_showOnPrint{display: block;}.L2641148612_showOnPrint{display: none;}</style><style type="text/css">.L2129611849_hideOnPrint{display: none;}.L2129611849_showOnPrint{display: block;}.L2129611849_showOnPrint{display: none;}</style><style type="text/css">.L1196703120_hideOnPrint{display: none;}.L1196703120_showOnPrint{display: block;}.L1196703120_showOnPrint{display: none;}</style><style type="text/css">.L2234146220_hideOnPrint{display: none;}.L2234146220_showOnPrint{display: block;}.L2234146220_showOnPrint{display: none;}</style><style type="text/css">.L1788788890_hideOnPrint{display: none;}.L1788788890_showOnPrint{display: block;}.L1788788890_showOnPrint{display: none;}</style><meta http-equiv="refresh" content="7201;URL='./?we=module.org.uefiscdi.home&amp;wtok=&amp;wtkps=S7QytKoutjK1Uiovyc4pVrL2s64FAA==&amp;wchk=a89b2a5e0e639d919b396a0d641f400496614087'"><link href="/athon/lib/jas/external/jquery/jquery-ui.css?t=1733471851.3948" rel="stylesheet" type="text/css" id="jas/external/jquery/jquery-ui.css"><link href="/src/org/uefiscdi/template/css/bootstrap.css?t=1733944483" rel="stylesheet" type="text/css" id="org/uefiscdi/template/css/bootstrap.css"><link href="/src/org/uefiscdi/template/css/index.css?t=1733944483" rel="stylesheet" type="text/css" id="org/uefiscdi/template/css/index.css"><link href="/src/org/uefiscdi/template/css/mega-meniu.css?t=1733944483" rel="stylesheet" type="text/css" id="org/uefiscdi/template/css/mega-meniu.css"><link href="/src/org/uefiscdi/template/css/calendar-style.css?t=1733471851.3948" rel="stylesheet" type="text/css" id="org/uefiscdi/template/css/calendar-style.css"><link href="/src/org/uefiscdi/template/css/mdl/material.min.css?t=1733471851.3948" rel="stylesheet" type="text/css" id="org/uefiscdi/template/css/mdl/material.min.css"><link href="/src/org/nart/t/news/swipe1/style.css?t=1733944483" rel="stylesheet" type="text/css" id="org/nart/t/news/swipe1/style.css"><link href="/src/org/uefiscdi/inline/css/SliderMobileHome.css?t=1731592824.1393" rel="stylesheet" type="text/css" id="org/uefiscdi/inline/css/SliderMobileHome.css"><link href="/src/org/uefiscdi/template/css/webflow.css?t=1733944483" rel="stylesheet" type="text/css" id="org/uefiscdi/template/css/webflow.css"><link href="/src/org/uefiscdi/inline/css/HomeLogo.css?t=1733944483" rel="stylesheet" type="text/css" id="org/uefiscdi/inline/css/HomeLogo.css"><link href="/athon/lib/jas/external/atooltip/css/atooltip.css?t=1731592824.1393" rel="stylesheet" type="text/css" id="jas/external/atooltip/css/atooltip.css"><link href="/src/org/nart/t/news/css/NewsBox.css?t=1731592824.1393" rel="stylesheet" type="text/css" id="org/nart/t/news/css/NewsBox.css"><link href="/src/org/uefiscdi/app/newsletter/css/Home.css?t=1733471851.3948" rel="stylesheet" type="text/css" id="org/uefiscdi/app/newsletter/css/Home.css"><meta id="loader" a:object="jphp_ui_object_DefaultResourceLoader" a:localId="loader" a:p="1" remove="yes">
+        </head>
+		<body>
+
+        <!--<a id="linkBeta" href="./versiune-beta-site-uefiscdi" security="off" class="beta-corner"></a>-->
+
+          <!--<script src="css/mdl/material.min.js"></script>--> 
+
+          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+          <!--<script src="js/jquery-1.11.2.min.js"></script>--> 
+
+          <!-- Include all compiled plugins (below), or include individual files as needed --> 
+          <!--<script src="js/bootstrap.js"></script>--> 
+
+          <!-- Include salvattore for masonry layouts --> 
+          <!--<script src="js/salvattore.js"></script>--> 
+
+          <!-- START HEADER -->
+          <form class="buton-reload" method="post" enctype="multipart/form-data" id="frmHeader" onsubmit="return false" action="/index.php">
+            <div class="container-fluid no-container-margin white-bg">
+            
+              <div class="container header-container">
+                <div class="col-xs-10 col-sm-10 col-md-4 col-lg-4"> <a href="/?we=module.org.uefiscdi.home&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=f1dc7e6ba97ca5b4dc00a6c2777961317f3a02d3" id="home" class="home uefiscdi-logo" a:localId="home" a:p="1"></a> </div>
+                <div class="col-md-4 col-lg-4"><a href="http://www.edu.ro" target="_blank" class="logo-men-tower"></a></div>
+                <!--<div class="col-md-2 col-lg-2"><a href="http://www.research.gov.ro" target="_blank" class="logo-mci-tower"></a></div>
+				<div class="col-md-2 col-lg-2"><a href="https://www.romania2019.eu" target="_blank" class="centenar-logo"></a></div> -->
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <div class="home-utils-container"> 
+          <!-- <div class="phone-container">
+                        <div class="phone-label">Telefon: </div><div class="phone-nr">+40 213 023 850</div>
+                      </div> -->
+					  <div class="gt-container">
+						<div id="google_translate_element" type="google-translate" runat="server" a:handler="gtLoadStyles" a:localId="google_translate_element" a:p="1">
+            <script type="text/javascript">
+				function googleTranslateElementInit() {
+				  new google.translate.TranslateElement({pageLanguage: "ro", includedLanguages: "bg,cs,de,el,en,es,et,fi,fr,ga,hr,hu,hy,is,it,iw,ja,lb,lt,lv,mk,no,pl,pt,ru,ro,sk,sl,sr,sv,tr,uk,zh-CN", layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, "google_translate_element");
+				}
+			</script>
+			<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+			<!-- <div id="translationDetector" style="display:none;">Romanian</div> -->
+	        <script type="text/javascript">
+				
+	            //var googleTranslateOrigValue = document.getElementById("translationDetector").innerHTML;
+	            var googleTranslateOrigValue = null;
+				var googleCustomHandler= null;
+	            //document.getElementById("translationDetector").addEventListener("DOMSubtreeModified", translationCallback, false);
+	            function googleTranslateHandler(){
+					console.log("[WARNING] no google translate handler provided. Language is "+googleTranslateOrigValue);
+				}
+				function googleTranslateElementCallback() {
+	                // This function needs to be called when Google translates this web page.
+	                var o=$(".goog-te-menu-value").find("span").get(0);
+					var currentValue = "";
+					if (o!=null){
+						currentValue = $(".goog-te-menu-value").find("span").get(0).innerHTML;
+					}
+	                var currentDocumentClassName=document.documentElement.getAttribute("class");
+				  	if (currentDocumentClassName==null || currentDocumentClassName==""){
+				  			currentDocumentClassName="";
+				  	}
+				  	//console.log(currentDocumentClassName);
+				  	var isTranslated=(currentDocumentClassName.indexOf("translated-ltr")!=-1);
+				  	if (!isTranslated){
+				  		currentValue="Original";
+				  	}
+				  	//if (currentValue=="Select Language") currentValue="Romanian";
+					//console.log(document.documentElement.getAttribute("class"));
+	                //console.log(currentValue);
+	                if (currentValue && googleTranslateOrigValue!=currentValue)  {
+	                	googleTranslateOrigValue = currentValue;
+// 	   	            	/jas.Boot.removeEvent($(".goog-te-menu-value").get(0),"DOMSubtreeModified", googleTranslateElementCallback);
+	   	            	
+	                    //console.log("Return:"+currentValue);
+				  		//console.log(googleCustomHandler);
+				  		if (googleCustomHandler==null){
+							googleCustomHandler=110;
+				  			setTimeout(
+				  				function(){
+				  					gtLoadStyles();
+				  					//console.log("reseting custom handler");
+									googleCustomHandler=null;
+									$(".goog-te-menu-value").attr("a:loader","0");
+								},500);
+						}else{
+							$(".goog-te-menu-value").attr("a:loader","0");
+						}
+	                }
+	            }
+	            
+	            jas.Boot.attach("load",function(){
+					
+	            	jas.Boot.attachEvent($(".goog-te-menu-value").find("span").get(0),"DOMSubtreeModified", function(){
+								setTimeout(function(){googleTranslateElementCallback();},300);
+							}
+					 );
+	            	 //jas.Boot.attachEvent( document.getElementById("translationDetector"),"DOMSubtreeModified",googleTranslateElementCallback);
+	            	 googleTranslateElementCallback();
+	            });
+	            
+	        </script>
+		</div>
+			
+				
+					  </div>
+                      <div class="login-container" id="inlineAuthId" a:object="org_uefiscdi_inline_Auth" type="html" runat="server" a:localId="inlineAuthId" a:p="1">
+<div class="login-label">
+	<a href="/?we=module.org.uefiscdi.auth&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=bb1c0ee299f9d2d9870e4e3d47097ce571160b5b" id="67800849_lnkLogin" a:localid="lnkLogin" a:ddpn="67800849" a:p="1">Admin UEFISCDI</a>
+</div>
+</div>
+                      <div class="clear"></div>
+					             <div class="fp-search" id="custom-search-input" a:object="org_uefiscdi_app_search_Query" type="html" runat="server" a:localId="custom-search-input" a:p="1">
+<div class="input-group">
+	<input type="text" class="  search-query form-control" placeholder="Caută articole" id="3819760301_q" name="3819760301[q]" a:localid="q" a:localname="q" a:ddpn="3819760301" a:p="1" autocomplete="none" a:sa="|#Y#.#Y#.aa1a228c0e0bcce3be70c4d149b328f2fd6fb094|#Y#.#Y#.aa1a228c0e0bcce3be70c4d149b328f2fd6fb094">
+    <span class="input-group-btn">
+      <input value="" class="btn-srch-icon btn btn-srch" type="submit" id="3819760301_btnQuery" name="3819760301[btnQuery]" onclick="Core.call(this,'search')" a:localid="btnQuery" a:localname="btnQuery" a:ddpn="3819760301" a:p="1" autocomplete="none" a:sa="|#Y#.J3NlYXJjaCc=#Y#.8ebd918a736e166b79449932e32b4afa531da03c|#Y#.J3NlYXJjaCc=#Y#.8ebd918a736e166b79449932e32b4afa531da03c">
+    </span> 
+</div>
+</div>
+                   </div>
+               </div>
+              </div>
+              
+              <div class="menu-bg">
+                    <div class="container"> 
+        <!--<div id="nav-container">
+                    <ul>
+                        <li><a href="#">Finanțare CDI</a></li>
+                        <li><a href="#">Învățământ Superior</a></li>
+                        <li><a href="#">Proiecte Instituționale</a></li>
+                        <li><a href="#">Cooperare Internațională</a></li>
+                        <li><a href="#">Despre Uefiscdi</a></li>
+                    </ul>
+                  </div>-->
+                  
+                  <header class="dark">
+                    <nav role="navigation"> <a href="javascript:void(0);" class="ic menu" onclick="this.focus();" a:sa="|#Y#.dGhpcy5mb2N1cygpOw==#Y#.b6506491937118ece833d0f4dbc88ec67bc379f7"> <span class="line"></span> <span class="line"></span> <span class="line"></span> </a> <a href="javascript:void(0);" class="ic close"></a>
+                      <ul class="main-nav" onclick="this.focus()">
+                        <li class="top-level-link"> <a class="mega-menu" onclick="this.focus()" href="#s" a:sa="|#Y#.dGhpcy5mb2N1cygp#Y#.1a17469283c406d80939f57edfd883f78be65950"><span>Finanțare CDI</span></a>
+                          <div class="sub-menu-block">
+                            <div class="row" id="fcdi" a:object="org_nart_ImngrArticle('fintantare-cdi')" type="html" runat="server" a:localId="fcdi" a:p="1">
+
+<ddps>
+	
+	<div id="408639079_categ1" runat="server" type="html" a:localid="categ1" a:ddpn="408639079" a:p="1"><ddps>
+	<div id="2966198471_primitive" runat="server" type="html" a:localid="primitive" a:ddpn="2966198471" a:p="1"><div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 "><h2 class="sub-menu-head"><a a:security="0" href="https://uefiscdi.gov.ro/pncdi-iv" loader="1" a:loader="on">PNCDI IV</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="https://uefiscdi.gov.ro/pncdi-iv" loader="1" a:loader="on">PNCDI IV</a></li></ul><h2 class="sub-menu-head"><a a:security="0" href="https://uefiscdi.gov.ro/programe-pncdi-iii-coordonate-de-uefiscdi" loader="1" a:loader="on">PNCDI III</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="https://uefiscdi.gov.ro/programe-pncdi-iii-coordonate-de-uefiscdi" loader="1" a:loader="on">PNCDI III</a></li></ul><h2 class="sub-menu-head"><a a:security="0" href="/pncdi-ii" loader="1" a:loader="on">PNCDI II</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="/pncdi-ii" loader="1" a:loader="on">PNCDI II</a></li></ul></div></div>		
+</ddps></div>
+	<div id="408639079_categ2" runat="server" type="html" a:localid="categ2" a:ddpn="408639079" a:p="1"><ddps>
+	<div id="1942195907_primitive" runat="server" type="html" a:localid="primitive" a:ddpn="1942195907" a:p="1"><div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 "><h2 class="sub-menu-head"><a a:security="0" href="https://uefiscdi.gov.ro/eea-norway-grants" loader="1" a:loader="on">EEA &amp; Norway Grants</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="https://uefiscdi.gov.ro/eea-norway-grants" loader="1" a:loader="on">EEA &amp; Norway Grants</a></li></ul><h2 class="sub-menu-head"><a a:security="0" href="https://uefiscdi.gov.ro/second-swiss-contribution" loader="1" a:loader="on">Second Swiss Contribution</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="https://uefiscdi.gov.ro/second-swiss-contribution" loader="1" a:loader="on">Second Swiss Contribution</a></li></ul><h2 class="sub-menu-head"><a a:security="0" href="https://uefiscdi.gov.ro/platforme-cercetare" loader="1" a:loader="on">Platforme Cercetare</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="https://uefiscdi.gov.ro/platforma-udimanager" loader="1" a:loader="on">UDiManager</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/platforma-brainmap" loader="1" a:loader="on">Brainmap</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/platforma-eertis" loader="1" a:loader="on">EERTIS</a></li><li><a a:security="0" href="/portal-euraxess" loader="1" a:loader="on">EURAXESS</a></li></ul></div></div>		
+</ddps></div>
+	<div id="408639079_categ3" runat="server" type="html" a:localid="categ3" a:ddpn="408639079" a:p="1"><ddps>
+	<div id="851870527_primitive" runat="server" type="html" a:localid="primitive" a:ddpn="851870527" a:p="1"><div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 "><h2 class="sub-menu-head"><a a:security="0" href="https://uefiscdi.gov.ro/documente-strategice" loader="1" a:loader="on">Documente Strategice</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="/strategia-cdi-2014-2020" loader="1" a:loader="on">Strategia CDI 2014-2020</a></li><li><a a:security="0" href="/strategia-cdi-2007-2014" loader="1" a:loader="on">Strategia CDI 2007-2014</a></li></ul><h2 class="sub-menu-head"><a a:security="0" href="https://uefiscdi.gov.ro/biroul-de-scientometrie" loader="1" a:loader="on">Scientometrie</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="https://uefiscdi.gov.ro/scientometrie-reviste" loader="1" a:loader="on">Reviste</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/scientometrie-edituri" loader="1" a:loader="on">Edituri</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/scientometrie-baze-de-date" loader="1" a:loader="on">Baze de date</a></li></ul><h2 class="sub-menu-head"><a a:security="0" href="/consilii-consultative-cdi" loader="1" a:loader="on">Consilii Consultative CDI</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="/consilii-consultative-cdi" loader="1" a:loader="on">Consilii Consultative CDI</a></li></ul></div></div>		
+</ddps></div>
+	
+	<div id="408639079_simple" runat="server" type="html" a:localid="simple" a:ddpn="408639079" a:p="1"></div>
+	
+	
+	
+</ddps></div>
+                          </div>
+                        </li>
+                        <li class="top-level-link"> <a class="mega-menu" onclick="this.focus()" href="#s" a:sa="|#Y#.dGhpcy5mb2N1cygp#Y#.1a17469283c406d80939f57edfd883f78be65950"><span>Învățământ Superior</span></a>
+                          <div class="sub-menu-block">
+                            <div class="row" id="is" a:object="org_nart_ImngrArticle('invatamant-superior')" type="html" runat="server" a:localId="is" a:p="1">
+
+<ddps>
+	
+	
+	<div id="4215972072_categ1" runat="server" type="html" a:localid="categ1" a:ddpn="4215972072" a:p="1"><ddps>
+	<div id="2966198471_primitive" runat="server" type="html" a:localid="primitive" a:ddpn="2966198471" a:p="1"><div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 "><h2 class="sub-menu-head"><a a:security="0" href="/invatamant-superior" loader="1" a:loader="on">Învăţământ superior</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="/finantare-invatamant-superior" loader="1" a:loader="on">Finanţare învăţământ superior</a></li><li><a a:security="0" href="/analiza-date-institutionale" loader="1" a:loader="on">Analiză date instituționale</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/consilii-consultative-men" loader="1" a:loader="on">Consilii consultative MEN</a></li></ul></div></div>		
+</ddps></div>
+	<div id="4215972072_categ2" runat="server" type="html" a:localid="categ2" a:ddpn="4215972072" a:p="1"><ddps>
+	<div id="1942195907_primitive" runat="server" type="html" a:localid="primitive" a:ddpn="1942195907" a:p="1"><div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 "><h2 class="sub-menu-head"><a a:security="0" href="/platforme-informatice-pentru-invatamantul-superior" loader="1" a:loader="on">Platforme informatice</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="/registrul-educational-integrat-registrul-matricol-unic" loader="1" a:loader="on">REI / RMU</a></li><li><a a:security="0" href="/platforma-ans" loader="1" a:loader="on">ANS</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/platforma-study-in-romania" loader="1" a:loader="on">Study in Romania</a></li><li><a a:security="0" href="/platforma-studenti-absolventi-si-piata-muncii" loader="1" a:loader="on">SAPM</a></li></ul></div></div>		
+</ddps></div>
+	
+	<div id="4215972072_simple" runat="server" type="html" a:localid="simple" a:ddpn="4215972072" a:p="1"></div>
+	
+	
+	
+</ddps></div>
+                          </div>
+                        </li>
+                        <li class="top-level-link"> <a class="mega-menu" onclick="this.focus()" href="#s" a:sa="|#Y#.dGhpcy5mb2N1cygp#Y#.1a17469283c406d80939f57edfd883f78be65950"><span>Proiecte Instituționale</span></a>
+                          <div class="sub-menu-block">
+                            <div class="row" id="is" a:object="org_nart_ImngrArticle('proiecte-inst')" type="html" runat="server" a:localId="is" a:p="1">
+
+<ddps>
+	
+	
+	<div id="4215972072_categ1" runat="server" type="html" a:localid="categ1" a:ddpn="4215972072" a:p="1"><ddps>
+	<div id="2966198471_primitive" runat="server" type="html" a:localid="primitive" a:ddpn="2966198471" a:p="1"><div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 "><h2 class="sub-menu-head"><a a:security="0" href="https://uefiscdi.gov.ro/proiecte-in-derulare" loader="1" a:loader="on">Proiecte în derulare</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="https://uefiscdi.gov.ro/program-educatie-si-ocupare" loader="1" a:loader="on">Program educație și ocupare (PEO)</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/erasmus" loader="1" a:loader="on">ERASMUS +</a></li><li><a a:security="0" href="/eurostudent" loader="1" a:loader="on">EUROSTUDENT</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/comisia-europeana-proiecte-in-derulare" loader="1" a:loader="on">Comisia Europeană</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/danube-transnational-programme" loader="1" a:loader="on">Danube Transnational Programme</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/programul-de-cooperare-interreg-europe" loader="1" a:loader="on">INTERREG EUROPE</a></li></ul><h2 class="sub-menu-head"><a a:security="0" href="https://uefiscdi.gov.ro/proiecte-finalizate" loader="1" a:loader="on">Proiecte finalizate</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="https://uefiscdi.gov.ro/proiecte-poca-finalizate" loader="1" a:loader="on">POCA</a></li><li><a a:security="0" href="/posdru" loader="1" a:loader="on">POSDRU</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/podca" loader="1" a:loader="on">PODCA</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/proiecte-pocu-finalizate" loader="1" a:loader="on">POCU</a></li><li><a a:security="0" href="/elaborare-strategie-sncdi-2014-2020" loader="1" a:loader="on">Elaborare strategie SNCDI 2014-2020</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/proiecte-finalizate-erasmus" loader="1" a:loader="on">ERASMUS+</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/comisia-europeana" loader="1" a:loader="on">Comisia Europeană</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/proiecte-finalizate-danube-transnational-programme_1" loader="1" a:loader="on">Danube Transnational Programme</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/proiecte-finalizate-interreg-europe" loader="1" a:loader="on">INTERREG EUROPE</a></li></ul></div></div>		
+</ddps></div>
+	<div id="4215972072_categ2" runat="server" type="html" a:localid="categ2" a:ddpn="4215972072" a:p="1"><ddps>
+	<div id="1942195907_primitive" runat="server" type="html" a:localid="primitive" a:ddpn="1942195907" a:p="1"><div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 "><h2 class="sub-menu-head"><a a:security="0" href="/publicatii" loader="1" a:loader="on">Publicaţii</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="/publicatii" loader="1" a:loader="on">Publicaţii</a></li></ul><h2 class="sub-menu-head"><a a:security="0" href="https://uefiscdi.gov.ro/platforme-institutionale" loader="1" a:loader="on">Platforme</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="https://uefiscdi.gov.ro/platforma-eertis" loader="1" a:loader="on">EERTIS</a></li><li><a a:security="0" href="/registrul-educational-integrat-registrul-matricol-unic" loader="1" a:loader="on">REI / RMU</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/platforma-study-in-romania" loader="1" a:loader="on">Study in Romania</a></li><li><a a:security="0" href="/platforma-ans" loader="1" a:loader="on">ANS</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/platforma-brainmap" loader="1" a:loader="on">Brainmap</a></li></ul></div></div>		
+</ddps></div>
+	
+	<div id="4215972072_simple" runat="server" type="html" a:localid="simple" a:ddpn="4215972072" a:p="1"></div>
+	
+	
+	
+</ddps></div>
+                          </div>
+                        </li>
+                        <li class="top-level-link"> <a class="mega-menu" onclick="this.focus()" href="#s" a:sa="|#Y#.dGhpcy5mb2N1cygp#Y#.1a17469283c406d80939f57edfd883f78be65950"><span>Cooperare Internațională</span></a>
+                          <div class="sub-menu-block">
+                            <div class="row" id="is" a:object="org_nart_ImngrArticle('coop-intern')" type="html" runat="server" a:localId="is" a:p="1">
+
+<ddps>
+	
+	
+	<div id="4215972072_categ1" runat="server" type="html" a:localid="categ1" a:ddpn="4215972072" a:p="1"><ddps>
+	<div id="2966198471_primitive" runat="server" type="html" a:localid="primitive" a:ddpn="2966198471" a:p="1"><div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 "><h2 class="sub-menu-head"><a a:security="0" href="https://uefiscdi.gov.ro/cooperare-internationala" loader="1" a:loader="on">Cooperare internaţională</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="https://uefiscdi.gov.ro/apeluri-transnationale" loader="1" a:loader="on">Apeluri transnaţionale</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/participari-in-proiecte-internationale" loader="1" a:loader="on">Participări în proiecte internaţionale</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/parteneriate-internationale" loader="1" a:loader="on">Parteneriate</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/planul-national-de-redresare-si-rezilienta-pnrr" loader="1" a:loader="on">PNRR</a></li></ul></div></div>		
+</ddps></div>
+	<div id="4215972072_categ2" runat="server" type="html" a:localid="categ2" a:ddpn="4215972072" a:p="1"><ddps>
+	<div id="1942195907_primitive" runat="server" type="html" a:localid="primitive" a:ddpn="1942195907" a:p="1"><div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 "></div></div>		
+</ddps></div>
+	
+	<div id="4215972072_simple" runat="server" type="html" a:localid="simple" a:ddpn="4215972072" a:p="1"></div>
+	
+	
+	
+</ddps></div>
+                          </div>
+                        </li>
+                        <li class="top-level-link"> <a class="mega-menu" onclick="this.focus()" href="#s" a:sa="|#Y#.dGhpcy5mb2N1cygp#Y#.1a17469283c406d80939f57edfd883f78be65950"><span>Despre Uefiscdi</span></a>
+                          <div class="sub-menu-block">
+                            <div class="row" id="is" a:object="org_nart_ImngrArticle('despre-uefiscdi')" type="html" runat="server" a:localId="is" a:p="1">
+
+<ddps>
+	
+	
+	<div id="4215972072_categ1" runat="server" type="html" a:localid="categ1" a:ddpn="4215972072" a:p="1"><ddps>
+	<div id="2966198471_primitive" runat="server" type="html" a:localid="primitive" a:ddpn="2966198471" a:p="1"><div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 "><h2 class="sub-menu-head"><a a:security="0" href="/despre-uefiscdi" loader="1" a:loader="on">Despre UEFISCDI</a></h2><ul class="sub-menu-lists"><li><a a:security="0" href="https://uefiscdi.gov.ro/documente-constitutive" loader="1" a:loader="on">Documente constitutive</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/prezentare-institutionala" loader="1" a:loader="on">Prezentare instituţională</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/rapoarte-de-activitate" loader="1" a:loader="on">Rapoarte de activitate</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/organigrama" loader="1" a:loader="on">Organigramă</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/plan-egalitate-de-gen-uefiscdi" loader="1" a:loader="on">Egalitate de gen</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/membership" loader="1" a:loader="on">Membership</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/transparenta-institutionala" loader="1" a:loader="on">Transparenţă instituţională</a></li><li><a a:security="0" href="/premii" loader="1" a:loader="on">Premii</a></li><li><a a:security="0" href="/marci-uefiscdi" loader="1" a:loader="on">Mărci înregistrate UEFISCDI</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/anunturi-cariere" loader="1" a:loader="on">Cariere</a></li><li><a a:security="0" href="/protectia-datelor-cu-caracter-personal" loader="1" a:loader="on">Termeni și condiții GDPR</a></li><li><a a:security="0" href="https://uefiscdi.gov.ro/contact" loader="1" a:loader="on">Contact</a></li></ul></div></div>		
+</ddps></div>
+	<div id="4215972072_categ2" runat="server" type="html" a:localid="categ2" a:ddpn="4215972072" a:p="1"><ddps>
+	<div id="1942195907_primitive" runat="server" type="html" a:localid="primitive" a:ddpn="1942195907" a:p="1"><div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 "></div></div>		
+</ddps></div>
+	
+	<div id="4215972072_simple" runat="server" type="html" a:localid="simple" a:ddpn="4215972072" a:p="1"></div>
+	
+	
+	
+</ddps></div>
+                          </div>
+                        </li>
+                      </ul>
+                    </nav>
+                  </header>
+                </div>
+              </div>
+            </div>
+          <input a:created="1" name="wtok" id="frmHeader_wtok" value="" type="hidden"><input a:created="1" name="wlist" id="frmHeader_wlist" value="#Y#.YTowOnt9#Y#.5452c2af6d8a7e89b9597a5398d75b2d257d1b2e" type="hidden"><input a:created="1" name="wtvnl" id="frmHeader_wtvnl" value="UzdReXRLck90REsyTUxRME56TXdOakMwVHJReXNxb3VCZ29yRlNwWmcra1VFRzFocFpSVWtoZFltbHBVaVJDdXJRVUE=#f890be478a437f3978a25b05154d70c4fb19c31a" type="hidden"><input a:created="1" name="we" id="frmHeader_we" value="module.org.uefiscdi.home" type="hidden"><input a:created="1" name="wtkps" id="frmHeader_wtkps" value="VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==" type="hidden"></form>
+          <div class="container-fluid no-container-margin slider-container">
+            <div class="container">
+              
+              <div class="slider">
+                
+                <div class="row" style="padding-left:15px;padding-right:15px;">
+                  <div class="col-xs-1" style="padding:0px;">                   
+                      <a class="btn-slider-left" href="#" onclick="return mySwipe.prev()" a:sa="|#Y#.cmV0dXJuIG15U3dpcGUucHJldigp#Y#.c16de74d32a57168c4b8106d9c9c464d0e24f7d7"></a> 
+                  </div>
+                  <div class="col-xs-12 col-sm-10" style="padding-left:0px!important;padding-right:0px;!important;margin-left:0px;margin-right:0px;height:284px;overflow:hidden">
+ 					          <div a:object="org_nart_ImngrArticle('slider')" type="html" runat="server" id="slider" a:localId="slider" a:p="1">
+
+<ddps>
+	
+	<div id="240354671_swiper1" runat="server" type="html" a:localid="swiper1" a:ddpn="240354671" a:p="1"><ddps>
+	<div id="4274988656_primitive" runat="server" type="html" a:localid="primitive" a:ddpn="4274988656" a:p="1">
+
+<div id="4274988656_mySwipe" style="width:100%" class="swipe" a:localid="mySwipe" a:ddpn="4274988656" a:p="1">
+  <div class="swipe-wrap" id="4274988656_list" runat="server" type="table" a:localid="list" a:ddpn="4274988656" a:p="1">
+  	<div a:type="template">
+  		<div><!-- a:width="945" a:height="270"-->
+				<a href="https://uefiscdi.gov.ro/research-in-the-spotlight" type="zzz" id="4274988656_list.items.titleLink@0" a:parseifnovalue="yes" a:localid="titleLink" a:ddpn="4274988656" a:row="0" a:p="1" target="_blank"><img id="4274988656_list.items.idFileImage@0" style="width:100%" a:width="950" a:height="260" a:defaultimagepath="org/uefiscdi/template/css/img/news-cat-1.png" a:preview="0" alt="banner site homepage" a:localid="idFileImage" a:ddpn="4274988656" a:row="0" a:p="1" width="950" src="https://uefiscdi.gov.ro/preview.php?id=41265&amp;type=image&amp;width=950&amp;height=260&amp;rm=WH&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=13c1c5db68ce98b84a8dcdfa8c5ef7512320df09"></a>
+				<div class="band" runat="server"><a href="https://uefiscdi.gov.ro/research-in-the-spotlight" id="4274988656_list.items.title@0" style="height:100px" a:localid="title" a:ddpn="4274988656" a:row="0" a:p="1" target="_blank">Research in the spotlight</a></div>
+  		</div>
+  	</div><div a:type="template">
+  		<div><!-- a:width="945" a:height="270"-->
+				<a href="https://uefiscdi.gov.ro/proiecte-complexe-bilaterale-romania-statele-unite-ale-americii" type="zzz" id="4274988656_list.items.titleLink@1" a:parseifnovalue="yes" a:localid="titleLink" a:ddpn="4274988656" a:row="1" a:p="1"><img id="4274988656_list.items.idFileImage@1" style="width:100%" a:width="950" a:height="260" a:defaultimagepath="org/uefiscdi/template/css/img/news-cat-1.png" a:preview="0" alt="banner site homepage" a:localid="idFileImage" a:ddpn="4274988656" a:row="1" a:p="1" width="950" src="https://uefiscdi.gov.ro/preview.php?id=42053&amp;type=image&amp;width=950&amp;height=260&amp;rm=WH&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=4bf4a473ef088470077e04250fb5b31c8f69ea0f"></a>
+				<div class="band" runat="server"><a href="https://uefiscdi.gov.ro/proiecte-complexe-bilaterale-romania-statele-unite-ale-americii" id="4274988656_list.items.title@1" style="height:100px" a:localid="title" a:ddpn="4274988656" a:row="1" a:p="1">Oportunitate de colaborare SUA - România în domeniul științelor matematice și fizice</a></div>
+  		</div>
+  	</div><div a:type="template">
+  		<div><!-- a:width="945" a:height="270"-->
+				<a href="https://www.youtube.com/watch?v=HPVHxMsZKfU&amp;t=1517s" type="zzz" id="4274988656_list.items.titleLink@2" a:parseifnovalue="yes" a:localid="titleLink" a:ddpn="4274988656" a:row="2" a:p="1" target="_blank"><img id="4274988656_list.items.idFileImage@2" style="width:100%" a:width="950" a:height="260" a:defaultimagepath="org/uefiscdi/template/css/img/news-cat-1.png" a:preview="0" alt="banner site homepage" a:localid="idFileImage" a:ddpn="4274988656" a:row="2" a:p="1" width="950" src="https://uefiscdi.gov.ro/preview.php?id=42081&amp;type=image&amp;width=950&amp;height=260&amp;rm=WH&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=7ef8aeaca61922e2a7e6cc77c66b7987d52f95dd"></a>
+				<div class="band" runat="server"><a href="https://www.youtube.com/watch?v=HPVHxMsZKfU&amp;t=1517s" id="4274988656_list.items.title@2" style="height:100px" a:localid="title" a:ddpn="4274988656" a:row="2" a:p="1" target="_blank">Dialoguri M100</a></div>
+  		</div>
+  	</div>
+  </div>
+</div>
+
+<div style="width:100%">
+</div>
+
+<!-- 
+<img id="idFileImage" width="360" height="203" he src="" a:defaultimagepath="org/uefiscdi/template/css/img/news-cat-1.png" a:preview="0" alt="Poza stire"/>
+<h4 class="titleView">
+	<div id="title" runat="server" type="html" style="display:inline-block"></div>
+</h4>
+ -->
+</div>		
+</ddps></div>
+	
+</ddps></div>
+                  </div>
+                  <div class="col-xs-1" style="padding:0px; padding-right:-15px;margin-left:0px;">  
+                    
+                      <a class="btn-slider-right" href="#" onclick="return mySwipe.next()" a:sa="|#Y#.cmV0dXJuIG15U3dpcGUubmV4dCgp#Y#.4ae5f3f5d5015832c7eef06258a49e073e1687d0"></a> 
+                    
+                  </div>
+                </div>              
+              </div> 
+
+            </div>
+
+            <div class="slider-selector-bg">
+              <div class="container">
+                <div class="slider-selector"> </div>
+              </div>
+            </div>
+
+          </div>
+              
+          <form class="buton-reload" method="post" enctype="multipart/form-data" id="formMain" onsubmit="return false" action="/index.php">
+            <div class="container">
+              
+              <div class="clear"></div>
+              <div class="row">
+              
+              <!--custom mobile banners-->
+              <!--<div class="mtop20"></div>-->
+                    
+                  
+                <div a:object="org_uefiscdi_inline_SliderMobileHome" type="html" runat="server" id="sliderMic" a:localId="sliderMic" a:p="1">
+
+       <div class="image-slider-holder-home-small" style="width: 370px; margin: 10px auto">
+        <div data-animation="slide" data-duration="500" data-infinite="1" data-autoplay="1" data-delay="5000" class="slider w-slider" role="region" aria-label="carousel" style="height: 150px">
+            <div class="w-slider-mask" id="945008838_sliderMicHome" runat="server" type="table" a:localid="sliderMicHome" a:ddpn="945008838" a:p="1">
+                <div template="items" class="w-slide" aria-label="1 of 3" role="group" style="transform: translateX(0px); opacity: 1; text-align: center" a:type="template">
+                    <a href="https://uefiscdi.gov.ro/research-in-the-spotlight" type="zzz" id="945008838_sliderMicHome.items.titleLink@0" a:parseifnovalue="yes" style="vertical-align: middle; display: block" a:localid="titleLink" a:ddpn="945008838" a:row="0" a:p="1" target="_blank"><img id="945008838_sliderMicHome.items.idFile@0" a:resize="wh" a:width="350" a:height="180" a:localid="idFile" a:ddpn="945008838" a:row="0" a:p="1" alt="banner site homepage" width="350" src="https://uefiscdi.gov.ro/preview.php?id=41265&amp;type=image&amp;width=350&amp;height=180&amp;rm=WH&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=765f1f9b3dd6797f6ea25e8eef8b594de8bfea26"></a>
+                    <div class="band" runat="server"><a href="https://uefiscdi.gov.ro/research-in-the-spotlight" id="945008838_sliderMicHome.items.title@0" style="height:100px; font-size: 11px" a:localid="title" a:ddpn="945008838" a:row="0" a:p="1" target="_blank">Research in the spotlight</a></div>
+                </div><div template="items" class="w-slide" aria-label="1 of 3" role="group" style="transform: translateX(0px); opacity: 1; text-align: center" a:type="template">
+                    <a href="https://uefiscdi.gov.ro/proiecte-complexe-bilaterale-romania-statele-unite-ale-americii" type="zzz" id="945008838_sliderMicHome.items.titleLink@1" a:parseifnovalue="yes" style="vertical-align: middle; display: block" a:localid="titleLink" a:ddpn="945008838" a:row="1" a:p="1"><img id="945008838_sliderMicHome.items.idFile@1" a:resize="wh" a:width="350" a:height="180" a:localid="idFile" a:ddpn="945008838" a:row="1" a:p="1" alt="banner site homepage" width="350" src="https://uefiscdi.gov.ro/preview.php?id=42053&amp;type=image&amp;width=350&amp;height=180&amp;rm=WH&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=7af4e7d2e6cfebcadc119c8f02751383f2681db9"></a>
+                    <div class="band" runat="server"><a href="https://uefiscdi.gov.ro/proiecte-complexe-bilaterale-romania-statele-unite-ale-americii" id="945008838_sliderMicHome.items.title@1" style="height:100px; font-size: 11px" a:localid="title" a:ddpn="945008838" a:row="1" a:p="1">Oportunitate de colaborare SUA - România în domeniul științelor matematice și fizice</a></div>
+                </div><div template="items" class="w-slide" aria-label="1 of 3" role="group" style="transform: translateX(0px); opacity: 1; text-align: center" a:type="template">
+                    <a href="https://www.youtube.com/watch?v=HPVHxMsZKfU&amp;t=1517s" type="zzz" id="945008838_sliderMicHome.items.titleLink@2" a:parseifnovalue="yes" style="vertical-align: middle; display: block" a:localid="titleLink" a:ddpn="945008838" a:row="2" a:p="1" target="_blank"><img id="945008838_sliderMicHome.items.idFile@2" a:resize="wh" a:width="350" a:height="180" a:localid="idFile" a:ddpn="945008838" a:row="2" a:p="1" alt="banner site homepage" width="350" src="https://uefiscdi.gov.ro/preview.php?id=42081&amp;type=image&amp;width=350&amp;height=180&amp;rm=WH&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=5660e79bde9f31e9359129bfe9ee06db7f9eb8e1"></a>
+                    <div class="band" runat="server"><a href="https://www.youtube.com/watch?v=HPVHxMsZKfU&amp;t=1517s" id="945008838_sliderMicHome.items.title@2" style="height:100px; font-size: 11px" a:localid="title" a:ddpn="945008838" a:row="2" a:p="1" target="_blank">Dialoguri M100</a></div>
+                </div>
+                <div aria-live="off" aria-atomic="true" class="w-slider-aria-label" data-wf-ignore=""></div>
+                <div aria-live="off" aria-atomic="true" class="w-slider-aria-label" data-wf-ignore=""></div>
+            </div>
+            <div class="w-slider-arrow-left" role="button" tabindex="0" aria-controls="w-slider-mask-0" aria-label="previous slide" style="width: 25px; font-size: 30px">
+                <div class="slider-icon w-icon-slider-left"></div>
+            </div>
+            <div class="w-slider-arrow-right" role="button" tabindex="0" aria-controls="w-slider-mask-0" aria-label="next slide" style="width: 25px; font-size: 30px">
+                <div class="slider-icon w-icon-slider-right"></div>
+            </div>
+            <div class="slide-nav w-slider-nav w-slider-nav-invert w-shadow w-round">
+                <div class="w-slider-dot w-active" data-wf-ignore="" aria-label="Show slide 1 of 3" aria-pressed="true" role="button" tabindex="0"></div>
+                <div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 2 of 3" aria-pressed="false" role="button" tabindex="-1"></div>
+                <div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 3 of 3" aria-pressed="false" role="button" tabindex="-1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="image-slider-holder-home-big" style="width: 500px; margin: 10px auto;">
+        <div data-animation="slide" data-duration="500" data-infinite="1" data-autoplay="1" data-delay="5000" class="slider w-slider" role="region" aria-label="carousel" style="height: 200px">
+            <div class="w-slider-mask" id="945008838_sliderMicHome" runat="server" type="table" a:localid="sliderMicHome" a:ddpn="945008838" a:p="1">
+                <div template="items" class="w-slide" aria-label="1 of 3" role="group" style="transform: translateX(0px); opacity: 1; text-align: center" a:type="template">
+                    <a href="https://uefiscdi.gov.ro/research-in-the-spotlight" type="zzz" id="945008838_sliderMicHome.items.titleLink@0" a:parseifnovalue="yes" style="vertical-align: middle; display: block" a:localid="titleLink" a:ddpn="945008838" a:row="0" a:p="1" target="_blank"><img id="945008838_sliderMicHome.items.idFile@0" a:resize="wh" a:width="500" a:height="250" a:localid="idFile" a:ddpn="945008838" a:row="0" a:p="1" alt="banner site homepage" width="500" src="https://uefiscdi.gov.ro/preview.php?id=41265&amp;type=image&amp;width=500&amp;height=250&amp;rm=WH&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=1dfd202781f9eee778f150b3c9e4304e8183cfdc"></a>
+                    <div class="band" runat="server"><a href="https://uefiscdi.gov.ro/research-in-the-spotlight" id="945008838_sliderMicHome.items.title@0" style="height:100px; font-size: 12px" a:localid="title" a:ddpn="945008838" a:row="0" a:p="1" target="_blank">Research in the spotlight</a></div>
+                </div><div template="items" class="w-slide" aria-label="1 of 3" role="group" style="transform: translateX(0px); opacity: 1; text-align: center" a:type="template">
+                    <a href="https://uefiscdi.gov.ro/proiecte-complexe-bilaterale-romania-statele-unite-ale-americii" type="zzz" id="945008838_sliderMicHome.items.titleLink@1" a:parseifnovalue="yes" style="vertical-align: middle; display: block" a:localid="titleLink" a:ddpn="945008838" a:row="1" a:p="1"><img id="945008838_sliderMicHome.items.idFile@1" a:resize="wh" a:width="500" a:height="250" a:localid="idFile" a:ddpn="945008838" a:row="1" a:p="1" alt="banner site homepage" width="500" src="https://uefiscdi.gov.ro/preview.php?id=42053&amp;type=image&amp;width=500&amp;height=250&amp;rm=WH&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=b4a0464bf543a99c13ba124d79ec3a1ddb621424"></a>
+                    <div class="band" runat="server"><a href="https://uefiscdi.gov.ro/proiecte-complexe-bilaterale-romania-statele-unite-ale-americii" id="945008838_sliderMicHome.items.title@1" style="height:100px; font-size: 12px" a:localid="title" a:ddpn="945008838" a:row="1" a:p="1">Oportunitate de colaborare SUA - România în domeniul științelor matematice și fizice</a></div>
+                </div><div template="items" class="w-slide" aria-label="1 of 3" role="group" style="transform: translateX(0px); opacity: 1; text-align: center" a:type="template">
+                    <a href="https://www.youtube.com/watch?v=HPVHxMsZKfU&amp;t=1517s" type="zzz" id="945008838_sliderMicHome.items.titleLink@2" a:parseifnovalue="yes" style="vertical-align: middle; display: block" a:localid="titleLink" a:ddpn="945008838" a:row="2" a:p="1" target="_blank"><img id="945008838_sliderMicHome.items.idFile@2" a:resize="wh" a:width="500" a:height="250" a:localid="idFile" a:ddpn="945008838" a:row="2" a:p="1" alt="banner site homepage" width="500" src="https://uefiscdi.gov.ro/preview.php?id=42081&amp;type=image&amp;width=500&amp;height=250&amp;rm=WH&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=1314b016064454afeb1108e8ff97ef179babfe2c"></a>
+                    <div class="band" runat="server"><a href="https://www.youtube.com/watch?v=HPVHxMsZKfU&amp;t=1517s" id="945008838_sliderMicHome.items.title@2" style="height:100px; font-size: 12px" a:localid="title" a:ddpn="945008838" a:row="2" a:p="1" target="_blank">Dialoguri M100</a></div>
+                </div>
+                <div aria-live="off" aria-atomic="true" class="w-slider-aria-label" data-wf-ignore=""></div>
+                <div aria-live="off" aria-atomic="true" class="w-slider-aria-label" data-wf-ignore=""></div>
+            </div>
+            <div class="w-slider-arrow-left" role="button" tabindex="0" aria-controls="w-slider-mask-0" aria-label="previous slide" style="width: 25px; font-size: 30px">
+                <div class="slider-icon w-icon-slider-left"></div>
+            </div>
+            <div class="w-slider-arrow-right" role="button" tabindex="0" aria-controls="w-slider-mask-0" aria-label="next slide" style="width: 25px; font-size: 30px">
+                <div class="slider-icon w-icon-slider-right"></div>
+            </div>
+            <div class="slide-nav w-slider-nav w-slider-nav-invert w-shadow w-round">
+                <div class="w-slider-dot w-active" data-wf-ignore="" aria-label="Show slide 1 of 3" aria-pressed="true" role="button" tabindex="0"></div>
+                <div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 2 of 3" aria-pressed="false" role="button" tabindex="-1"></div>
+                <div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 3 of 3" aria-pressed="false" role="button" tabindex="-1"></div>
+            </div>
+        </div>
+    </div>
+
+</div>  
+                  
+                <div class="col-xs-12 col-sm-12 col-md-6 nopadding">
+
+                    <div class="col-xs-12">
+                        <div class="section-headline"><span>Finanțare Învățământ Superior</span></div>
+                    </div>
+
+
+                    <div class="col-xs-12">
+                       <div class="mdl-card mdl-shadow--2dp mtop30">
+                          <a class="btn-finantare mdl-js-button mdl-js-ripple-effect" security="off" href="/finantare-invatamant-superior" a:loader="on">Finanțare învățământ superior</a>
+                        </div>
+                    </div>
+
+                   <div class="col-xs-12">
+                       <div class="mdl-card mdl-shadow--2dp mtop15">
+                          <a class="btn-statistici mdl-js-button mdl-js-ripple-effect" security="off" href="/analiza-date-institutionale" a:loader="on">Analiză date instituționale</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                       <div class="mdl-card mdl-shadow--2dp mtop15">
+                          <a class="btn-consilii mdl-js-button mdl-js-ripple-effect" security="off" href="/consilii-consultative-men" a:loader="on">Consilii consultative MEN</a>
+                        </div>
+                    </div>
+
+
+                </div> 
+                  
+                  <div class="col-xs-12 col-sm-12 col-md-6 nopadding">
+
+                    <div class="col-xs-12">
+                        <div class="section-headline"><span>PNRR Educație</span></div>
+                    </div>
+
+
+                    <div class="col-xs-12">
+                       <div class="mdl-card mdl-shadow--2dp mtop30">
+                          <a class="btn-pnrr mdl-js-button mdl-js-ripple-effect" security="off" href="/dotarea-cu-mobilier-pnrr" a:loader="on">PNRR Dotări</a>
+                        </div>
+                    </div>
+
+                   <div class="col-xs-12">
+                       <div class="mdl-card mdl-shadow--2dp mtop15">
+                          <a class="btn-pnrr mdl-js-button mdl-js-ripple-effect" security="off" href="/dotarea-cu-laboratoare-inteligente-pnrr" a:loader="on">PNRR Smart Labs</a>
+                        </div>
+                    </div>
+
+
+                </div>
+                  
+              <div class="col-xs-12 col-sm-12 col-md-12 nopadding">
+                
+                    <div class="col-xs-12">
+                      <div class="section-headline"><span>Finanțare CDI</span></div>
+                    </div>
+                    <div class="col-xs-12 nopadding">    
+                        <div class="col-xs-12 col-md-12 col-lg-6">
+                            <div class="mdl-card mdl-shadow--2dp mtop15"> 
+                              <a class="btn-p4-program mdl-js-button mdl-js-ripple-effect" security="off" href="/pncdi-iv-program-1" a:loader="on"><div class="logo-pn4-mic logo-pn4-p1"></div> Program 5.1 – Idei</a> 
+                            </div>
+
+                            <div class="mdl-card mdl-shadow--2dp mtop15"> 
+                              <a class="btn-p4-program mdl-js-button mdl-js-ripple-effect" security="off" href="/pncdi-iv-program-2" a:loader="on"><div class="logo-pn4-mic logo-pn4-p2"></div> Program 5.2 – Resurse Umane</a> 
+                            </div>
+                            
+                            <div class="mdl-card mdl-shadow--2dp mtop15"> 
+                              <a class="btn-p4-program mdl-js-button mdl-js-ripple-effect" security="off" href="/pncdi-iv-program-3" a:loader="on"><div class="logo-pn4-mic logo-pn4-p3"></div> Program 5.3 – Organizații de cercetare performante </a> 
+                            </div>
+                            
+                            <div class="mdl-card mdl-shadow--2dp mtop15"> 
+                              <a class="btn-p4-program mdl-js-button mdl-js-ripple-effect" security="off" href="/pncdi-iv-program-5" a:loader="on"><div class="logo-pn4-mic logo-pn4-p5"></div> Program 5.5 – Infrastructuri de Cercetare</a> 
+                            </div>
+
+                            <div class="mdl-card mdl-shadow--2dp mtop15"> 
+                              <a class="btn-p4-program mdl-js-button mdl-js-ripple-effect" security="off" href="/pncdi-iv-program-6" a:loader="on"><div class="logo-pn4-mic logo-pn4-p6"></div> Program 5.6 – Provocări</a> 
+                            </div>
+                        </div>   
+                        <div class="col-xs-12 col-md-12 col-lg-6">
+                            <div class="mdl-card mdl-shadow--2dp mtop15"> 
+                              <a class="btn-p4-program mdl-js-button mdl-js-ripple-effect" security="off" href="/pncdi-iv-program-7" a:loader="on"><div class="logo-pn4-mic logo-pn4-p7"></div> Program 5.7 – Parteneriat pentru Inovare</a> 
+                            </div>
+
+                            <div class="mdl-card mdl-shadow--2dp mtop15"> 
+                              <a class="btn-p4-program mdl-js-button mdl-js-ripple-effect" security="off" href="/pncdi-iv-program-8" a:loader="on"><div class="logo-pn4-mic logo-pn4-p8"></div> Program 5.8 – Cooperare Europeană și Internațională </a> 
+                            </div>
+                            
+                            <div class="mdl-card mdl-shadow--2dp mtop15"> 
+                              <a class="btn-p4-program mdl-js-button mdl-js-ripple-effect" security="off" href="/pncdi-iv-program-9" a:loader="on"><div class="logo-pn4-mic logo-pn4-p9"></div> Program 5.9 – Cercetare în domenii de interes strategic  </a> 
+                            </div>
+
+                            <div class="mdl-card mdl-shadow--2dp mtop15"> 
+                              <a class="btn-p4-program mdl-js-button mdl-js-ripple-effect" security="off" href="/pncdi-iv-program-10" a:loader="on"><div class="logo-pn4-mic logo-pn4-p10"></div> Program 5.10 – Știință și societate </a> 
+                            </div>
+
+                            <div class="mdl-card mdl-shadow--2dp mtop15"> 
+                              <a class="btn-p4-program mdl-js-button mdl-js-ripple-effect" security="off" href="/programe-pncdi-iii-coordonate-de-uefiscdi" a:loader="on"><div class="logo-pn4-mic logo-pn3"></div> PNCDI III  </a> 
+                            </div>
+                        </div>    
+                    </div>    
+                    <!--<div class="col-xs-12">
+                      <div class="mdl-card mdl-shadow--2dp mtop30"> <a class="program-p1 mdl-js-button mdl-js-ripple-effect" security="off" href="./p1-dezvoltarea-sistemului-national-de-cd"></a> </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                      <div class="mdl-card mdl-shadow--2dp mtop15"> <a class="program-p2 mdl-js-button mdl-js-ripple-effect" security="off" href="./p2-cresterea-competitivitatii-economiei-romanesti-prin-cdi"></a> </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                      <div class="mdl-card mdl-shadow--2dp mtop15"> <a class="program-p3 mdl-js-button mdl-js-ripple-effect" security="off" href="./p3-cooperare-europeana-si-internationala"></a> </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                      <div class="mdl-card mdl-shadow--2dp mtop15"> <a class="program-p4 mdl-js-button mdl-js-ripple-effect" security="off" href="./p4-cercetare-fundamentala-si-de-frontiera"></a> </div>
+                    </div>-->
+                  
+                    <div class="col-xs-12 col-md-12 col-lg-6">
+                        <div class="mdl-card mdl-shadow--2dp mtop15"> 
+                          <a class="program-eea mdl-js-button mdl-js-ripple-effect" security="off" href="/eea-norway-grants" a:loader="on"></a> 
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-12 col-lg-6">
+                        <div class="mdl-card mdl-shadow--2dp mtop15"> 
+                          <a class="program-heu mdl-js-button mdl-js-ripple-effect" security="off" href="/programul-orizont-europa-al-comisiei-europene" a:loader="on">Horizon Europe</a> 
+                        </div>
+                    </div>  
+                  
+                    <div class="col-xs-12 col-md-12 col-lg-6">
+                        <div class="mdl-card mdl-shadow--2dp mtop15"> 
+                            <a class="swiss-container btn-p4-program mdl-js-button mdl-js-ripple-effect" security="off" href="/second-swiss-contribution" a:loader="on"><div class="logo-swiss-btn"></div>Second Swiss Contribution </a> 
+                        </div>
+                    </div>
+
+                </div>
+
+              </div>
+			  
+			  <div class="mtop20"></div>
+			  <div class="input-group" style="width: 100%">
+                  <a security="off" href="#noutatiRow" class="btn-arhiva-news" style="" loader="off">Noutăți</a>
+				  <a security="off" href="/newsletter" class="btn-arhiva-news" style="" a:loader="on">Newsletter</a>
+                  <a security="off" href="/mass-media" class="btn-arhiva-news" style="" a:loader="on">Comunicate de presă</a>
+				  <a security="off" href="/publicatii-1" class="btn-arhiva-news" style="" a:loader="on">Publicații</a>
+				  
+				  <a security="off" href="/calendar" class="btn-arhiva-news calendar" style="float: right" a:loader="on">Calendar UEFISCDI</a>
+				  <a security="off" href="/calendar" class="calendar-icon" title="Calendar UEFISCDI" a:loader="on"> </a>
+			  </div>
+
+              <div class="mtop30"></div>
+			  
+              <div class="row competitiiHome" id="fcdi" a:object="org_nart_ImngrArticle('home.competitii')" type="html" runat="server" a:localId="fcdi" a:p="1">
+
+<ddps>
+	
+
+	<div id="2424998736_competitii" runat="server" type="html" a:localid="competitii" a:ddpn="2424998736" a:p="1"><ddps>
+	<div id="3060269661_primitive" runat="server" type="html" a:localid="primitive" a:ddpn="3060269661" a:p="1">
+<script type="text/javascript" language="javascript">
+	var DisplayFormat="%%D%% days, %%H%% hours, %%M%% minutes, %%S%% seconds"; var FinishMessage="Submission period HAS ENDED!";
+</script>
+
+ <div class="col-sm-12 col-md-12 col-lg-12 competitii-container">
+     <div id="3060269661_competitii" class="mdl-card mdl-shadow--2dp pdlr15" a:localid="competitii" a:ddpn="3060269661" a:p="1">
+         <div class="competitii-header">Competiții deschise</div>
+         <div class="mtop15"></div>
+         <ul type="table" id="3060269661_list" runat="server" a:localid="list" a:ddpn="3060269661" a:p="1">
+         	 <div a:type="template">
+			 	<li>
+                    <a href="https://uefiscdi.gov.ro/burse-de-cercetare-stefan-odobleja-pn4" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" id="3060269661_list.items.competitie.link@0" a:parseifnovalue="yes" a:localid="competitie.link" a:ddpn="3060269661" a:row="0" a:p="1">
+			 			<div class="row">
+			 			<div class="col-xs-12 col-sm-8">
+					 		<div class="on-led"></div>
+					 		<span class="competitiiHome" id="3060269661_list.items.competitie.descriere@0" runat="server" type="html" a:localid="competitie.descriere" a:ddpn="3060269661" a:row="0" a:p="1">PNCDI IV, P 5.2.1 - Burse de cercetare "Stefan Odobleja", BSO-2023</span>
+				 		</div>
+				 		<div class="col-xs-12 col-sm-4">
+					 		<div class="counter" id="3060269661_list.items.timerArea@0" a:localid="timerArea" a:ddpn="3060269661" a:row="0" a:p="1">
+					 			
+					 			<span id="3060269661_list.items.depunereContinuaText@0" runat="server" a:localid="depunereContinuaText" a:ddpn="3060269661" a:row="0" a:p="1">Depunere Continuă</span>
+					 		</div>
+					 		<div class="clock" id="3060269661_list.items.clockArea@0" a:localid="clockArea" a:ddpn="3060269661" a:row="0" a:p="1"></div>
+				 		</div>
+				 		</div>
+			 		</a>
+			 	</li>
+             </div><div a:type="template">
+			 	<li>
+                    <a href="https://uefiscdi.gov.ro/eureka" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" id="3060269661_list.items.competitie.link@1" a:parseifnovalue="yes" a:localid="competitie.link" a:ddpn="3060269661" a:row="1" a:p="1">
+			 			<div class="row">
+			 			<div class="col-xs-12 col-sm-8">
+					 		<div class="on-led"></div>
+					 		<span class="competitiiHome" id="3060269661_list.items.competitie.descriere@1" runat="server" type="html" a:localid="competitie.descriere" a:ddpn="3060269661" a:row="1" a:p="1">PNCDI IV, SP 5.8.2 -  EUREKA</span>
+				 		</div>
+				 		<div class="col-xs-12 col-sm-4">
+					 		<div class="counter" id="3060269661_list.items.timerArea@1" a:localid="timerArea" a:ddpn="3060269661" a:row="1" a:p="1">
+					 			
+					 			<span id="3060269661_list.items.depunereContinuaText@1" runat="server" a:localid="depunereContinuaText" a:ddpn="3060269661" a:row="1" a:p="1">Depunere Continuă</span>
+					 		</div>
+					 		<div class="clock" id="3060269661_list.items.clockArea@1" a:localid="clockArea" a:ddpn="3060269661" a:row="1" a:p="1"></div>
+				 		</div>
+				 		</div>
+			 		</a>
+			 	</li>
+             </div><div a:type="template">
+			 	<li>
+                    <a href="https://uefiscdi.gov.ro/proiect-de-suport-reprezentare" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" id="3060269661_list.items.competitie.link@2" a:parseifnovalue="yes" a:localid="competitie.link" a:ddpn="3060269661" a:row="2" a:p="1">
+			 			<div class="row">
+			 			<div class="col-xs-12 col-sm-8">
+					 		<div class="on-led"></div>
+					 		<span class="competitiiHome" id="3060269661_list.items.competitie.descriere@2" runat="server" type="html" a:localid="competitie.descriere" a:ddpn="3060269661" a:row="2" a:p="1">PNCDI IV, SP 5.8.4 - Proiect de suport reprezentare, REPREZ-2024</span>
+				 		</div>
+				 		<div class="col-xs-12 col-sm-4">
+					 		<div class="counter" id="3060269661_list.items.timerArea@2" a:localid="timerArea" a:ddpn="3060269661" a:row="2" a:p="1">
+					 			
+					 			<span id="3060269661_list.items.depunereContinuaText@2" runat="server" a:localid="depunereContinuaText" a:ddpn="3060269661" a:row="2" a:p="1">Depunere Continuă</span>
+					 		</div>
+					 		<div class="clock" id="3060269661_list.items.clockArea@2" a:localid="clockArea" a:ddpn="3060269661" a:row="2" a:p="1"></div>
+				 		</div>
+				 		</div>
+			 		</a>
+			 	</li>
+             </div><div a:type="template">
+			 	<li>
+                    <a href="https://uefiscdi.gov.ro/premiere-orizont-europa-echipe-de-cercetare" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" id="3060269661_list.items.competitie.link@3" a:parseifnovalue="yes" a:localid="competitie.link" a:ddpn="3060269661" a:row="3" a:p="1">
+			 			<div class="row">
+			 			<div class="col-xs-12 col-sm-8">
+					 		<div class="on-led"></div>
+					 		<span class="competitiiHome" id="3060269661_list.items.competitie.descriere@3" runat="server" type="html" a:localid="competitie.descriere" a:ddpn="3060269661" a:row="3" a:p="1">PNCDI IV, SP 5.8.1 - Premiere Orizont Europa - Echipe de Cercetare - Competiția 2024</span>
+				 		</div>
+				 		<div class="col-xs-12 col-sm-4">
+					 		<div class="counter" id="3060269661_list.items.timerArea@3" a:localid="timerArea" a:ddpn="3060269661" a:row="3" a:p="1">
+					 			
+					 			<span id="3060269661_list.items.depunereContinuaText@3" runat="server" a:localid="depunereContinuaText" a:ddpn="3060269661" a:row="3" a:p="1">Depunere Continuă</span>
+					 		</div>
+					 		<div class="clock" id="3060269661_list.items.clockArea@3" a:localid="clockArea" a:ddpn="3060269661" a:row="3" a:p="1"></div>
+				 		</div>
+				 		</div>
+			 		</a>
+			 	</li>
+             </div><div a:type="template">
+			 	<li>
+                    <a href="https://uefiscdi.gov.ro/premiere-orizont-europa-institutii" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" id="3060269661_list.items.competitie.link@4" a:parseifnovalue="yes" a:localid="competitie.link" a:ddpn="3060269661" a:row="4" a:p="1">
+			 			<div class="row">
+			 			<div class="col-xs-12 col-sm-8">
+					 		<div class="on-led"></div>
+					 		<span class="competitiiHome" id="3060269661_list.items.competitie.descriere@4" runat="server" type="html" a:localid="competitie.descriere" a:ddpn="3060269661" a:row="4" a:p="1">PNCDI IV, SP 5.8.1 - Premiere Orizont Europa - Instituții - Competiția 2024</span>
+				 		</div>
+				 		<div class="col-xs-12 col-sm-4">
+					 		<div class="counter" id="3060269661_list.items.timerArea@4" a:localid="timerArea" a:ddpn="3060269661" a:row="4" a:p="1">
+					 			
+					 			<span id="3060269661_list.items.depunereContinuaText@4" runat="server" a:localid="depunereContinuaText" a:ddpn="3060269661" a:row="4" a:p="1">Depunere Continuă</span>
+					 		</div>
+					 		<div class="clock" id="3060269661_list.items.clockArea@4" a:localid="clockArea" a:ddpn="3060269661" a:row="4" a:p="1"></div>
+				 		</div>
+				 		</div>
+			 		</a>
+			 	</li>
+             </div><div a:type="template">
+			 	<li>
+                    <a href="https://uefiscdi.gov.ro/proiecte-suport-pentru-organizare-evenimente-internationale" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" id="3060269661_list.items.competitie.link@5" a:parseifnovalue="yes" a:localid="competitie.link" a:ddpn="3060269661" a:row="5" a:p="1">
+			 			<div class="row">
+			 			<div class="col-xs-12 col-sm-8">
+					 		<div class="on-led"></div>
+					 		<span class="competitiiHome" id="3060269661_list.items.competitie.descriere@5" runat="server" type="html" a:localid="competitie.descriere" a:ddpn="3060269661" a:row="5" a:p="1">PNCDI IV, SP 5.8.4 - Proiecte suport pentru organizare evenimente internaționale, ORG-2024</span>
+				 		</div>
+				 		<div class="col-xs-12 col-sm-4">
+					 		<div class="counter" id="3060269661_list.items.timerArea@5" a:localid="timerArea" a:ddpn="3060269661" a:row="5" a:p="1">
+					 			
+					 			<span id="3060269661_list.items.depunereContinuaText@5" runat="server" a:localid="depunereContinuaText" a:ddpn="3060269661" a:row="5" a:p="1">Depunere Continuă</span>
+					 		</div>
+					 		<div class="clock" id="3060269661_list.items.clockArea@5" a:localid="clockArea" a:ddpn="3060269661" a:row="5" a:p="1"></div>
+				 		</div>
+				 		</div>
+			 		</a>
+			 	</li>
+             </div><div a:type="template">
+			 	<li>
+                    <a href="https://uefiscdi.gov.ro/parteneriate-si-misiuni-europene" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" id="3060269661_list.items.competitie.link@6" a:parseifnovalue="yes" a:localid="competitie.link" a:ddpn="3060269661" a:row="6" a:p="1">
+			 			<div class="row">
+			 			<div class="col-xs-12 col-sm-8">
+					 		<div class="on-led"></div>
+					 		<span class="competitiiHome" id="3060269661_list.items.competitie.descriere@6" runat="server" type="html" a:localid="competitie.descriere" a:ddpn="3060269661" a:row="6" a:p="1">PNCDI IV, SP 5.8.1 - Parteneriate și misiuni europene, Competiția 2024</span>
+				 		</div>
+				 		<div class="col-xs-12 col-sm-4">
+					 		<div class="counter" id="3060269661_list.items.timerArea@6" a:localid="timerArea" a:ddpn="3060269661" a:row="6" a:p="1">
+					 			
+					 			<span id="3060269661_list.items.depunereContinuaText@6" runat="server" a:localid="depunereContinuaText" a:ddpn="3060269661" a:row="6" a:p="1">Depunere Continuă</span>
+					 		</div>
+					 		<div class="clock" id="3060269661_list.items.clockArea@6" a:localid="clockArea" a:ddpn="3060269661" a:row="6" a:p="1"></div>
+				 		</div>
+				 		</div>
+			 		</a>
+			 	</li>
+             </div><div a:type="template">
+			 	<li>
+                    <a href="https://uefiscdi.gov.ro/europa-digitala" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" id="3060269661_list.items.competitie.link@7" a:parseifnovalue="yes" a:localid="competitie.link" a:ddpn="3060269661" a:row="7" a:p="1">
+			 			<div class="row">
+			 			<div class="col-xs-12 col-sm-8">
+					 		<div class="on-led"></div>
+					 		<span class="competitiiHome" id="3060269661_list.items.competitie.descriere@7" runat="server" type="html" a:localid="competitie.descriere" a:ddpn="3060269661" a:row="7" a:p="1">PNCDI IV, SP 5.8.2 -  Europa Digitală, Competiția 2024</span>
+				 		</div>
+				 		<div class="col-xs-12 col-sm-4">
+					 		<div class="counter" id="3060269661_list.items.timerArea@7" a:localid="timerArea" a:ddpn="3060269661" a:row="7" a:p="1">
+					 			
+					 			<span id="3060269661_list.items.depunereContinuaText@7" runat="server" a:localid="depunereContinuaText" a:ddpn="3060269661" a:row="7" a:p="1">Depunere Continuă</span>
+					 		</div>
+					 		<div class="clock" id="3060269661_list.items.clockArea@7" a:localid="clockArea" a:ddpn="3060269661" a:row="7" a:p="1"></div>
+				 		</div>
+				 		</div>
+			 		</a>
+			 	</li>
+             </div><div a:type="template">
+			 	<li>
+                    <a href="https://uefiscdi.gov.ro/burse-de-cercetare-simion-mehedinti-bsm" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" id="3060269661_list.items.competitie.link@8" a:parseifnovalue="yes" a:localid="competitie.link" a:ddpn="3060269661" a:row="8" a:p="1">
+			 			<div class="row">
+			 			<div class="col-xs-12 col-sm-8">
+					 		<div class="on-led"></div>
+					 		<span class="competitiiHome" id="3060269661_list.items.competitie.descriere@8" runat="server" type="html" a:localid="competitie.descriere" a:ddpn="3060269661" a:row="8" a:p="1">PNCDI IV, SP 5.2.1 - Burse de cercetare ”Simion Mehedinți”, BSM-2024</span>
+				 		</div>
+				 		<div class="col-xs-12 col-sm-4">
+					 		<div class="counter" id="3060269661_list.items.timerArea@8" a:localid="timerArea" a:ddpn="3060269661" a:row="8" a:p="1">
+					 			
+					 			<span id="3060269661_list.items.depunereContinuaText@8" runat="server" a:localid="depunereContinuaText" a:ddpn="3060269661" a:row="8" a:p="1">Depunere Continuă</span>
+					 		</div>
+					 		<div class="clock" id="3060269661_list.items.clockArea@8" a:localid="clockArea" a:ddpn="3060269661" a:row="8" a:p="1"></div>
+				 		</div>
+				 		</div>
+			 		</a>
+			 	</li>
+             </div><div a:type="template">
+			 	<li>
+                    <a href="https://uefiscdi.gov.ro/proiecte-complexe-bilaterale-romania-statele-unite-ale-americii" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" id="3060269661_list.items.competitie.link@9" a:parseifnovalue="yes" a:localid="competitie.link" a:ddpn="3060269661" a:row="9" a:p="1">
+			 			<div class="row">
+			 			<div class="col-xs-12 col-sm-8">
+					 		<div class="on-led"></div>
+					 		<span class="competitiiHome" id="3060269661_list.items.competitie.descriere@9" runat="server" type="html" a:localid="competitie.descriere" a:ddpn="3060269661" a:row="9" a:p="1">PNCDI IV, SP 5.8.3 - Proiecte complexe bilaterale România – Statele Unite ale Americii</span>
+				 		</div>
+				 		<div class="col-xs-12 col-sm-4">
+					 		<div class="counter" id="3060269661_list.items.timerArea@9" a:localid="timerArea" a:ddpn="3060269661" a:row="9" a:p="1">
+					 			
+					 			<span id="3060269661_list.items.depunereContinuaText@9" runat="server" a:localid="depunereContinuaText" a:ddpn="3060269661" a:row="9" a:p="1">Depunere Continuă</span>
+					 		</div>
+					 		<div class="clock" id="3060269661_list.items.clockArea@9" a:localid="clockArea" a:ddpn="3060269661" a:row="9" a:p="1"></div>
+				 		</div>
+				 		</div>
+			 		</a>
+			 	</li>
+             </div><div a:type="template">
+			 	<li>
+                    <a href="https://uefiscdi.gov.ro/stiinta-in-scoli-ss-sc" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" id="3060269661_list.items.competitie.link@10" a:parseifnovalue="yes" a:localid="competitie.link" a:ddpn="3060269661" a:row="10" a:p="1">
+			 			<div class="row">
+			 			<div class="col-xs-12 col-sm-8">
+					 		<div class="on-led"></div>
+					 		<span class="competitiiHome" id="3060269661_list.items.competitie.descriere@10" runat="server" type="html" a:localid="competitie.descriere" a:ddpn="3060269661" a:row="10" a:p="1">PNCDI IV, P 10 - Știința în școli, SS-SC-2024</span>
+				 		</div>
+				 		<div class="col-xs-12 col-sm-4">
+					 		<div class="counter" id="3060269661_list.items.timerArea@10" a:localid="timerArea" a:ddpn="3060269661" a:row="10" a:p="1">
+					 			<script id="3060269661_list.items.depunereContinuaScript@10" runat="server" type="text/javascript" a:localid="depunereContinuaScript" a:ddpn="3060269661" a:row="10" a:p="1" src="https://uefiscdi-direct.ro/timp.competitie.php?c=SSSC2024"></script>
+					 			
+					 		</div>
+					 		<div class="clock" id="3060269661_list.items.clockArea@10" a:localid="clockArea" a:ddpn="3060269661" a:row="10" a:p="1"></div>
+				 		</div>
+				 		</div>
+			 		</a>
+			 	</li>
+             </div>
+             <div remove="no">
+             <!-- <li>
+                 <a href="./proiecte-de-cercetare-exploratorie" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" a:parseifnovalue="yes">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8">
+                            <div class="on-led"></div>
+                            <span class="competitiiHome">P 4 - Proiecte de Cercetare Exploratorie, 2020</span>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="counter" id="timerArea">
+                                <span runat="server">Perioada de &icirc;nregistrare s-a &icirc;ncheiat</span>
+                            </div>
+                            <div class="clock" id="clockArea"></div>
+                        </div>
+                    </div>
+                </a>
+             </li>-->
+             <li>
+                 <a href="/pncdi-iv-solutii" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" a:parseifnovalue="yes" a:loader="on">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8">
+                            <div class="on-led"></div>
+                            <span class="competitiiHome">PNCDI IV, SP 5.6.1 - Soluții - Competiția 2024</span>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="counter" id="timerArea">
+                                
+                                <script id="depunereContinuaScript" runat="server" type="text/javascript" src="https://uefiscdi-direct.ro/timp.competitie.php?c=SOL2023"></script>
+                            </div>
+                            <div class="clock" id="clockArea"></div>
+                        </div>
+                    </div>
+                </a>
+             </li>
+             <!--<li>
+                 <a href="./solutii" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" a:parseifnovalue="yes">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8">
+                            <div class="on-led"></div>
+                            <span class="competitiiHome">Solu&#539;ii - 2020 - 2</span>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="counter" id="timerArea">
+                                <span runat="server">Competi&#539;iile s-au finalizat</span>
+                            </div>
+                            <div class="clock" id="clockArea"></div>
+                        </div>
+                    </div>
+                </a>
+             </li> -->
+                <!--<li>
+                 <a href="./second-swiss-contribution" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" a:parseifnovalue="yes">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8">
+                            <div class="on-led"></div>
+                            <span class="competitiiHome">Second Swiss Contribution, 2024 Call</span>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="counter" id="timerArea">
+                                <span id="finished" runat="server" remove="yes">Competi&#539;ia s-a finalizat</span>
+                                <script id="depunereContinuaScript" runat="server" type="text/javascript" src="https://uefiscdi-direct.ro/timp.competitie.php?c=ROCH2024"></script>
+                            </div>
+                            <div class="clock" id="clockArea"></div>
+                        </div>
+                    </div>
+                </a>
+             </li>-->
+             </div>
+         </ul>
+         <div class="clear"></div>
+         <div class="mtop15"></div>
+		 
+         <script type="text/javascript" language="Javascript">jas.Boot.onLoad(function(){var vObj=document.getElementById("3060269661_compPCollapse");var vs=vObj.getElementsByClassName("athon-collapse-collapsible");var f=function(o){o.classList.toggle("athon-collapse-active");var contents=o.parentNode.getElementsByClassName("athon-collapse-content");var content=contents[0];if(content==null){JAS.error("missing inner div athon-collapse-content");}
+content.classList.toggle("athon-collapse-content-active");if(content.style.maxHeight){content.style.maxHeight=null;console.log("disable");}else{console.log("enable");content.style.maxHeight=content.scrollHeight+"px";}}
+var v=vs[0];if(v==null){vs=vObj.getElementsByClassName("title");v=vs[0];if(v!=null){v.classList.add("athon-collapse-collapsible");}
+if(v==null){JAS.error("missing inner div athon-collapse-collapsible or title");}}
+var contents=vObj.getElementsByClassName("athon-collapse-content");var content=contents[0];if(content==null){contents=vObj.getElementsByClassName("content");content=contents[0];if(content!=null){content.classList.add("athon-collapse-content");}
+if(content==null){JAS.error("missing inner div having classname athon-collapse-content or content");}}
+if(v){if(v.hasAttribute("a:collapse")&&v.getAttribute("a:collapse")=="1"){f(v);}}
+v.addEventListener("click",function(){f(this);});});</script><div id="3060269661_compPCollapse" runat="server" a:options="collapse" a:canparseitself class="comp-p-collapse" a:localid="compPCollapse" a:ddpn="3060269661" a:p="1">
+             <div class="title competitii-header">Competiții în pregătire (<label id="3060269661_nrP" a:localid="nrP" a:ddpn="3060269661" a:p="1" for="null">2</label>)</div>
+             <div class="content">
+                 <div class="mtop15"></div>
+                 <ul type="table" id="3060269661_listP" runat="server" a:localid="listP" a:ddpn="3060269661" a:p="1">
+                     <div a:type="template">
+                        <li>
+                            <a href="https://uefiscdi.gov.ro/proiecte-complexe-de-cercetare-de-frontiera-pccf" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" id="3060269661_listP.items.competitie.link@0" a:parseifnovalue="yes" a:localid="competitie.link" a:ddpn="3060269661" a:row="0" a:p="1">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-8">
+                                        <div class="on-led"></div>
+                                        <span class="competitiiHome" id="3060269661_listP.items.competitie.descriere@0" runat="server" type="html" a:localid="competitie.descriere" a:ddpn="3060269661" a:row="0" a:p="1">PNCDI IV, P 5.1 - Proiecte Complexe de Cercetare de Frontieră, PCCF-2024</span>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4">
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                     </div><div a:type="template">
+                        <li>
+                            <a href="https://uefiscdi.gov.ro/provocari-schimbare-pps" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" id="3060269661_listP.items.competitie.link@1" a:parseifnovalue="yes" a:localid="competitie.link" a:ddpn="3060269661" a:row="1" a:p="1">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-8">
+                                        <div class="on-led"></div>
+                                        <span class="competitiiHome" id="3060269661_listP.items.competitie.descriere@1" runat="server" type="html" a:localid="competitie.descriere" a:ddpn="3060269661" a:row="1" a:p="1">PNCDI IV, SP 5.6.1 - Provocări - Schimbare, PPS2024</span>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4">
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                     </div>
+                 </ul>
+             </div>
+         </div>
+         
+         <div class="clear"></div>
+         <div class="mtop15"></div>
+         
+		 <div class="competitii-header">Apeluri transnaționale deschise</div>
+         <div class="mtop15"></div>
+         <ul type="table" id="3060269661_listAp" runat="server" a:localid="listAp" a:ddpn="3060269661" a:p="1">
+         	 <div a:type="template">
+			 	<li><a href="https://uefiscdi.gov.ro/future-of-food-systems-partnership-futurefoods" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" id="3060269661_listAp.items.competitie.link@0" a:parseifnovalue="yes" a:localid="competitie.link" a:ddpn="3060269661" a:row="0" a:p="1">
+			 			<div class="row">
+			 			<div class="col-xs-12 col-sm-8">
+					 		<div class="on-led"></div>
+					 		<span class="competitiiHome" id="3060269661_listAp.items.competitie.descriere@0" runat="server" type="html" a:localid="competitie.descriere" a:ddpn="3060269661" a:row="0" a:p="1">FutureFoodS, Transforming Food Systems</span>
+				 		</div>
+				 		<div class="col-xs-12 col-sm-4">
+					 		<div class="counter" id="3060269661_listAp.items.timerArea@0" a:localid="timerArea" a:ddpn="3060269661" a:row="0" a:p="1"><script id="3060269661_listAp.items.depunereContinuaScript@0" runat="server" type="text/javascript" a:localid="depunereContinuaScript" a:ddpn="3060269661" a:row="0" a:p="1" src="./timp.competitie.php?c=FutureFoodS-2024"></script></div>
+					 		<div class="clock" id="3060269661_listAp.items.clockArea@0" a:localid="clockArea" a:ddpn="3060269661" a:row="0" a:p="1"></div>
+				 		</div>
+				 		</div>
+			 		</a>
+			 	</li>
+             </div><div a:type="template">
+			 	<li><a href="https://uefiscdi.gov.ro/accelerating-farming-systems-transition-agroecology-living-labs-and-research-infrastructures" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" id="3060269661_listAp.items.competitie.link@1" a:parseifnovalue="yes" a:localid="competitie.link" a:ddpn="3060269661" a:row="1" a:p="1">
+			 			<div class="row">
+			 			<div class="col-xs-12 col-sm-8">
+					 		<div class="on-led"></div>
+					 		<span class="competitiiHome" id="3060269661_listAp.items.competitie.descriere@1" runat="server" type="html" a:localid="competitie.descriere" a:ddpn="3060269661" a:row="1" a:p="1">Agroecology 2025, Performance of agroecology</span>
+				 		</div>
+				 		<div class="col-xs-12 col-sm-4">
+					 		<div class="counter" id="3060269661_listAp.items.timerArea@1" a:localid="timerArea" a:ddpn="3060269661" a:row="1" a:p="1"><script id="3060269661_listAp.items.depunereContinuaScript@1" runat="server" type="text/javascript" a:localid="depunereContinuaScript" a:ddpn="3060269661" a:row="1" a:p="1" src="./timp.competitie.php?c=Agroecology-2025"></script></div>
+					 		<div class="clock" id="3060269661_listAp.items.clockArea@1" a:localid="clockArea" a:ddpn="3060269661" a:row="1" a:p="1"></div>
+				 		</div>
+				 		</div>
+			 		</a>
+			 	</li>
+             </div>
+         </ul>
+		 <script type="text/javascript" language="Javascript">jas.Boot.onLoad(function(){var vObj=document.getElementById("3060269661_compAPCollapse");var vs=vObj.getElementsByClassName("athon-collapse-collapsible");var f=function(o){o.classList.toggle("athon-collapse-active");var contents=o.parentNode.getElementsByClassName("athon-collapse-content");var content=contents[0];if(content==null){JAS.error("missing inner div athon-collapse-content");}
+content.classList.toggle("athon-collapse-content-active");if(content.style.maxHeight){content.style.maxHeight=null;console.log("disable");}else{console.log("enable");content.style.maxHeight=content.scrollHeight+"px";}}
+var v=vs[0];if(v==null){vs=vObj.getElementsByClassName("title");v=vs[0];if(v!=null){v.classList.add("athon-collapse-collapsible");}
+if(v==null){JAS.error("missing inner div athon-collapse-collapsible or title");}}
+var contents=vObj.getElementsByClassName("athon-collapse-content");var content=contents[0];if(content==null){contents=vObj.getElementsByClassName("content");content=contents[0];if(content!=null){content.classList.add("athon-collapse-content");}
+if(content==null){JAS.error("missing inner div having classname athon-collapse-content or content");}}
+if(v){if(v.hasAttribute("a:collapse")&&v.getAttribute("a:collapse")=="1"){f(v);}}
+v.addEventListener("click",function(){f(this);});});</script><div id="3060269661_compAPCollapse" runat="server" a:options="collapse" a:canparseitself class="comp-p-collapse" a:localid="compAPCollapse" a:ddpn="3060269661" a:p="1">
+             <div class="title competitii-header">Apeluri transnaționale în pregătire (<label id="3060269661_nrAP" a:localid="nrAP" a:ddpn="3060269661" a:p="1" for="null">1</label>)</div>
+             <div class="content">
+                 <div class="mtop15"></div>
+                 <ul type="table" id="3060269661_listApp" runat="server" a:localid="listApp" a:ddpn="3060269661" a:p="1">
+                     <div a:type="template">
+                        <li><a href="https://uefiscdi.gov.ro/neuron-cofund-2" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary btn-competitii" id="3060269661_listApp.items.competitie.link@0" a:parseifnovalue="yes" a:localid="competitie.link" a:ddpn="3060269661" a:row="0" a:p="1">
+                                <div class="row">
+                                <div class="col-xs-12 col-sm-8">
+                                    <div class="on-led"></div>
+                                    <span class="competitiiHome" id="3060269661_listApp.items.competitie.descriere@0" runat="server" type="html" a:localid="competitie.descriere" a:ddpn="3060269661" a:row="0" a:p="1">NEURON2-2025</span>
+                                </div>
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="counter">Lansare: 
+
+                                        <span remove="no" class="competitiiHome">
+                                            <label id="3060269661_listApp.items.zi@0" a:localid="zi" a:ddpn="3060269661" a:row="0" for="null" a:p="1">07</label> <label id="3060269661_listApp.items.luna@0" a:localid="luna" a:ddpn="3060269661" a:row="0" for="null" a:p="1">Ianuarie</label> <label id="3060269661_listApp.items.an@0" a:localid="an" a:ddpn="3060269661" a:row="0" for="null" a:p="1">2025</label>
+                                        </span>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                        </li>
+                     </div>
+                 </ul>
+             </div>
+         </div>
+         
+		 <div class="clear"></div>
+         <div class="mtop15"></div>
+		          
+     </div>
+	 <div class="clear"></div>
+     <div class="mtop15"></div>
+	 <div class="input-group">
+     	<a href="/competitii-inchise" class="btn-arhiva-news" id="3060269661_btnCompInc" name="3060269661%5BbtnCompInc%5D" style="display:block; color: white; border-bottom:2px solid #aaa; border-right:2px solid #aaa" a:localid="btnCompInc" a:localname="btnCompInc" a:ddpn="3060269661" a:p="1" a:loader="on">Competiții închise</a> 
+	</div>
+ </div>
+
+</div>		
+</ddps></div>
+</ddps></div>
+			  
+			  	
+				
+				
+				
+				
+					
+              <div class="row" a:object="org_uefiscdi_inline_HomeLogo" id="platforme" runat="server" a:localId="platforme" a:p="1">
+
+                   <div class="col-xs-12 col-sm-12 col-md-6 nopadding">
+
+                    <div class="col-xs-12">
+                    	<div class="section-headline"><span>Platforme CDI</span></div>
+                    </div>
+
+
+                    <div class="col-xs-12 logo-home">
+                      	
+                        	<div class="mdl-card mdl-shadow--2dp mtop30 fl-left logo-space pdlr15" style="overflow:hidden">
+                          			<div class="row">
+						  	
+										  <div class="col-xs-4 col-sm-4 col-md-4">
+										  	<div class="tooltip-logo">
+												<img id="2641148612_logoUDi" a:tooltip="yes" src="/src/org/uefiscdi/inline/css/img/platforme/logo-udii.svg" class="img-responsive" style="display: inline-block;" a:localid="logoUDi" a:ddpn="2641148612" a:p="1" a:tooltipdata="PHBhcnNlZD4NCgk8c3Ryb25nPlBsYXRmb3JtYSBVRGlNYW5hZ2VyPC9zdHJvbmc+PGJyPjxicj4NCglQbGF0Zm9ybWEgVURpTWFuYWdlciBlc3RlIHV0aWxpemF0JiMyNTk7IHBlbnRydSBkZXB1bmVyZWEgJiMzNTE7aSBldmFsdWFyZWEgb25saW5lIGEgcHJvcHVuZXJpbG9yIGRlIHByb2llY3RlIGRpbiBjb21wZXRpJiMzNTU7aWlsZSBQTkNESSBJSUkgJiMzNTE7aSBGREkuPGJyPjxicj4NCglNYWkgbXVsdGUgZGV0YWxpaSBzdW50IGRpc3BvbmliaWxlIDxhIGhyZWY9Ii4vcGxhdGZvcm1hLXVkaW1hbmFnZXIiIHRhcmdldD0iX3NlbGYiPmFpY2k8L2E+Ljxicj4NCglQbGF0Zm9ybWEgcG9hdGUgZmkgYWNjZXNhdCYjMjU5OyBsYSBhZHJlc2E8YnI+PGEgaHJlZj0iaHR0cHM6Ly91ZWZpc2NkaS1kaXJlY3Qucm8iIHRhcmdldD0iX2JsYW5rIj5odHRwczovL3VlZmlzY2RpLWRpcmVjdC5ybzwvYT4gDQo8L3BhcnNlZD4=" onclick="if(!this['a:e']){$(this).aToolTip({clickIt: true,tipContent: document.getElementById('2641148612_logoUDi__TT6759e4a3341860.72885273').innerHTML });this['a:e']=1;this.click();this['onclick']=null;}" a:security="0" alt="logo udii" loader="off" a:sa="|#Y#.aWYoIXRoaXNbJ2E6ZSddKXskKHRoaXMpLmFUb29sVGlwKHtjbGlja0l0OiB0cnVlLHRpcENvbnRlbnQ6IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCcyNjQxMTQ4NjEyX2xvZ29VRGlfX1RUNjc1OWU0YTMzNDE4NjAuNzI4ODUyNzMnKS5pbm5lckhUTUwgfSk7dGhpc1snYTplJ109MTt0aGlzLmNsaWNrKCk7dGhpc1snb25jbGljayddPW51bGw7fQ==#Y#.c54f1fd36bae14476a62396f5128d3e6d946c625" a:loader="on" href="https://uefiscdi.gov.ro/src/org/uefiscdi/inline/css/img/platforme/logo-udii.svg">
+												<!-- <span class="tooltip-text">Click logo pentru detalii</span> -->
+											<span id="2641148612_logoUDi__TT6759e4a3341860.72885273" style="display:none">
+	<strong>Platforma UDiManager</strong><br><br>
+	Platforma UDiManager este utilizată pentru depunerea şi evaluarea online a propunerilor de proiecte din competiţiile PNCDI III şi FDI.<br><br>
+	Mai multe detalii sunt disponibile <a href="/platforma-udimanager" target="_self" a:loader="off">aici</a>.<br>
+	Platforma poate fi accesată la adresa<br><a href="https://uefiscdi-direct.ro" target="_blank">https://uefiscdi-direct.ro</a> 
+</span></div>	
+											<div class="tooltip-logo">
+												<img id="2641148612_logoEVoC" a:tooltip="yes" src="/src/org/uefiscdi/inline/css/img/platforme/logo-evoc.png" class="img-responsive" style="display: inline-block;" a:localid="logoEVoC" a:ddpn="2641148612" a:p="1" a:tooltipdata="PHBhcnNlZD4NCgk8c3Ryb25nPlBsYXRmb3JtYSBFVm9DPC9zdHJvbmc+PGJyPjxicj4NCglQbGF0Zm9ybWEgRVZvQyBlc3RlIHV0aWxpemF0JiMyNTk7IHBlbnRydSBjb250cmFjdGFyZWEgJiMzNTE7aSBtb25pdG9yaXphcmVhIG9ubGluZSBhIHByb2llY3RlbG9yIGZpbmFuJiMzNTU7YXRlIGRlIFVFRklTQ0RJLjxicj48YnI+DQoJUGxhdGZvcm1hIHBvYXRlIGZpIGFjY2VzYXQmIzI1OTsgbGEgYWRyZXNhPGJyPjxhIGhyZWY9Imh0dHBzOi8vdWVmaXNjZGktZGlyZWN0LnJvL0VWb0MiIHRhcmdldD0iX2JsYW5rIj5odHRwczovL3VlZmlzY2RpLWRpcmVjdC5yby9FVm9DPC9hPg0KPC9wYXJzZWQ+" onclick="if(!this['a:e']){$(this).aToolTip({clickIt: true,tipContent: document.getElementById('2641148612_logoEVoC__TT6759e4a3343303.58295808').innerHTML });this['a:e']=1;this.click();this['onclick']=null;}" a:security="0" alt="logo evoc" loader="off" a:sa="|#Y#.aWYoIXRoaXNbJ2E6ZSddKXskKHRoaXMpLmFUb29sVGlwKHtjbGlja0l0OiB0cnVlLHRpcENvbnRlbnQ6IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCcyNjQxMTQ4NjEyX2xvZ29FVm9DX19UVDY3NTllNGEzMzQzMzAzLjU4Mjk1ODA4JykuaW5uZXJIVE1MIH0pO3RoaXNbJ2E6ZSddPTE7dGhpcy5jbGljaygpO3RoaXNbJ29uY2xpY2snXT1udWxsO30=#Y#.911fed924c3e5e45f67ac696e9e031286bc36feb" a:loader="on" href="https://uefiscdi.gov.ro/src/org/uefiscdi/inline/css/img/platforme/logo-evoc.png">
+												<!-- <span class="tooltip-text">Click logo pentru detalii</span> -->
+											<span id="2641148612_logoEVoC__TT6759e4a3343303.58295808" style="display:none">
+	<strong>Platforma EVoC</strong><br><br>
+	Platforma EVoC este utilizată pentru contractarea şi monitorizarea online a proiectelor finanţate de UEFISCDI.<br><br>
+	Platforma poate fi accesată la adresa<br><a href="https://uefiscdi-direct.ro/EVoC" target="_blank">https://uefiscdi-direct.ro/EVoC</a>
+</span></div>
+										  </div>
+							 
+										  
+										  <div class="col-xs-4 col-sm-4 col-md-4">     
+										  	<div class="tooltip-logo">
+												<img id="2641148612_logoERRIS" a:tooltip="yes" src="/src/org/uefiscdi/inline/css/img/platforme/logo-eertis.svg" class="img-responsive" style="display: inline-block;" a:localid="logoERRIS" a:ddpn="2641148612" a:p="1" a:tooltipdata="PHBhcnNlZD4NCgk8c3Ryb25nPlBsYXRmb3JtYSBFRVJUSVM8L3N0cm9uZz48YnI+PGJyPg0KCVBsYXRmb3JtYSBFRVJUSVMgKEVuZ2FnZSBpbiB0aGUgRXVyb3BlYW4gUmVzZWFyY2ggYW5kIFRlY2hub2xvZ3kgU3lzdGVtKSAgYSBmb3N0IGNyZWF0JiMyNTk7IHBlbnRydSBhIHZlbmkgJmljaXJjO24gc3ByaWppbnVsIGNvb3Jkb25hdG9yaWxvciBpbmZyYXN0cnVjdHVyaWxvciBkZSBjZXJjZXRhcmUgcHVibGljZS9wcml2YXRlIGRpbiBSb20mYWNpcmM7bmlhICYjNTM3O2kgYSBjZWxvciBjYXJlIGRvcmVzYyBzJiMyNTk7IGJlbmVmaWNpZXplIGRlIHNlcnZpY2lpbGUgb2Zlcml0ZSBkZSBhY2VzdGUgaW5mcmFzdHJ1Y3R1cmkuPGJyPjxicj4NCglNYWkgbXVsdGUgZGV0YWxpaSBzdW50IGRpc3BvbmliaWxlIDxhIGhyZWY9Ii4vcGxhdGZvcm1hLWVlcnRpcyIgdGFyZ2V0PSJfc2VsZiI+YWljaTwvYT4uPGJyPg0KCVBsYXRmb3JtYSBwb2F0ZSBmaSBhY2Nlc2F0JiMyNTk7IGxhIGFkcmVzYTxicj48YSBocmVmPSJodHRwczovL2VlcnRpcy5ldSI+aHR0cHM6Ly9lZXJ0aXMuZXU8L2E+DQo8L3BhcnNlZD4=" onclick="if(!this['a:e']){$(this).aToolTip({clickIt: true,tipContent: document.getElementById('2641148612_logoERRIS__TT6759e4a3344015.86812062').innerHTML });this['a:e']=1;this.click();this['onclick']=null;}" a:security="0" alt="logo eertis" loader="off" a:sa="|#Y#.aWYoIXRoaXNbJ2E6ZSddKXskKHRoaXMpLmFUb29sVGlwKHtjbGlja0l0OiB0cnVlLHRpcENvbnRlbnQ6IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCcyNjQxMTQ4NjEyX2xvZ29FUlJJU19fVFQ2NzU5ZTRhMzM0NDAxNS44NjgxMjA2MicpLmlubmVySFRNTCB9KTt0aGlzWydhOmUnXT0xO3RoaXMuY2xpY2soKTt0aGlzWydvbmNsaWNrJ109bnVsbDt9#Y#.05e771bfb71cd0f7ea0372378e073f59763ba4b0" a:loader="on" href="https://uefiscdi.gov.ro/src/org/uefiscdi/inline/css/img/platforme/logo-eertis.svg">
+												<!-- <span class="tooltip-text">Click logo pentru detalii</span> -->
+											<span id="2641148612_logoERRIS__TT6759e4a3344015.86812062" style="display:none">
+	<strong>Platforma EERTIS</strong><br><br>
+	Platforma EERTIS (Engage in the European Research and Technology System)  a fost creată pentru a veni în sprijinul coordonatorilor infrastructurilor de cercetare publice/private din România și a celor care doresc să beneficieze de serviciile oferite de aceste infrastructuri.<br><br>
+	Mai multe detalii sunt disponibile <a href="/platforma-eertis" target="_self" a:loader="off">aici</a>.<br>
+	Platforma poate fi accesată la adresa<br><a href="https://eertis.eu">https://eertis.eu</a>
+</span></div>
+											<div class="tooltip-logo">
+												<img id="2641148612_logoLaser" a:tooltip="yes" src="/src/org/uefiscdi/inline/css/img/platforme/logo-laser-valley.svg" class="img-responsive" style="display: inline-block;" a:localid="logoLaser" a:ddpn="2641148612" a:p="1" a:tooltipdata="PHBhcnNlZD4NCgk8c3Ryb25nPkxhc2VyIFZhbGxleSAtIExhbmQgb2YgTGlnaHRzPC9zdHJvbmc+PGJyPjxicj4NCglVbiBjb25jZXB0IGRlIGRlenZvbHRhcmUgdGVyaXRvcmlhbCYjMjU5OyBpbnRlbGlnZW50JiMyNTk7PGJyPnByaW4gdmFsb3JpZmljYXJlYSBpbmZyYXN0cnVjdHVyaWkgcGFuLWV1cm9wZW5lIEV4dHJlbWUgTGlnaHQgSW5mcmFzdHJ1Y3R1cmUgJm5kYXNoOyBOdWNsZWFyIFBoeXNpY3MgKEVMSS1OUCkuPGJyPjxicj4NCglNYWkgbXVsdGUgZGV0YWxpaSBzdW50IGRpc3BvbmliaWxlIDxhIGhyZWY9Ii4vbGFzZXItdmFsbGV5LWxhbmQtb2YtbGlnaHRzIiB0YXJnZXQ9Il9zZWxmIj5haWNpPC9hPi48YnI+DQoJUGxhdGZvcm1hIHBvYXRlIGZpIGFjY2VzYXQmIzI1OTsgbGEgYWRyZXNhPGJyPjxhIGhyZWY9Imh0dHA6Ly93d3cubGFzZXJ2YWxsZXkucm8vIj5odHRwOi8vd3d3Lmxhc2VydmFsbGV5LnJvLzwvYT4NCjwvcGFyc2VkPg==" onclick="if(!this['a:e']){$(this).aToolTip({clickIt: true,tipContent: document.getElementById('2641148612_logoLaser__TT6759e4a3344d14.46174909').innerHTML });this['a:e']=1;this.click();this['onclick']=null;}" a:security="0" alt="logo laser valley" loader="off" a:sa="|#Y#.aWYoIXRoaXNbJ2E6ZSddKXskKHRoaXMpLmFUb29sVGlwKHtjbGlja0l0OiB0cnVlLHRpcENvbnRlbnQ6IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCcyNjQxMTQ4NjEyX2xvZ29MYXNlcl9fVFQ2NzU5ZTRhMzM0NGQxNC40NjE3NDkwOScpLmlubmVySFRNTCB9KTt0aGlzWydhOmUnXT0xO3RoaXMuY2xpY2soKTt0aGlzWydvbmNsaWNrJ109bnVsbDt9#Y#.f39c5a2dedffd03e9c8a5559e7c17ad4ed7d6d91" a:loader="on" href="https://uefiscdi.gov.ro/src/org/uefiscdi/inline/css/img/platforme/logo-laser-valley.svg">
+												<!-- <a href="#a" id="logoLaser" a:tooltip="yes" class="logo-laser-platforme img-responsive" style="display: inline-block;"></a> -->
+												<!-- <span class="tooltip-text">Click logo pentru detalii</span> -->
+											<span id="2641148612_logoLaser__TT6759e4a3344d14.46174909" style="display:none">
+	<strong>Laser Valley - Land of Lights</strong><br><br>
+	Un concept de dezvoltare teritorială inteligentă<br>prin valorificarea infrastructurii pan-europene Extreme Light Infrastructure – Nuclear Physics (ELI-NP).<br><br>
+	Mai multe detalii sunt disponibile <a href="/laser-valley-land-of-lights" target="_self" a:loader="off">aici</a>.<br>
+	Platforma poate fi accesată la adresa<br><a href="http://www.laservalley.ro/">http://www.laservalley.ro/</a>
+</span></div>
+										  </div>
+										  
+										  <div class="col-xs-4 col-sm-4 col-md-4">
+										  	<div class="tooltip-logo">
+												<img id="2641148612_logoBrainMap" a:tooltip="yes" src="/src/org/uefiscdi/inline/css/img/platforme/logo-brainmap.svg" class="img-responsive" style="display: inline-block;" a:localid="logoBrainMap" a:ddpn="2641148612" a:p="1" a:tooltipdata="PHBhcnNlZD4NCgk8c3Ryb25nPlBsYXRmb3JtYSBCcmFpbk1hcDwvc3Ryb25nPjxicj48YnI+DQoJUGxhdGZvcm1hIEJyYWluTWFwIHJldW5lJiM1Mzc7dGUgbWFqb3JpdGF0ZWEgIGNlcmNldCYjMjU5O3Rvcmlsb3IgJiMzNTE7aSBhbnRyZXByZW5vcmlsb3IgZGluIGVjb3Npc3RlbXVsIGRlIGlub3ZhcmUgJiMzNTE7aSBvZmVyJiMyNTk7ICBhY2NlcyBsYSBleHBlcnRpemEgJiMzNTE7aSByZXp1bHRhdGVsZSAgYWN0aXZpdCYjMjU5OyYjMzU1O2lpIENESSBkaW4gUm9tJmFjaXJjO25pYS48YnI+DQoJPGJyPg0KCU1haSBtdWx0ZSBkZXRhbGlpIHN1bnQgZGlzcG9uaWJpbGUgPGEgaHJlZj0iLi9wbGF0Zm9ybWEtYnJhaW5tYXAiIHRhcmdldD0iX3NlbGYiPmFpY2k8L2E+Ljxicj4NCglQbGF0Zm9ybWEgcG9hdGUgZmkgYWNjZXNhdCYjMjU5OyBsYSBhZHJlc2E8YnI+PGEgaHJlZj0iaHR0cHM6Ly93d3cuYnJhaW5tYXAucm8iIHRhcmdldD0iX2JsYW5rIj5odHRwczovL3d3dy5icmFpbm1hcC5ybzwvYT4NCjwvcGFyc2VkPg==" onclick="if(!this['a:e']){$(this).aToolTip({clickIt: true,tipContent: document.getElementById('2641148612_logoBrainMap__TT6759e4a3345909.85726772').innerHTML });this['a:e']=1;this.click();this['onclick']=null;}" a:security="0" alt="logo brainmap" loader="off" a:sa="|#Y#.aWYoIXRoaXNbJ2E6ZSddKXskKHRoaXMpLmFUb29sVGlwKHtjbGlja0l0OiB0cnVlLHRpcENvbnRlbnQ6IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCcyNjQxMTQ4NjEyX2xvZ29CcmFpbk1hcF9fVFQ2NzU5ZTRhMzM0NTkwOS44NTcyNjc3MicpLmlubmVySFRNTCB9KTt0aGlzWydhOmUnXT0xO3RoaXMuY2xpY2soKTt0aGlzWydvbmNsaWNrJ109bnVsbDt9#Y#.09ef681bfbd3a95568bd3eb2ca3e55d71f9631c6" a:loader="on" href="https://uefiscdi.gov.ro/src/org/uefiscdi/inline/css/img/platforme/logo-brainmap.svg">
+												<!-- <span class="tooltip-text">Click logo pentru detalii</span> -->
+											<span id="2641148612_logoBrainMap__TT6759e4a3345909.85726772" style="display:none">
+	<strong>Platforma BrainMap</strong><br><br>
+	Platforma BrainMap reunește majoritatea  cercetătorilor şi antreprenorilor din ecosistemul de inovare şi oferă  acces la expertiza şi rezultatele  activităţii CDI din România.<br>
+	<br>
+	Mai multe detalii sunt disponibile <a href="/platforma-brainmap" target="_self" a:loader="off">aici</a>.<br>
+	Platforma poate fi accesată la adresa<br><a href="https://www.brainmap.ro" target="_blank">https://www.brainmap.ro</a>
+</span></div>
+											<div class="tooltip-logo">
+											    <img id="2641148612_logoEux" a:tooltip="yes" src="/src/org/uefiscdi/inline/css/img/platforme/logo-euraxess.svg" class="img-responsive" style="display: inline-block;" a:localid="logoEux" a:ddpn="2641148612" a:p="1" a:tooltipdata="PHBhcnNlZD4NCgk8c3Ryb25nPlBvcnRhbCBFVVJBWEVTUzwvc3Ryb25nPjxicj48YnI+DQoJRXN0ZSBvIHBsYXRmb3JtJiMyNTk7IGNhcmUgc3VzJiM1Mzk7aW5lIGludGVyYWMmIzUzOTtpdW5lYSBkaW50cmUgY2VyY2V0JiMyNTk7dG9yaSwgYW50cmVwcmVub3JpLCB1bml2ZXJzaXQmIzI1OTsmIzUzOTtpICYjNTM3O2kgbWVkaXVsIGRlIGFmYWNlcmkuPGJyPjxicj4NCglNYWkgbXVsdGUgZGV0YWxpaSBzdW50IGRpc3BvbmliaWxlIDxhIGhyZWY9Ii4vcG9ydGFsLWV1cmF4ZXNzIiB0YXJnZXQ9Il9zZWxmIj5haWNpPC9hPi48YnI+DQoJUGxhdGZvcm1hIHBvYXRlIGZpIGFjY2VzYXQmIzI1OTsgbGEgYWRyZXNhPGJyPjxhIGhyZWY9Imh0dHBzOi8vd3d3LmV1cmF4ZXNzLmdvdi5yby8iPmh0dHBzOi8vd3d3LmV1cmF4ZXNzLmdvdi5yby88L2E+DQo8L3BhcnNlZD4=" onclick="if(!this['a:e']){$(this).aToolTip({clickIt: true,tipContent: document.getElementById('2641148612_logoEux__TT6759e4a3346559.20695831').innerHTML });this['a:e']=1;this.click();this['onclick']=null;}" a:security="0" alt="logo euraxess" loader="off" a:sa="|#Y#.aWYoIXRoaXNbJ2E6ZSddKXskKHRoaXMpLmFUb29sVGlwKHtjbGlja0l0OiB0cnVlLHRpcENvbnRlbnQ6IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCcyNjQxMTQ4NjEyX2xvZ29FdXhfX1RUNjc1OWU0YTMzNDY1NTkuMjA2OTU4MzEnKS5pbm5lckhUTUwgfSk7dGhpc1snYTplJ109MTt0aGlzLmNsaWNrKCk7dGhpc1snb25jbGljayddPW51bGw7fQ==#Y#.de9d24cbe6739789611ca4a9546e5709efa9dc94" a:loader="on" href="https://uefiscdi.gov.ro/src/org/uefiscdi/inline/css/img/platforme/logo-euraxess.svg">
+												<!-- <a href="#b" id="logoEux" a:tooltip="yes" class="logo-euraxess-platforme img-responsive" style="display: inline-block;" a:tooltipdata="ccc"></a> -->
+												
+											<span id="2641148612_logoEux__TT6759e4a3346559.20695831" style="display:none">
+	<strong>Portal EURAXESS</strong><br><br>
+	Este o platformă care susține interacțiunea dintre cercetători, antreprenori, universități și mediul de afaceri.<br><br>
+	Mai multe detalii sunt disponibile <a href="/portal-euraxess" target="_self" a:loader="off">aici</a>.<br>
+	Platforma poate fi accesată la adresa<br><a href="https://www.euraxess.gov.ro/">https://www.euraxess.gov.ro/</a>
+</span></div>
+										  </div>
+                          			</div>
+                          			
+                        	</div>                     
+							
+                    </div>
+
+                    
+
+
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 nopadding">
+
+                    <div class="col-xs-12">
+                    <div class="section-headline"><span>Platforme Învățământ Superior</span></div>
+                    </div>
+
+
+                    <div class="col-xs-12 logo-home logo-home-is">
+                      
+                        <div class="mdl-card mdl-shadow--2dp mtop30 fl-left logo-space pdlr15">
+                          <div class="row">
+                              <div class="col-xs-3 col-sm-3 col-md-3">
+							  	<div class="tooltip-logo" style="text-align: center">
+								  	<img id="2641148612_logoREI" a:tooltip="yes" src="/src/org/uefiscdi/inline/css/img/platforme/logo-rei-rmu-initiale.svg" class="img-responsive logoREI" style="display: inline-block" a:localid="logoREI" a:ddpn="2641148612" a:p="1" a:tooltipdata="PHBhcnNlZD4NCgk8c3Ryb25nPlBsYXRmb3JtYSBSRUkgLyBSTVU8L3N0cm9uZz48YnI+PGJyPg0KCVBsYXRmb3JtYSA8YSBocmVmPSJodHRwczovL3d3dy5yZWkuZ292LnJvL1N0YXRpc3RpY2ktc3R1ZGVudGktOSIgdGFyZ2V0PSJfYmxhbmsiPlJlZ2lzdHJ1bCBNYXRyaWNvbCBVbmljIChSTVUpPC9hPiBzZSBhY2Nlc2VheiYjMjU5OyBwcmluIGludGVybWVkaXVsIHBsYXRmb3JtZWkgUkVJICYjNTM3O2kgYXNpZ3VyJiMyNTk7IGdlc3RpdW5lYSBpbnRlZ3JhdCYjMjU5OyBhIGRhdGVsb3IgcHJpdmluZCBzdHVkZW4mIzUzOTtpaSB1bml2ZXJzaXQmIzI1OTsmIzUzOTtpbG9yIGRlIHN0YXQgJiM1Mzc7aSBwYXJ0aWN1bGFyZSBkaW4gUm9tJmFjaXJjO25pYS48YnI+DQoJUGxhdGZvcm1hIDxhIGhyZWY9Imh0dHBzOi8vcmVpLmdvdi5ybyIgdGFyZ2V0PSJfYmxhbmsiPlJlZ2lzdHJ1bCBFZHVjYSYjNTM5O2lvbmFsIEludGVncmF0IChSRUkpPC9hPiBhc2lndXImIzI1OTsgaW50ZXJvcGVyYWJpbGl0YXRlYSAmaWNpcmM7bnRyZSBzaXN0ZW1lbGUgZGUgZ2VzdGl1bmUgZXhpc3RlbnRlICZpY2lyYztuIHNlY3RvcnVsIGVkdWNhJiM1Mzk7aW9uYWwgcHJlY3VtICYjNTM3O2kgY3Ugc2lzdGVtZWxlIGRlIGdlc3RpdW5lIGNvbmV4ZS4NCgk8YnI+PGJyPg0KCVN0YXRpc3RpY2kgZGVzcHJlIHN0dWRlbiYjNTM5O2lpIGRpbiBSTVUgc3VudCBkaXNwb25pYmlsZSA8YSBocmVmPSJodHRwczovL3d3dy5yZWkuZ292LnJvL1N0YXRpc3RpY2ktc3R1ZGVudGktOSIgdGFyZ2V0PSJfYmxhbmsiPmFpY2k8L2E+Ljxicj4NCglNYWkgbXVsdGUgZGV0YWxpaSBkZXNwcmUgUkVJL1JNVSBzdW50IGRpc3BvbmliaWxlIDxhIGhyZWY9Ii4vcmVnaXN0cnVsLWVkdWNhdGlvbmFsLWludGVncmF0LXJlZ2lzdHJ1bC1tYXRyaWNvbC11bmljIiB0YXJnZXQ9Il9zZWxmIj5haWNpPC9hPi48YnI+DQoJUGxhdGZvcm1hIFJFSS9STVUgcG9hdGUgZmkgYWNjZXNhdCYjMjU5OyBsYSBhZHJlc2E8YnI+PGEgaHJlZj0iaHR0cHM6Ly9yZWkuZ292LnJvIiB0YXJnZXQ9Il9ibGFuayI+aHR0cHM6Ly9yZWkuZ292LnJvPC9hPi4NCgkNCjwvcGFyc2VkPg==" onclick="if(!this['a:e']){$(this).aToolTip({clickIt: true,tipContent: document.getElementById('2641148612_logoREI__TT6759e4a33471c0.55226688').innerHTML });this['a:e']=1;this.click();this['onclick']=null;}" a:security="0" alt="logo rei rmu initiale" loader="off" a:sa="|#Y#.aWYoIXRoaXNbJ2E6ZSddKXskKHRoaXMpLmFUb29sVGlwKHtjbGlja0l0OiB0cnVlLHRpcENvbnRlbnQ6IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCcyNjQxMTQ4NjEyX2xvZ29SRUlfX1RUNjc1OWU0YTMzNDcxYzAuNTUyMjY2ODgnKS5pbm5lckhUTUwgfSk7dGhpc1snYTplJ109MTt0aGlzLmNsaWNrKCk7dGhpc1snb25jbGljayddPW51bGw7fQ==#Y#.c8fcfcaf0ed577a5f50d2d4179eedd9c0dd17065" a:loader="on" href="https://uefiscdi.gov.ro/src/org/uefiscdi/inline/css/img/platforme/logo-rei-rmu-initiale.svg"><br>
+									<!-- <span class="tooltip-text">Click logo pentru detalii</span> -->
+                                <span id="2641148612_logoREI__TT6759e4a33471c0.55226688" style="display:none">
+	<strong>Platforma REI / RMU</strong><br><br>
+	Platforma <a href="https://www.rei.gov.ro/Statistici-studenti-9" target="_blank">Registrul Matricol Unic (RMU)</a> se accesează prin intermediul platformei REI și asigură gestiunea integrată a datelor privind studenții universităților de stat și particulare din România.<br>
+	Platforma <a href="https://rei.gov.ro" target="_blank">Registrul Educațional Integrat (REI)</a> asigură interoperabilitatea între sistemele de gestiune existente în sectorul educațional precum și cu sistemele de gestiune conexe.
+	<br><br>
+	Statistici despre studenții din RMU sunt disponibile <a href="https://www.rei.gov.ro/Statistici-studenti-9" target="_blank">aici</a>.<br>
+	Mai multe detalii despre REI/RMU sunt disponibile <a href="/registrul-educational-integrat-registrul-matricol-unic" target="_self" a:loader="off">aici</a>.<br>
+	Platforma REI/RMU poate fi accesată la adresa<br><a href="https://rei.gov.ro" target="_blank">https://rei.gov.ro</a>.
+	
+</span></div>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                <div class="tooltip-logo" style="text-align: center;">
+	                                <img id="2641148612_logoANS" a:tooltip="yes" src="/src/org/uefiscdi/inline/css/img/platforme/logo-ans.svg" class="img-responsive" style="display: inline-block" a:localid="logoANS" a:ddpn="2641148612" a:p="1" a:tooltipdata="PHBhcnNlZD4NCgk8c3Ryb25nPlBsYXRmb3JtYSBBTlM8L3N0cm9uZz48YnI+PGJyPg0KCVBsYXRmb3JtYSBOYSYjMzU1O2lvbmFsJiMyNTk7IGRlIENvbGVjdGFyZSBhIERhdGVsb3IgU3RhdGlzdGljZSBwZW50cnUgJkljaXJjO252JiMyNTk7JiMzNTU7JiMyNTk7bSZhY2lyYztudHVsIFN1cGVyaW9yIChBTlMpIHJlcHJlemludCYjMjU5OyB1biBzaXN0ZW0gaW5mb3JtYSYjMzU1O2lvbmFsIGludGVncmF0LCBkZXp2b2x0YXQgJmljaXJjO24gbWFuaWVyYSBtb2R1bGFyJiMyNTk7LCBjb21wYXRpYmlsIGN1IHNpc3RlbWVsZSBkZSBjb2xlY3RhcmUgYSBkYXRlbG9yIGxhIG5pdmVsIGV1cm9wZWFuLCBkZWRpY2F0ICZpY2lyYztudiYjMjU5OyYjMzU1OyYjMjU5O20mYWNpcmM7bnR1bHVpIHN1cGVyaW9yIGRpbiBSb20mYWNpcmM7bmlhPGJyPjxicj4NCglNYWkgbXVsdGUgZGV0YWxpaSBzdW50IGRpc3BvbmliaWxlIDxhIGhyZWY9Ii4vcGxhdGZvcm1hLWFucyIgdGFyZ2V0PSJfc2VsZiI+YWljaTwvYT4uPGJyPg0KCVBsYXRmb3JtYSBwb2F0ZSBmaSBhY2Nlc2F0JiMyNTk7IGxhIGFkcmVzYTxicj48YSBocmVmPSJodHRwczovL2RhdGUuaW52YXRhbWFudC1zdXBlcmlvci5ybyIgdGFyZ2V0PSJfYmxhbmsiPmh0dHBzOi8vZGF0ZS5pbnZhdGFtYW50LXN1cGVyaW9yLnJvPC9hPg0KPC9wYXJzZWQ+" onclick="if(!this['a:e']){$(this).aToolTip({clickIt: true,tipContent: document.getElementById('2641148612_logoANS__TT6759e4a3347ef6.76965605').innerHTML });this['a:e']=1;this.click();this['onclick']=null;}" a:security="0" alt="logo ans" loader="off" a:sa="|#Y#.aWYoIXRoaXNbJ2E6ZSddKXskKHRoaXMpLmFUb29sVGlwKHtjbGlja0l0OiB0cnVlLHRpcENvbnRlbnQ6IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCcyNjQxMTQ4NjEyX2xvZ29BTlNfX1RUNjc1OWU0YTMzNDdlZjYuNzY5NjU2MDUnKS5pbm5lckhUTUwgfSk7dGhpc1snYTplJ109MTt0aGlzLmNsaWNrKCk7dGhpc1snb25jbGljayddPW51bGw7fQ==#Y#.a00fc59502fbfa7f37d01db30fbb1ba03c32c556" a:loader="on" href="https://uefiscdi.gov.ro/src/org/uefiscdi/inline/css/img/platforme/logo-ans.svg">
+									<!-- <span class="tooltip-text">Click logo pentru detalii</span> -->
+								<span id="2641148612_logoANS__TT6759e4a3347ef6.76965605" style="display:none">
+	<strong>Platforma ANS</strong><br><br>
+	Platforma Naţională de Colectare a Datelor Statistice pentru Învăţământul Superior (ANS) reprezintă un sistem informaţional integrat, dezvoltat în maniera modulară, compatibil cu sistemele de colectare a datelor la nivel european, dedicat învăţământului superior din România<br><br>
+	Mai multe detalii sunt disponibile <a href="/platforma-ans" target="_self" a:loader="off">aici</a>.<br>
+	Platforma poate fi accesată la adresa<br><a href="https://date.invatamant-superior.ro" target="_blank">https://date.invatamant-superior.ro</a>
+</span></div>
+                              </div>
+                              <div class="col-xs-3 col-sm-3 col-md-3">
+							  	<div class="tooltip-logo">
+	                                <img id="2641148612_logoStudy" a:tooltip="yes" src="/src/org/uefiscdi/inline/css/img/platforme/logo-study-in-romania.svg" class="img-responsive" style="display: inline-block" a:localid="logoStudy" a:ddpn="2641148612" a:p="1" a:tooltipdata="PHBhcnNlZD4NCgk8c3Ryb25nPlBsYXRmb3JtYSBTdHVkeSBpbiBSb21hbmlhPC9zdHJvbmc+PGJyPjxicj4NCglQbGF0Zm9ybWEgU3R1ZHkgaW4gUm9tYW5pYSAoU0lSKSBwcm9tb3ZlYXomIzI1OTsgJmljaXJjO252JiMyNTk7JiMzNTU7JiMyNTk7bSZhY2lyYztudHVsIHN1cGVyaW9yIHJvbSZhY2lyYztuZXNjIGxhIG5pdmVsIGdsb2JhbCwgY29udHJpYnVpbmQgbGEgYXRyYWdlcmVhIHN0dWRlbiYjMzU1O2lsb3IgbmEmIzM1NTtpb25hbGkgJiMzNTE7aSBpbnRlcm5hJiMzNTU7aW9uYWxpICZpY2lyYztuIHByb2dyYW1lIGRlIHN0dWRpdSBkaW4gb2ZlcnRhIGVkdWNhJiMzNTU7aW9uYWwmIzI1OTsgYSB1bml2ZXJzaXQmIzI1OTsmIzM1NTtpbG9yIHJvbSZhY2lyYztuZSYjMzUxO3RpLjxicj48YnI+DQoJTWFpIG11bHRlIGRldGFsaWkgc3VudCBkaXNwb25pYmlsZSA8YSBocmVmPSIuL3BsYXRmb3JtYS1zdHVkeS1pbi1yb21hbmlhIiB0YXJnZXQ9Il9zZWxmIj5haWNpPC9hPi48YnI+DQoJUGxhdGZvcm1hIHBvYXRlIGZpIGFjY2VzYXQmIzI1OTsgbGEgYWRyZXNhPGJyPjxhIGhyZWY9Imh0dHBzOi8vd3d3LnN0dWR5aW5yb21hbmlhLmdvdi5ybyIgdGFyZ2V0PSJfYmxhbmsiPmh0dHBzOi8vd3d3LnN0dWR5aW5yb21hbmlhLmdvdi5ybzwvYT4NCjwvcGFyc2VkPg==" onclick="if(!this['a:e']){$(this).aToolTip({clickIt: true,tipContent: document.getElementById('2641148612_logoStudy__TT6759e4a3348d03.67600612').innerHTML });this['a:e']=1;this.click();this['onclick']=null;}" a:security="0" alt="logo study in romania" loader="off" a:sa="|#Y#.aWYoIXRoaXNbJ2E6ZSddKXskKHRoaXMpLmFUb29sVGlwKHtjbGlja0l0OiB0cnVlLHRpcENvbnRlbnQ6IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCcyNjQxMTQ4NjEyX2xvZ29TdHVkeV9fVFQ2NzU5ZTRhMzM0OGQwMy42NzYwMDYxMicpLmlubmVySFRNTCB9KTt0aGlzWydhOmUnXT0xO3RoaXMuY2xpY2soKTt0aGlzWydvbmNsaWNrJ109bnVsbDt9#Y#.d418158b61135665bdbf989acd804701094a6db7" a:loader="on" href="https://uefiscdi.gov.ro/src/org/uefiscdi/inline/css/img/platforme/logo-study-in-romania.svg">
+									<!-- <span class="tooltip-text">Click logo pentru detalii</span> -->
+								<span id="2641148612_logoStudy__TT6759e4a3348d03.67600612" style="display:none">
+	<strong>Platforma Study in Romania</strong><br><br>
+	Platforma Study in Romania (SIR) promovează învăţământul superior românesc la nivel global, contribuind la atragerea studenţilor naţionali şi internaţionali în programe de studiu din oferta educaţională a universităţilor româneşti.<br><br>
+	Mai multe detalii sunt disponibile <a href="/platforma-study-in-romania" target="_self" a:loader="off">aici</a>.<br>
+	Platforma poate fi accesată la adresa<br><a href="https://www.studyinromania.gov.ro" target="_blank">https://www.studyinromania.gov.ro</a>
+</span></div>
+								</div>
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+								<div class="tooltip-logo">
+									<img id="2641148612_logoSAPM" a:tooltip="yes" src="/src/org/uefiscdi/inline/css/img/platforme/logo-sapm.svg" class="img-responsive" style="display: inline-block" a:localid="logoSAPM" a:ddpn="2641148612" a:p="1" a:tooltipdata="PHBhcnNlZD4NCgk8c3Ryb25nPlBsYXRmb3JtYSBTQVBNPC9zdHJvbmc+PGJyPjxicj4NCglQbGF0Zm9ybWEgU3R1ZGVuJiMzNTU7aSwgQWJzb2x2ZW4mIzM1NTtpICYjMzUxO2kgUGlhJiMzNTU7YSBNdW5jaWkgKFNBUE0pIGVzdGUgbyBiaWJsaW90ZWMmIzI1OTsgZGUgaW5zdHJ1bWVudGUgcGVudHJ1IGRlenZvbHRhcmVhICYjNTM3O2kgaW1wbGVtZW50YXJlYSBkZSBzdHVkaWkgZGUgbW9uaXRvcml6YXJlIGEgaW5zZXImIzUzOTtpZWkgcHJvZmVzaW9uYWxlIGEgYWJzb2x2ZW4mIzUzOTtpbG9yIGRlIHN0dWRpaSBzdXBlcmlvYXJlLjxicj48YnI+DQoJTWFpIG11bHRlIGRldGFsaWkgc3VudCBkaXNwb25pYmlsZSA8YSBocmVmPSIuL3BsYXRmb3JtYS1zdHVkZW50aS1hYnNvbHZlbnRpLXNpLXBpYXRhLW11bmNpaSIgdGFyZ2V0PSJfc2VsZiI+YWljaTwvYT4uPGJyPg0KCVBsYXRmb3JtYSBwb2F0ZSBmaSBhY2Nlc2F0JiMyNTk7IGxhIGFkcmVzYTxicj48YSBocmVmPSJodHRwOi8vd3d3LnNhcG0uZm9yaGUucm8iIHRhcmdldD0iX2JsYW5rIj5odHRwOi8vc2FwbS5mb3JoZS5yby88L2E+DQo8L3BhcnNlZD4=" onclick="if(!this['a:e']){$(this).aToolTip({clickIt: true,tipContent: document.getElementById('2641148612_logoSAPM__TT6759e4a3349959.04394214').innerHTML });this['a:e']=1;this.click();this['onclick']=null;}" a:security="0" alt="logo sapm" loader="off" a:sa="|#Y#.aWYoIXRoaXNbJ2E6ZSddKXskKHRoaXMpLmFUb29sVGlwKHtjbGlja0l0OiB0cnVlLHRpcENvbnRlbnQ6IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCcyNjQxMTQ4NjEyX2xvZ29TQVBNX19UVDY3NTllNGEzMzQ5OTU5LjA0Mzk0MjE0JykuaW5uZXJIVE1MIH0pO3RoaXNbJ2E6ZSddPTE7dGhpcy5jbGljaygpO3RoaXNbJ29uY2xpY2snXT1udWxsO30=#Y#.7a54628f1836678db33f32ded1edb0527fced43c" a:loader="on" href="https://uefiscdi.gov.ro/src/org/uefiscdi/inline/css/img/platforme/logo-sapm.svg">
+									<!-- <span class="tooltip-text">Click logo pentru detalii</span> -->
+								<span id="2641148612_logoSAPM__TT6759e4a3349959.04394214" style="display:none">
+	<strong>Platforma SAPM</strong><br><br>
+	Platforma Studenţi, Absolvenţi şi Piaţa Muncii (SAPM) este o bibliotecă de instrumente pentru dezvoltarea și implementarea de studii de monitorizare a inserției profesionale a absolvenților de studii superioare.<br><br>
+	Mai multe detalii sunt disponibile <a href="/platforma-studenti-absolventi-si-piata-muncii" target="_self" a:loader="off">aici</a>.<br>
+	Platforma poate fi accesată la adresa<br><a href="http://www.sapm.forhe.ro" target="_blank">http://sapm.forhe.ro/</a>
+</span></div>	
+                              </div>
+                              <!-- <div class="col-xs-3 col-sm-3 col-md-3">
+							  	
+                              </div>
+                              <div class="col-xs-3 col-sm-3 col-md-3">
+							  	
+                              </div> -->
+                          </div>
+                        </div>
+                      
+                    </div>
+
+                    
+
+
+                </div>
+
+
+</div>
+
+			  <!--<div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <div class="section-headline2"><span></span></div>
+                </div>
+              </div>	
+			  <div class="mtop30"></div>-->
+              
+              
+              
+			  
+			
+			
+            <a id="noutatiRow" a:localId="noutatiRow" a:p="1" href="/?&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=8215520d8f7cb18f49df31122bd1f546c1c3f1fa"></a>        
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <div class="section-headline"><span>Noutăți</span></div>
+                </div>
+              </div>
+            
+            <div id="news" a:object="org_nart_ImngrArticle('home.news')" type="html" runat="server" a:localId="news" a:p="1">
+
+<ddps>
+	
+	<div id="2129611849_news" runat="server" type="html" a:localid="news" a:ddpn="2129611849" a:p="1"><ddps>
+	<div id="1196703120_primitive" runat="server" type="html" a:localid="primitive" a:ddpn="1196703120" a:p="1">
+<div id="1196703120_list" runat="server" type="table" a:localid="list" a:ddpn="1196703120" a:p="1">
+	<div a:type="template">
+		 <div class="row" id="1196703120_list.items.news@0" runat="server" a:localid="news" a:ddpn="1196703120" a:row="0" a:p="1">
+
+
+<div class="col-xs-12 col-sm-4">
+  <div class="card">
+    <div class="cardThumb"> <a href="https://uefiscdi.gov.ro/news-dialoguri-m100" id="1196703120_img" a:parseifnovalue="yes" a:localid="img" a:ddpn="1196703120" a:p="1"> <img id="1196703120_aIdFilePoza" a:preview="0" src="https://uefiscdi.gov.ro/preview.php?id=42079&amp;type=image&amp;width=360&amp;height=229&amp;rm=WH&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=52e23a0088558b9cc6556c0ad80b8b8bb06f739b" a:width="360" a:height="229" a:localid="aIdFilePoza" a:ddpn="1196703120" a:p="1" alt="Banner articol Noutati" width="360"> </a> </div>
+    
+    <div class="cardDate">
+    	<span class="cardDateDay" id="1196703120_day" runat="server" a:localid="day" a:ddpn="1196703120" a:p="1">09</span>
+    	<span class="cardDateMonth" id="1196703120_month" runat="server" a:localid="month" a:ddpn="1196703120" a:p="1">Dec</span>
+    	<span class="cardDateYear" id="1196703120_year" runat="server" a:localid="year" a:ddpn="1196703120" a:p="1">2024</span>
+    </div>
+    <div class="cardBody">
+      <div class="cardCategory-6"><a href="https://uefiscdi.gov.ro/news-dialoguri-m100" id="1196703120_category" a:localid="category" a:ddpn="1196703120" a:p="1">EEA &amp; Norway Grants</a></div>
+      <h2 class="cardTitle"><a href="https://uefiscdi.gov.ro/news-dialoguri-m100" id="1196703120_homeTitle" a:localid="homeTitle" a:ddpn="1196703120" a:p="1">Dialoguri M100</a></h2>
+      <p class="cardDescription" id="1196703120_homeContent" runat="server" type="html" a:localid="homeContent" a:ddpn="1196703120" a:p="1">Sub deviza "Niciun oraș nu este lăsat în urmă," seria de podcasturi "Dialoguri M100" oferă ...</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="col-xs-12 col-sm-4">
+  <div class="card">
+    <div class="cardThumb"> <a href="https://uefiscdi.gov.ro/news-oportunitate-de-colaborare-sua-romania-in-domeniul-sttintelor-matematice-si-fizice" id="1196703120_img" a:parseifnovalue="yes" a:localid="img" a:ddpn="1196703120" a:p="1"> <img id="1196703120_aIdFilePoza" a:preview="0" src="https://uefiscdi.gov.ro/preview.php?id=42071&amp;type=image&amp;width=360&amp;height=229&amp;rm=WH&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=a17582978847860b0716579df64d9a52bc7620f1" a:width="360" a:height="229" a:localid="aIdFilePoza" a:ddpn="1196703120" a:p="1" alt="Banner articol Noutati" width="360"> </a> </div>
+    
+    <div class="cardDate">
+    	<span class="cardDateDay" id="1196703120_day" runat="server" a:localid="day" a:ddpn="1196703120" a:p="1">04</span>
+    	<span class="cardDateMonth" id="1196703120_month" runat="server" a:localid="month" a:ddpn="1196703120" a:p="1">Dec</span>
+    	<span class="cardDateYear" id="1196703120_year" runat="server" a:localid="year" a:ddpn="1196703120" a:p="1">2024</span>
+    </div>
+    <div class="cardBody">
+      <div class="cardCategory-6"><a href="https://uefiscdi.gov.ro/news-oportunitate-de-colaborare-sua-romania-in-domeniul-sttintelor-matematice-si-fizice" id="1196703120_category" a:localid="category" a:ddpn="1196703120" a:p="1">Competiție PN IV</a></div>
+      <h2 class="cardTitle"><a href="https://uefiscdi.gov.ro/news-oportunitate-de-colaborare-sua-romania-in-domeniul-sttintelor-matematice-si-fizice" id="1196703120_homeTitle" a:localid="homeTitle" a:ddpn="1196703120" a:p="1">Oportunitate de colaborare SUA - România în domeniul științelor matematice și fizice</a></h2>
+      <p class="cardDescription" id="1196703120_homeContent" runat="server" type="html" a:localid="homeContent" a:ddpn="1196703120" a:p="1">Direcția de Științe Matematice și Fizice a Fundației Naționale pentru Științe</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="col-xs-12 col-sm-4">
+  <div class="card">
+    <div class="cardThumb"> <a href="https://uefiscdi.gov.ro/news-apel-deschis-agroecology-2025-2026" id="1196703120_img" a:parseifnovalue="yes" a:localid="img" a:ddpn="1196703120" a:p="1"> <img id="1196703120_aIdFilePoza" a:preview="0" src="https://uefiscdi.gov.ro/preview.php?id=42024&amp;type=image&amp;width=360&amp;height=229&amp;rm=WH&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=220ad768dc1aa23c6cfe2addc92cc10cb3b6b84c" a:width="360" a:height="229" a:localid="aIdFilePoza" a:ddpn="1196703120" a:p="1" alt="Stire 2nd co funded call   call NOW OPEN" width="360"> </a> </div>
+    
+    <div class="cardDate">
+    	<span class="cardDateDay" id="1196703120_day" runat="server" a:localid="day" a:ddpn="1196703120" a:p="1">03</span>
+    	<span class="cardDateMonth" id="1196703120_month" runat="server" a:localid="month" a:ddpn="1196703120" a:p="1">Dec</span>
+    	<span class="cardDateYear" id="1196703120_year" runat="server" a:localid="year" a:ddpn="1196703120" a:p="1">2024</span>
+    </div>
+    <div class="cardBody">
+      <div class="cardCategory-6"><a href="https://uefiscdi.gov.ro/news-apel-deschis-agroecology-2025-2026" id="1196703120_category" a:localid="category" a:ddpn="1196703120" a:p="1">Competitie</a></div>
+      <h2 class="cardTitle"><a href="https://uefiscdi.gov.ro/news-apel-deschis-agroecology-2025-2026" id="1196703120_homeTitle" a:localid="homeTitle" a:ddpn="1196703120" a:p="1">Apel deschis Agroecology 2025-2026</a></h2>
+      <p class="cardDescription" id="1196703120_homeContent" runat="server" type="html" a:localid="homeContent" a:ddpn="1196703120" a:p="1">În cadrul parteneriatului Agroecology a fost lansat cel de-al doilea apel pentru proiecte europene comune de cercetare!</p>
+    </div>
+  </div>
+</div>
+</div>
+	</div><div a:type="template">
+		 <div class="row" id="1196703120_list.items.news@1" runat="server" a:localid="news" a:ddpn="1196703120" a:row="1" a:p="1">
+
+
+<div class="col-xs-12 col-sm-4">
+  <div class="card">
+    <div class="cardThumb"> <a href="https://uefiscdi.gov.ro/news-proiecte-de-cercetare-exploratorie-pce-acceptate-la-finantare-competitia-2023" id="1196703120_img" a:parseifnovalue="yes" a:localid="img" a:ddpn="1196703120" a:p="1"> <img id="1196703120_aIdFilePoza" a:preview="0" src="https://uefiscdi.gov.ro/preview.php?id=41967&amp;type=image&amp;width=360&amp;height=229&amp;rm=WH&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=7fe0c0b8365ca922373c7ab4e79a25ff6b2d4ae9" a:width="360" a:height="229" a:localid="aIdFilePoza" a:ddpn="1196703120" a:p="1" alt="Banner articol Noutati rezultate P1" width="360"> </a> </div>
+    
+    <div class="cardDate">
+    	<span class="cardDateDay" id="1196703120_day" runat="server" a:localid="day" a:ddpn="1196703120" a:p="1">26</span>
+    	<span class="cardDateMonth" id="1196703120_month" runat="server" a:localid="month" a:ddpn="1196703120" a:p="1">Nov</span>
+    	<span class="cardDateYear" id="1196703120_year" runat="server" a:localid="year" a:ddpn="1196703120" a:p="1">2024</span>
+    </div>
+    <div class="cardBody">
+      <div class="cardCategory-6"><a href="https://uefiscdi.gov.ro/news-proiecte-de-cercetare-exploratorie-pce-acceptate-la-finantare-competitia-2023" id="1196703120_category" a:localid="category" a:ddpn="1196703120" a:p="1">Competiție PN IV</a></div>
+      <h2 class="cardTitle"><a href="https://uefiscdi.gov.ro/news-proiecte-de-cercetare-exploratorie-pce-acceptate-la-finantare-competitia-2023" id="1196703120_homeTitle" a:localid="homeTitle" a:ddpn="1196703120" a:p="1">Proiecte de Cercetare Exploratorie (PCE ) - acceptate la finanțare - Competiția 2023</a></h2>
+      <p class="cardDescription" id="1196703120_homeContent" runat="server" type="html" a:localid="homeContent" a:ddpn="1196703120" a:p="1">Prin adresa MCID nr. 453046/26.11.2024, înregistrată la UEFISCDI cu nr. 4009/26.11.2024, MCID a aprobat lista proiectelor PCE...</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="col-xs-12 col-sm-4">
+  <div class="card">
+    <div class="cardThumb"> <a href="https://uefiscdi.gov.ro/news-proiecte-de-cercetare-pentru-stimularea-tinerelor-echipe-independente-te-acceptate-la-finantare-competitia-2023" id="1196703120_img" a:parseifnovalue="yes" a:localid="img" a:ddpn="1196703120" a:p="1"> <img id="1196703120_aIdFilePoza" a:preview="0" src="https://uefiscdi.gov.ro/preview.php?id=41968&amp;type=image&amp;width=360&amp;height=229&amp;rm=WH&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=f5bd37c07d457b65fbc6dda1953d393cdbf6d960" a:width="360" a:height="229" a:localid="aIdFilePoza" a:ddpn="1196703120" a:p="1" alt="Banner articol Noutati rezultate P2" width="360"> </a> </div>
+    
+    <div class="cardDate">
+    	<span class="cardDateDay" id="1196703120_day" runat="server" a:localid="day" a:ddpn="1196703120" a:p="1">26</span>
+    	<span class="cardDateMonth" id="1196703120_month" runat="server" a:localid="month" a:ddpn="1196703120" a:p="1">Nov</span>
+    	<span class="cardDateYear" id="1196703120_year" runat="server" a:localid="year" a:ddpn="1196703120" a:p="1">2024</span>
+    </div>
+    <div class="cardBody">
+      <div class="cardCategory-6"><a href="https://uefiscdi.gov.ro/news-proiecte-de-cercetare-pentru-stimularea-tinerelor-echipe-independente-te-acceptate-la-finantare-competitia-2023" id="1196703120_category" a:localid="category" a:ddpn="1196703120" a:p="1">Competiție PN IV</a></div>
+      <h2 class="cardTitle"><a href="https://uefiscdi.gov.ro/news-proiecte-de-cercetare-pentru-stimularea-tinerelor-echipe-independente-te-acceptate-la-finantare-competitia-2023" id="1196703120_homeTitle" a:localid="homeTitle" a:ddpn="1196703120" a:p="1">Proiecte de cercetare pentru stimularea tinerelor echipe independente (TE) - acceptate la finanţare - Competiția 2023</a></h2>
+      <p class="cardDescription" id="1196703120_homeContent" runat="server" type="html" a:localid="homeContent" a:ddpn="1196703120" a:p="1">Prin adresa MCID nr. 453046/26.11.2024, înregistrată la UEFISCDI cu nr. 4009/26.11.2024, MCI...</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="col-xs-12 col-sm-4">
+  <div class="card">
+    <div class="cardThumb"> <a href="https://uefiscdi.gov.ro/news-competitia-deschisa-stiinta-in-scoli" id="1196703120_img" a:parseifnovalue="yes" a:localid="img" a:ddpn="1196703120" a:p="1"> <img id="1196703120_aIdFilePoza" a:preview="0" src="https://uefiscdi.gov.ro/preview.php?id=41691&amp;type=image&amp;width=360&amp;height=229&amp;rm=WH&amp;wtok=&amp;wtkps=VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==&amp;wchk=fcc48c882f6e680360355a5bce0d184b6bbba14e" a:width="360" a:height="229" a:localid="aIdFilePoza" a:ddpn="1196703120" a:p="1" alt="Banner articol Noutati lansare competitie P10" width="360"> </a> </div>
+    
+    <div class="cardDate">
+    	<span class="cardDateDay" id="1196703120_day" runat="server" a:localid="day" a:ddpn="1196703120" a:p="1">18</span>
+    	<span class="cardDateMonth" id="1196703120_month" runat="server" a:localid="month" a:ddpn="1196703120" a:p="1">Nov</span>
+    	<span class="cardDateYear" id="1196703120_year" runat="server" a:localid="year" a:ddpn="1196703120" a:p="1">2024</span>
+    </div>
+    <div class="cardBody">
+      <div class="cardCategory-6"><a href="https://uefiscdi.gov.ro/news-competitia-deschisa-stiinta-in-scoli" id="1196703120_category" a:localid="category" a:ddpn="1196703120" a:p="1">Competiție PN IV</a></div>
+      <h2 class="cardTitle"><a href="https://uefiscdi.gov.ro/news-competitia-deschisa-stiinta-in-scoli" id="1196703120_homeTitle" a:localid="homeTitle" a:ddpn="1196703120" a:p="1">Competiția deschisă - Știința în Școli</a></h2>
+      <p class="cardDescription" id="1196703120_homeContent" runat="server" type="html" a:localid="homeContent" a:ddpn="1196703120" a:p="1">Ministerul Cercetării, Inovării și Digitalizării a aprobat, prin OMCID nr. 22196/14.11.2024, lansarea competiției ”</p>
+    </div>
+  </div>
+</div>
+</div>
+	</div>
+</div>
+</div>		
+</ddps></div>
+</ddps></div>
+			  
+			<div class="fp-arhiva-news" id="arhivaNews" a:object="org_uefiscdi_app_arhivanews_Query" type="html" runat="server" a:localId="arhivaNews" a:p="1">
+<div class="input-group">
+      <input value="Arhivă noutăți" class="btn-arhiva-news" type="submit" id="2234146220_btnQuery" name="2234146220[btnQuery]" onclick="Core.call(this,'search')" a:localid="btnQuery" a:localname="btnQuery" a:ddpn="2234146220" a:p="1" autocomplete="none" a:sa="|#Y#.J3NlYXJjaCc=#Y#.8ebd918a736e166b79449932e32b4afa531da03c|#Y#.J3NlYXJjaCc=#Y#.8ebd918a736e166b79449932e32b4afa531da03c"> 
+</div>
+</div>
+             
+                
+            <div class="row">
+	                <div class="col-sm-12 col-md-12 col-lg-12">
+	                  <div class="section-headline2"><span></span></div>
+	                </div>
+	            </div>
+				<div class="mtop30"></div>
+				<!--box NPC-->
+				
+				<div class="mdl-card mdl-shadow--2dp">
+					<div class="row ncp-box">
+						<div class="col-md-4 col-sm-12 padded">
+							<h2 class="ncp-h2">
+                                National Contact Point for<br>Horizon Europe
+                            </h2>
+                            <a href="https://ncp.uefiscdi.ro" target="_blank" rel="nofollow" class="ncp-link ncp-link-big">
+								See more
+							</a>
+							
+						</div>
+
+						<div class="col-md-4 col-sm-12 padded" style="text-align: center;">
+							<a href="/noutati-ncp" target="_blank" rel="nofollow" class="ncp-link" a:loader="off">
+								News &amp; events
+							</a>
+                            <a href="https://www.ncp.uefiscdi.ro/information" target="_blank" rel="nofollow" class="ncp-link">
+								Templates and guidelines 
+							</a>
+                            <a href="https://www.ncp.uefiscdi.ro/assistance-support" target="_blank" rel="nofollow" class="ncp-link">
+								Assistance and support 
+							</a>
+						</div>
+
+						<div class="col-md-4 col-sm-12 padded">
+							<img id="s1" src="/src/org/uefiscdi/template/css/img/Horizon_Europe_poster7_200.png" loader="off" style="cursor: default; margin-top: 24px" a:localId="s1" a:p="1" a:security="0" alt="Horizon Europe poster7 200" a:loader="on" href="https://uefiscdi.gov.ro/src/org/uefiscdi/template/css/img/Horizon_Europe_poster7_200.png">
+						</div>
+
+
+					</div>
+				</div>
+				
+				<!--end box NPC-->
+                <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <div class="section-headline2"><span></span></div>
+                </div>
+              </div>
+				<div class="mtop30"></div>
+				
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<div class="mdl-card mdl-shadow--2dp">
+						<div class="row">
+							<div class="col-sm-5 col-md-4 ">
+								<a class="logo-oshub" href="https://www.open-science.ro/" target="_blank"></a>
+							</div>
+							<div class="col-sm-3 col-md-5 ">
+                                <div class="osh-news-links">
+                                	
+								    <a class="logo-osh-news" href="/noutati-open-science" target="_self" a:loader="off">Noutăți OSKH </a>
+								    <a class="logo-osh-nosci" href="/ro-nosci" target="_self" a:loader="off">RO-NOSCI</a>
+								    <a class="logo-osh-covid" href="https://www.open-science.ro/cartea-alba-a-tranzitiei-catre-stiinta-deschisa-2023-2030" target="_blank">Cartea Albă a Tranziției Către Știința Deschisă</a>
+                               		<a class="logo-osh-covid" href="/resource-863421-brosura-open-science-en_v1-smallest-text.pdf" target="_blank" a:loader="off">The White Book of the Transition to Open Science</a>
+                                </div>    
+							</div>
+							<div class="col-sm-4 col-md-3 ">
+								<div class="oshub-links">
+									<span class="oshub-title">
+                                        Proiecte în derulare
+                                        <!--<a href="./open-science-hub" target="_self">Open Science Knowledge Hub Romania</a> projects:-->
+                                    </span>
+									<ul>
+                                        <li><a href="/openaire-advance" target="_self" a:loader="off">OpenAIRE NOAD Romania</a></li>
+                                        <li><a href="/research-data-alliance-rda" target="_self" a:loader="off">Research Data Alliance (RDA) Node</a></li>
+										<li><a href="/opus" target="_self" a:loader="off">OPUS Project</a></li>
+										<li><a href="/fair-impact" target="_self" a:loader="off">FAIR-IMPACT Project</a></li>
+										<li><a href="/graspos-project" target="_self" a:loader="off">GraspOS Project</a></li>
+										<li><a href="/secure-project" target="_self" a:loader="off">SECURE Project</a></li>
+									</ul>
+                                    <span class="oshub-title" style="margin-bottom: 10px;">
+                                        Proiecte finalizate 
+                                        <a href="/proiecte-open-science-finalizate" a:loader="on">aici</a>.
+                                    </span>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+                
+                
+            <div class="clear mtop30"></div>
+
+            <div class="clear"></div>
+			<!--
+            <div class="row">
+            	<div class="col-sm-12 col-md-12 col-lg-12">
+                	<div class="section-headline"><span>Harta interactivă a instituţiilor implicate în proiecte finanţate (versiune beta)</span></div>
+				  	<p style="color: #606060;">Harta conţine implicările instituţiilor în proiectele finanţate din 72 de competiţii prin PNCDI II şi PNCDI III în perioada 2007-2017.</p>
+                </div>
+           	</div>
+
+			<div class="clear mtop30"></div>				
+			<div class="row">	
+					<iframe class="iframeHartaHome" src="?we=module.org.uefiscdi.map.org.all" style="" scrolling="no" frameborder="0" hspace="0" vspace="0"></iframe>			  		
+					<div class="col-xs-12">
+						<a href="?we=module.org.uefiscdi.map.org.all.fs" class="hartaFull" target="_blank">Mărește harta</a>
+					</div>
+			</div>-->
+          </div>
+          <input a:created="1" name="wtok" id="formMain_wtok" value="" type="hidden"><input a:created="1" name="wlist" id="formMain_wlist" value="#Y#.YTowOnt9#Y#.5452c2af6d8a7e89b9597a5398d75b2d257d1b2e" type="hidden"><input a:created="1" name="wtvnl" id="formMain_wtvnl" value="UzdReXRLck90REl5TWpZeE5ERXpNakt3VGdTSkZGdFpXQ2tsbGVRRmxxWVdWU3BaRndQRmxGS1VyR3RyQVE9PQ==#eff8a40e79c7e9a32beae8fec5ac23038660d1d8" type="hidden"><input a:created="1" name="we" id="formMain_we" value="module.org.uefiscdi.home" type="hidden"><input a:created="1" name="wtkps" id="formMain_wtkps" value="VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==" type="hidden"></form>
+    
+          <div class="mtop60"></div>
+          <div class="old-site">Versiunea anterioară a site-ului poate fi accesată la adresa: <a href="http://old.uefiscdi.ro">http://old.uefiscdi.ro</a></div> 
+		  <form class="buton-reload" method="post" enctype="multipart/form-data" id="formFooter" onsubmit="return false" action="/index.php">
+	          <div class="container-fluid newsletter-bg">
+				
+	          	<div class="container" a:object="org_uefiscdi_app_newsletter_Home" runat="server" id="newsletter" a:localId="newsletter" a:p="1">
+
+            <div class="row newsletterRow" style="padding:45px 0px;">
+		          <div class="col-xs-12 col-sm-5 col-md-7">
+		          
+		          <span class="newsletterTxt">Fiţi informat despre toate domeniile în care UEFISCDI îşi desfăşoară activitatea.</span><br>
+		          <span class="newsletterTxtMic">Înregistraţi-vă adresa de email pentru a primi newsletter-ul UEFISCDI</span> 
+		        </div>
+		        <div class="mobi-spacer"></div>
+		        <div class="col-xs-12 col-sm-7 col-md-5">
+		          <div class="newsletter-form-container">
+		          <input class="newsletterButton" type="button" value="Înregistrare" id="1788788890_btnRegister2" name="1788788890[btnRegister2]" onclick="Core.setAnchor('scroll');Core.call(this,'register')" a:localid="btnRegister2" a:localname="btnRegister2" a:ddpn="1788788890" a:p="1" autocomplete="none" a:sa="|#Y#.J3Njcm9sbCc6J3JlZ2lzdGVyJzonMTc4ODc4ODg5MF9idG5SZWdpc3RlcjIn#Y#.ee17720186a4e95d05195b2d59242baa71a96125|#Y#.J3Njcm9sbCc6J3JlZ2lzdGVyJzonMTc4ODc4ODg5MF9idG5SZWdpc3RlcjIn#Y#.ee17720186a4e95d05195b2d59242baa71a96125">
+		          <input type="text" class="newsletterField" placeholder="Adresa dvs. de e-mail" id="1788788890_eml" name="1788788890[eml]" a:localid="eml" a:localname="eml" a:ddpn="1788788890" a:p="1" autocomplete="none" a:sa="|#Y#.#Y#.aa1a228c0e0bcce3be70c4d149b328f2fd6fb094|#Y#.#Y#.aa1a228c0e0bcce3be70c4d149b328f2fd6fb094">
+		          <input class="newsletterButton2" type="button" value="Înregistrare" id="1788788890_btnRegister" name="1788788890[btnRegister]" onclick="Core.setAnchor('scroll');Core.call(this,'register')" a:localid="btnRegister" a:localname="btnRegister" a:ddpn="1788788890" a:p="1" autocomplete="none" a:sa="|#Y#.J3Njcm9sbCc6J3JlZ2lzdGVyJzonMTc4ODc4ODg5MF9idG5SZWdpc3Rlcic=#Y#.84c693cee2e284945756ef63396e4eabaf4e49ba|#Y#.J3Njcm9sbCc6J3JlZ2lzdGVyJzonMTc4ODc4ODg5MF9idG5SZWdpc3Rlcic=#Y#.84c693cee2e284945756ef63396e4eabaf4e49ba">
+		          <div class="clear mtop15"></div>
+                  <div id="1788788890_pageStatus" runat="server" class="ErrNewsletterPosition" a:localid="pageStatus" a:ddpn="1788788890" a:p="1"></div>
+                  </div>
+		        </div>
+       		</div>
+
+</div>
+	
+	          </div>
+          <input a:created="1" name="wtok" id="formFooter_wtok" value="" type="hidden"><input a:created="1" name="wlist" id="formFooter_wlist" value="#Y#.YTowOnt9#Y#.5452c2af6d8a7e89b9597a5398d75b2d257d1b2e" type="hidden"><input a:created="1" name="wtvnl" id="formFooter_wtvnl" value="UzdReXRLck90REkwdDdBQUlndExBK3RFa0VpeGxiR1ZVbXB1anBKMU1aQ3JsS0prWFZzTEFBPT0=#d672800180cc4ec03bb7b6f467b4ff7936252b1c" type="hidden"><input a:created="1" name="we" id="formFooter_we" value="module.org.uefiscdi.home" type="hidden"><input a:created="1" name="wtkps" id="formFooter_wtkps" value="VY1RDsIgGIPvwvtQGAP5vYSJJyCDDeKADYZOjXeX+eZL035NUwUtvHMVlJ1G5wwdBURo9Hde2ETZppZ8G4S1RK4lvVa/qfKkYvG0a1xQ4yybkBzr474lHJDWc7hcD1Ry1h5Pgu9cAvrL9eJhfoYB8lGXyeCYRlzM4HKvHbbR1/7zBQ==" type="hidden"></form>
+
+
+
+          <div class="container-fluid footerContainer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <span class="footerHeadline">Despre UEFISCDI</span>
+                  <div class="mtop30"></div>
+                  <ul class="footerLinks">
+                    <li><a security="off" href="/documente-constitutive" a:loader="on">Documente constitutive</a></li>
+                    <li><a security="off" href="/prezentare-institutionala" a:loader="on">Prezentare instituţională</a></li>
+                    <li><a security="off" href="/rapoarte-de-activitate" a:loader="on">Rapoarte de activitate</a></li>
+                    <li><a security="off" href="/organigrama" a:loader="on">Organigramă</a></li>
+                    <li><a security="off" href="/plan-egalitate-de-gen-uefiscdi" a:loader="on">Egalitate de Gen</a></li>
+                    <li><a security="off" href="/membership" a:loader="on">Membership</a></li>
+                    <li><a security="off" href="/transparenta-institutionala" a:loader="on">Transparenţă instituţională</a></li>
+                    <li><a security="off" href="/premii" a:loader="on">Premii</a></li>
+					<li><a security="off" href="/marci-uefiscdi" a:loader="on">Mărci înregistrate UEFISCDI</a></li>
+                    <li><a security="off" href="/anunturi-cariere" a:loader="on">Cariere</a></li>
+					<li><a security="off" href="/protectia-datelor-cu-caracter-personal" a:loader="on">Termeni și condiții GDPR</a></li>
+                    <li><a security="off" href="https://editura.uefiscdi.ro/despre-editura" loader="off">UEFISCDI Publishing House</a></li>  
+                    <li><a security="off" href="/contact" a:loader="on">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3"> <span class="footerHeadline">Comunicare</span>
+                  <div class="mtop30"></div>
+                  <ul class="footerLinks">
+                    <li><a security="off" href="/mass-media" a:loader="on">Comunicate de presă</a></li>
+					<li><a security="off" href="/aparitii-in-mass-media" a:loader="on">Apariţii în mass-media</a></li>
+					<li><a security="off" href="/evenimente" a:loader="on">Evenimente</a></li>
+                    <li><a security="off" href="/publicatii-1" a:loader="on">Publicații</a></li>
+                    <li><a security="off" href="/newsletter" a:loader="on">Newsletter</a></li>
+                    <li><a security="off" href="/campanii" a:loader="on">Campanii</a></li>
+                    <li><a security="off" href="/identitate-vizuala" a:loader="on">Identitate vizuală</a></li>
+                  </ul>
+                  <span class="footerHeadline">Ne găsești și pe</span>
+                  <div class="mtop30"></div>
+                  <a class="social-facebook" href="https://www.facebook.com/uefiscdi/" target="_blank"></a>
+                  <a class="social-youtube" href="https://www.youtube.com/channel/UCcwWeLtY5VHJlFy9hzi68QA" target="_blank"></a>
+				  
+				  <a class="social-twitter" href="https://twitter.com/uefiscdi" target="_blank"></a>
+				  <a class="social-linkedin" href="https://www.linkedin.com/company/executive-agency-for-higher-education-research-development-and-innovation-funding" target="_blank"></a>
+                  <br class="clear">
+                  <div class="mtop45"></div>
+                </div>
+                <div class="col-md-3"> 
+                <span class="footerHeadline">Juridic</span>
+                  <div class="mtop30"></div>
+                  <ul class="footerLinks">
+                    <li><a security="off" href="/legislatie-invatamant-superior" a:loader="on">Legislație învățământ superior</a></li>
+                    <li><a security="off" href="/legislatie-cdi" a:loader="on">Legislație CDI</a></li>
+                    <li><a security="off" href="/legislatie-europeana" a:loader="on">Legislație Europeană</a></li>
+                    <li><a security="off" href="/initiative-legislative" a:loader="on">Inițiative legislative</a></li>
+                    <li><a security="off" href="/procese" a:loader="on">Procese</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <div style="margin-top: 30px;display: block;"></div>
+                  <div class="clear"></div>
+                  <a class="logo-men" href="http://www.edu.ro" target="_blank"></a>
+                  <div style="margin-top: 15px;display: block;"></div>
+                  <div class="clear"></div>
+                  <a class="logo-mci" href="http://www.research.gov.ro" target="_blank"></a>
+                </div>
+                <div class="col-md-12">
+                  <div class="mtop30"></div>
+                  <div class="centered"> <span class="footerCopy">© 2017 UEFISCDI. All rights reserved.</span> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <script language="JavaScript" type="text/javascript" src="/athon/lib/jas/external/jquery/jquery.js?t=1733944483" id="jas/external/jquery/jquery.js"></script><script language="JavaScript" type="text/javascript" src="/athon/lib/jas/external/jquery/jquery-ui.js?t=1733944483" id="jas/external/jquery/jquery-ui.js"></script><script language="JavaScript" type="text/javascript" src="/athon/lib/jas/ddp/UI.js?t=1733471851.3948" id="jas/ddp/UI.js"></script><script language="JavaScript" type="text/javascript" src="/athon/lib/jas/ui/API.js?t=1733471851.3948" id="jas/ui/API.js"></script><script language="JavaScript" type="text/javascript" src="/athon/lib/jas/external/XBase64.js?t=1733471851.3948" id="jas/external/XBase64.js"></script><script language="JavaScript" type="text/javascript" src="/src/org/uefiscdi/template/js/bootstrap.js?t=1733944483" id="org/uefiscdi/template/js/bootstrap.js"></script><script language="JavaScript" type="text/javascript" src="/src/org/uefiscdi/template/js/common.js?t=1733471851.3948" id="org/uefiscdi/template/js/common.js"></script><script language="JavaScript" type="text/javascript" src="/src/org/nart/t/news/swipe1/swipe.js?t=1733944483" id="org/nart/t/news/swipe1/swipe.js"></script><script language="JavaScript" type="text/javascript" src="/import.php?r=b3JnL25hcnQvdC9uZXdzL3N3aXBlMS9Td2lwZXIxLmpz&amp;t=anM=&amp;p=YToxOntzOjg6IkZPUk1OQU1FIjtzOjEwOiI0Mjc0OTg4NjU2Ijt9&amp;wtok=&amp;wtkps=S7QytKoutjK1Uiovyc4pVrL2s64FAA==&amp;wchk=717127d55975679e0269330b58cd5fb47f60b8bb" id="org/nart/t/news/swipe1/Swiper1.js"></script><script language="JavaScript" type="text/javascript" src="/src/org/uefiscdi/template/js/webflow.js?t=1733944483" id="org/uefiscdi/template/js/webflow.js"></script><script language="JavaScript" type="text/javascript" src="/athon/lib/jas/external/atooltip/atooltip.js?t=1731592824.1393" id="jas/external/atooltip/atooltip.js"></script><div class="benchmark">[T: 1.3505, O: 343]</div></body>
+        </html>
