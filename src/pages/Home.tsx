@@ -10,8 +10,8 @@ import ljubljanaLogo from "../icons/UL_BF-logoENG-VER-CMYK_color_edited.avif";
 import bruxellesLogo from "../icons/ulb-logo.avif";
 import italyLogo from "../icons/udla-logo.avif";
 import hunLogo from "../icons/elte-logo.svg";
-import logoInstitute from '../icons/Romania_ISER_ARFCN_transparent_background.png';
-import logoInstitutCrop from '../icons/Romania_ISER_ARFCN_crop.png';
+import logoInstitute from '../icons/file.png';
+import logoInstitutCrop from '../icons/Romania_ISER_ARFCN_transparent_background.png';
 import luxLogo from '../icons/nmn-logo.svg'
 import logoBioMon from '../icons/SubBioMon high.jpg'
 import uefscdiLogo from '../icons/uefiscdi-logo.png'
@@ -129,7 +129,7 @@ export default function Home() {
                                     textAlign: { xs: "center", md: "center" },
                                 }}
                             >
-                                
+
                             </Box>
                         </Box>
                     </Grid2>
@@ -173,7 +173,7 @@ export default function Home() {
                             </Box>
                         </Paper>
                     </Grid2>
-                   
+
                     {/* News Section */}
 
                     <Grid2 size={{ xs: 12, sm: 4 }}>
@@ -242,18 +242,18 @@ export default function Home() {
                             </Box>
                         </Paper>
                         <Grid2>
-                        <Grid2 sx={{
-                            //marginLeft: "20%",
-                            alignItems: "center",
-                            justifyContent: "center",
-                        }} 
-                        size={{xs: 12, md: 12}}>
+                            <Grid2 sx={{
+                                //marginLeft: "20%",
+                                alignItems: "center",
+                                justifyContent: "center",
+                            }}
+                                size={{ xs: 12, md: 12 }}>
 
-                        
-                        
-                        </Grid2>
-                        <Grid2 size={{xs: 6, md: 12}}>
-                        <Typography
+
+
+                            </Grid2>
+                            <Grid2 size={{ xs: 6, md: 12 }} padding={0.5} sx={{ backgroundColor: "lightgray" }}>
+                                <Typography
                                     marginTop={"5%"}
                                     variant="body1"
                                     fontWeight={"bold"}
@@ -261,14 +261,17 @@ export default function Home() {
                                         wordWrap: "break-word",
                                         fontSize: "0.7rem"
                                     }}
-                                    
+
                                 >
                                     Biodiversa+ call: <a target="_blank"
-                                            rel="noopener noreferrer"
-                                            href="https://www.biodiversa.eu/2024/04/15/sub-
+                                        rel="noopener noreferrer"
+                                        href="https://www.biodiversa.eu/2024/04/15/sub-
 biomon/"
-                                             style={{ color: "inherit" }}
-                                            >2022 – 2023 BiodivMon</a>
+                                        style={{ //color: "inherit", 
+                                            fontSize: "0.65rem",
+                                            fontWeight: "normal"
+                                        }}
+                                    >2022 – 2023 BiodivMon</a>
                                 </Typography>
 
                                 <Typography
@@ -279,13 +282,16 @@ biomon/"
                                         wordWrap: "break-word",
                                         fontSize: "0.65rem"
                                     }}
-                                    
+
                                 >
                                     SubBioMon official web page: <a target="_blank"
-                                            rel="noopener noreferrer"
-                                            href="https://www.sub-biomon.net/about"
-                                             //style={{ color: "inherit" }}
-                                            >https://www.sub-biomon.net/about</a>
+                                        rel="noopener noreferrer"
+                                        href="https://www.sub-biomon.net/about"
+                                        style={{
+                                            //color: "inherit"
+                                            fontWeight: "normal"
+                                        }}
+                                    >https://www.sub-biomon.net/about</a>
                                 </Typography>
 
                                 <Typography marginTop={"5%"}
@@ -295,46 +301,71 @@ biomon/"
                                         wordWrap: "break-word",
                                         fontSize: "0.7rem"
                                     }}>
-                                Duration: 01/04/2024 – 31/03/2027
-                            </Typography>
-                            
-                            <Typography marginTop={"5%"}
+                                    Duration: <span style={{
+                                        fontWeight: "normal",
+                                        fontSize: "0.7rem"
+                                    }}>01/04/2024 – 31/03/2027</span>
+                                </Typography>
+
+                                <Typography marginTop={"5%"}
                                     variant="body1"
                                     fontWeight={'bold'}
                                     sx={{
                                         wordWrap: "break-word",
                                         fontSize: "0.7rem"
-                                    }}>Principal coordinator: </Typography>
-                            <Typography
-                                variant="body1"
-                                textAlign={"justify"}
-                                sx={{
-                                    wordWrap: "break-word",
-                                    fontSize: "0.7rem"
-                                }}
-                            >
+                                    }}>
+                                    Romanian Lead beneficiary:
+                                </Typography>
+                                <Box
+                                    sx={{
+                                        //display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
 
-University of Ljubljana, Subterranean Biology Lab (SubBioLab)
+                                        marginBottom: { xs: 1, md: 0 },
 
-Department of Biology, Biotechnical Faculty SLOVENIA
+                                    }}
+                                >
+                                    <img
+                                        src={logoInstitute}
 
-                            </Typography>
-                            <Box
-                                component="img"
-                                src={partnersData[0].logo}
-                                alt={partnersData[0].name}
-                                sx={{
-                                    width: 150,
-                                    height: 150,
-                                    marginRight: 2,
-                                    objectFit: "contain"
-                                }}
-                            ></Box>
-                        
+                                        alt="logo"
+                                        style={{
+                                            //marginTop: "20%",
+                                            height: "100px",
+                                            maxWidth: "100%",
+                                        }}
+                                    />
+                                </Box>
+
+
+                                <Typography marginTop={"5%"}
+                                    variant="body1"
+                                    fontWeight={'bold'}
+                                    sx={{
+                                        wordWrap: "break-word",
+                                        fontSize: "0.7rem"
+                                    }}>Coordonator Romanian partner:</Typography>
+                                <Typography marginTop={"5%"}
+                                    variant="body1"
+
+                                    sx={{
+                                        wordWrap: "break-word",
+                                        fontSize: "0.7rem"
+                                    }}>Dr. Sanda IEPURE</Typography>
+                                <Typography marginTop={"5%"}
+                                    variant="body1"
+                                    fontWeight={'bold'}
+                                    sx={{
+                                        wordWrap: "break-word",
+                                        fontSize: "0.7rem"
+                                    }}><a href="mailto:sanda.iepure@acad-cj.ro">sanda.iepure@acad-cj.ro</a></Typography>
+
+
+                            </Grid2>
+                            {/* Logo */}
+
                         </Grid2>
-                        {/* Logo */}
-                       
-                    </Grid2>
                     </Grid2>
 
                     {/* Map section */}
@@ -352,81 +383,114 @@ Department of Biology, Biotechnical Faculty SLOVENIA
                             gap: 1,
                         }}
                     >
-                        <Grid2 sx={{ marginTop: -4 }}>
-                        <Typography marginTop={"5%"}
-                                    variant="body1"
-                                    fontWeight={'bold'}
-                                    sx={{
-                                        wordWrap: "break-word",
-                                        fontSize: "0.7rem"
-                                    }}>
-                                Lead beneficiary:
-                            </Typography>
-                        <Box
-                                    sx={{
-                                        //display: "flex",
-                                        alignItems: "center",
-                                        justifyContent: "center",
+                        <Grid2 container sx={{ marginTop: 0 }}>
 
-                                        marginBottom: { xs: 1, md: 0 },
-
-                                    }}
-                                >
-                                    <img
-                                        src={logoInstitutCrop}
-                                        
-                                        alt="logo"
-                                        style={{
-                                            //marginTop: "20%",
-                                            height: "150px",
-                                            maxWidth: "100%",
-                                        }}
-                                    />
-                                </Box>
-
+                            <Grid2 size={12}>
                                 <Typography marginTop={-2}
                                     variant="body1"
                                     fontWeight={'bold'}
-                                    
+
                                     sx={{
                                         wordWrap: "break-word",
                                         fontSize: "0.7rem"
                                     }}>
-                                Academia Romana Filiala Cluj Napoca
-                                Str. Republicii 9, Cluj-Napoca 400347
+                                    Romanian funding agency
+                                </Typography>
+                            </Grid2>
+                            <Grid2 size={{ xs: 12, sm: 8 }} sx={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center"
+                            }}>
+                                <Typography textAlign={"justify"} fontSize={"0.8rem"}>
+                                    The Executive Unit for the Financing of Higher Education, Research, Development and Innovation
+                                </Typography>
+                            </Grid2>
+                            <Grid2 size={{ xs: 12, sm: 4 }}>
+                                <Box
+                                    component={"img"}
+                                    src={uefscdiLogo}
+                                    alt="uefscdi-logo"
+                                    sx={{
+                                        display: "block",
+                                        marginLeft: "auto",
+                                        marginRight: "auto",
+                                        minHeight: "100px",
+                                        maxHeight: "100px",
+                                        objectFit: "contain"
+                                    }}
+                                >
+                                </Box>
+                            </Grid2>
+                        </Grid2>
+
+                        <Grid2 size={12}>
+                            <Typography marginTop={"5%"}
+                                variant="body1"
+                                fontWeight={'bold'}
+                                sx={{
+                                    wordWrap: "break-word",
+                                    fontSize: "0.7rem"
+                                }}>Principal coordinator: </Typography>
+                        </Grid2>
+                        <Grid2 size={{ xs: 12, sm: 8 }} sx={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center"
+                        }}>
+                            <Typography textAlign={"justify"} fontSize={"0.8rem"}>
+
+                                University of Ljubljana, Subterranean Biology Lab (SubBioLab)
+
+                                Department of Biology, Biotechnical Faculty SLOVENIA
+
                             </Typography>
                         </Grid2>
-                        <Grid2 size={12} marginTop={3}>
-                        <Typography variant="h6" fontSize={"0.7rem"} fontWeight={"bold"} component="div">Partners of the project</Typography>
-                        </Grid2>
-                        <Grid2 container spacing={-5} marginTop={-3}  justifyContent={"left"}>
-                            
-                            {partnersData.map((partner, index) => (
-                                index ? (<Grid2 size={{xs:12, sm: 3}} key={index}>
-                                    {/* <Box display="flex" alignItems="center"> */}
+                            <Box
+                                component="img"
+                                src={partnersData[0].logo}
+                                alt={partnersData[0].name}
+                                sx={{
+                                    width: 150,
+                                    height: 150,
+                                    marginRight: 2,
+                                    objectFit: "contain"
+                                }}
+                            ></Box>
+                            <Grid2 size={12} marginTop={3}>
+                                <Typography variant="h6" fontSize={"0.7rem"} fontWeight={"bold"} component="div">Consortium: </Typography>
+                                <Typography textAlign={"justify"} fontSize={"0.8rem"}>The Sub-BioMon team consists of researchers from 6 institutions in  European countries. Find out more here: <a href="https://www.sub-biomon.net">https://www.sub-biomon.net</a> </Typography>
+                            </Grid2>
+                            <Grid2 container spacing={-7} marginTop={-1} justifyContent={"left"}>
+
+                                {partnersData.map((partner, index) => (
+                                    // index ? (<Grid2 size={{ xs: 12, sm: 1.5 }} key={index}>
+                                    <Grid2 size={{ xs: 12, sm: 1 }} key={index}>
+                                        {/* <Box display="flex" alignItems="center"> */}
                                         <Grid2>
-                                       <CardMedia
-                                            component="img"
-                                            image={partner.logo}
-                                            alt={partner.name}
-                                            sx={{
-                                                width: 150,
-                                                height: 150,
-                                                marginRight: 2,
-                                                objectFit: "contain"
-                                            }}
-                                        />
+                                            <CardMedia
+                                                component="img"
+                                                image={partner.logo}
+                                                alt={partner.name}
+                                                sx={{
+                                                    width: 100,
+                                                    height: 100,
+                                                    marginRight: 2,
+                                                    objectFit: "contain"
+                                                }}
+                                            />
                                         </Grid2>
                                         <Box>
                                             {/* <Typography variant="body1" fontWeight="bold" fontSize={"0.7rem"}>{partner.name}</Typography>
                                             <Typography variant="body2">{partner.country}</Typography> */}
                                         </Box>
-                                    {/* </Box> */}
-                                </Grid2>) : null
-                            ))}
-                        </Grid2>
+                                        {/* </Box> */}
+                                    </Grid2>
+                                    // </Grid2>) : null
+                                ))}
+                            </Grid2>
 
-                        {/* <Grid2 size={12} sx={{
+                            {/* <Grid2 size={12} sx={{
                             justifyContent: 'center',
                             alignItems: 'center'
                         }}>
@@ -450,38 +514,52 @@ Department of Biology, Biotechnical Faculty SLOVENIA
                                 />
                             </Box>
                         </Grid2> */}
-                        <Grid2 size={12} marginTop={3}>
-                        <Typography variant="h6" fontSize={"0.7rem"} fontWeight={"bold"} component="div">Collaborators</Typography>
-                        </Grid2>
-                        <Grid2 container size={12} marginTop={-12}>
-                        <Grid2 size={{xs: 12, sm: 6}}>
-                                <Box
-                                    component={"img"}
-                                    src={apuseniLogo}
-                                    marginTop={15}
-                                
-                                    sx={{
-                                        
-                                        maxHeight: "75px"
-                                    }}
-                                ></Box>
+                            <Grid2 size={12} marginTop={3} >
+                            <hr style={{
+                                                border: 'none',
+                                                minHeight: '2px',
+                                                backgroundColor: 'blue'
+                                            }} />
+                                <Typography variant="h5" fontSize={"0.9rem"} fontWeight={"bold"} color="GrayText" component="div"sx={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center"
+                            }}>Romanian collaborators of the project:
+                        </Typography>
                             </Grid2>
-                            <Grid2 size={{xs: 12, sm: 6}}>
+                            <Grid2 container size={12} marginTop={-12}  sx={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center"}}>
+                                {/* <Grid2 size={{ xs: 12, sm: 6 }} alignContent={"center"}>
+                                    
+                                </Grid2> */}
+                                <Grid2 size={{ xs: 12, sm: 6 }}>
                                 <Box
-                                    component={"img"}
-                                    src={salvaLogo}
-                                    marginTop={15}
-                                    marginLeft={-25}
-                                    sx={{
-                                        
-                                        maxHeight: "75px"
-                                    }}
-                                ></Box>
-                            </Grid2>
-                        </Grid2>
-                    </Grid2>
+                                        component={"img"}
+                                        src={apuseniLogo}
+                                        marginTop={15}
 
-                </Grid2>
+                                        sx={{
+
+                                            maxHeight: "75px"
+                                        }}
+                                    ></Box>
+                                    <Box
+                                        component={"img"}
+                                        src={salvaLogo}
+                                        marginTop={15}
+                                        //marginLeft={-25}
+                                        sx={{
+
+                                            maxHeight: "75px"
+                                        }}
+                                    ></Box>
+                                </Grid2>
+                            </Grid2>
+                        </Grid2>
+
+                    </Grid2>
             </Box>
         </div>
     )
