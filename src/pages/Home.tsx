@@ -446,51 +446,51 @@ biomon/"
 
                             </Typography>
                         </Grid2>
-                            <Box
-                                component="img"
-                                src={partnersData[0].logo}
-                                alt={partnersData[0].name}
-                                sx={{
-                                    width: 150,
-                                    height: 150,
-                                    marginRight: 2,
-                                    objectFit: "contain"
-                                }}
-                            ></Box>
-                            <Grid2 size={12} marginTop={3}>
-                                <Typography variant="h6" fontSize={"0.7rem"} fontWeight={"bold"} component="div">Consortium: </Typography>
-                                <Typography textAlign={"justify"} fontSize={"0.8rem"}>The Sub-BioMon team consists of researchers from 6 institutions in  European countries. Find out more here: <a href="https://www.sub-biomon.net">https://www.sub-biomon.net</a> </Typography>
-                            </Grid2>
-                            <Grid2 container spacing={-7} marginTop={-1} justifyContent={"left"}>
+                        <Box
+                            component="img"
+                            src={partnersData[0].logo}
+                            alt={partnersData[0].name}
+                            sx={{
+                                width: 150,
+                                height: 150,
+                                marginRight: 2,
+                                objectFit: "contain"
+                            }}
+                        ></Box>
+                        <Grid2 size={12} marginTop={3}>
+                            <Typography variant="h6" fontSize={"0.7rem"} fontWeight={"bold"} component="div">Consortium: </Typography>
+                            <Typography textAlign={"justify"} fontSize={"0.8rem"}>The Sub-BioMon team consists of researchers from 6 institutions in  European countries. Find out more here: <a href="https://www.sub-biomon.net">https://www.sub-biomon.net</a> </Typography>
+                        </Grid2>
+                        <Grid2 container spacing={-7} marginTop={-1} justifyContent={"left"}>
 
-                                {partnersData.map((partner, index) => (
-                                    // index ? (<Grid2 size={{ xs: 12, sm: 1.5 }} key={index}>
-                                    <Grid2 size={{ xs: 12, sm: 1 }} key={index}>
-                                        {/* <Box display="flex" alignItems="center"> */}
-                                        <Grid2>
-                                            <CardMedia
-                                                component="img"
-                                                image={partner.logo}
-                                                alt={partner.name}
-                                                sx={{
-                                                    width: 100,
-                                                    height: 100,
-                                                    marginRight: 2,
-                                                    objectFit: "contain"
-                                                }}
-                                            />
-                                        </Grid2>
-                                        <Box>
-                                            {/* <Typography variant="body1" fontWeight="bold" fontSize={"0.7rem"}>{partner.name}</Typography>
-                                            <Typography variant="body2">{partner.country}</Typography> */}
-                                        </Box>
-                                        {/* </Box> */}
+                            {partnersData.map((partner, index) => (
+                                // index ? (<Grid2 size={{ xs: 12, sm: 1.5 }} key={index}>
+                                <Grid2 size={{ xs: 12, sm: 1 }} key={index}>
+                                    {/* <Box display="flex" alignItems="center"> */}
+                                    <Grid2>
+                                        <CardMedia
+                                            component="img"
+                                            image={partner.logo}
+                                            alt={partner.name}
+                                            sx={{
+                                                width: 100,
+                                                height: 100,
+                                                marginRight: 2,
+                                                objectFit: "contain"
+                                            }}
+                                        />
                                     </Grid2>
-                                    // </Grid2>) : null
-                                ))}
-                            </Grid2>
+                                    <Box>
+                                        {/* <Typography variant="body1" fontWeight="bold" fontSize={"0.7rem"}>{partner.name}</Typography>
+                                            <Typography variant="body2">{partner.country}</Typography> */}
+                                    </Box>
+                                    {/* </Box> */}
+                                </Grid2>
+                                // </Grid2>) : null
+                            ))}
+                        </Grid2>
 
-                            {/* <Grid2 size={12} sx={{
+                        {/* <Grid2 size={12} sx={{
                             justifyContent: 'center',
                             alignItems: 'center'
                         }}>
@@ -514,52 +514,67 @@ biomon/"
                                 />
                             </Box>
                         </Grid2> */}
-                            <Grid2 size={12} marginTop={3} >
+                        <Grid2 size={12} marginTop={3} >
                             <hr style={{
-                                                border: 'none',
-                                                minHeight: '2px',
-                                                backgroundColor: 'blue'
-                                            }} />
-                                <Typography variant="h5" fontSize={"0.9rem"} fontWeight={"bold"} color="GrayText" component="div"sx={{
+                                border: 'none',
+                                minHeight: '2px',
+                                backgroundColor: 'blue'
+                            }} />
+                            <Typography variant="h5" fontSize={"0.9rem"} fontWeight={"bold"} color="GrayText" component="div" sx={{
                                 display: "flex",
                                 justifyContent: "center",
                                 alignItems: "center"
                             }}>Romanian collaborators of the project:
-                        </Typography>
-                            </Grid2>
-                            <Grid2 container size={12} marginTop={-12}  sx={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center"}}>
-                                {/* <Grid2 size={{ xs: 12, sm: 6 }} alignContent={"center"}>
-                                    
-                                </Grid2> */}
-                                <Grid2 size={{ xs: 12, sm: 6 }}>
-                                <Box
-                                        component={"img"}
-                                        src={apuseniLogo}
-                                        marginTop={15}
-
-                                        sx={{
-
-                                            maxHeight: "75px"
-                                        }}
-                                    ></Box>
-                                    <Box
-                                        component={"img"}
-                                        src={salvaLogo}
-                                        marginTop={15}
-                                        //marginLeft={-25}
-                                        sx={{
-
-                                            maxHeight: "75px"
-                                        }}
-                                    ></Box>
-                                </Grid2>
-                            </Grid2>
+                            </Typography>
                         </Grid2>
+                        <Box
+  sx={{
+    display: 'flex', // Enables flexbox to center the grid horizontally
+    justifyContent: 'center', // Centers the grid horizontally
+    alignItems: 'center', // Optional: Center the grid vertically in the viewport
+    //height: '100vh', // Full viewport height for vertical centering
+    width: '85%', // Ensure full width for centering
+  }}
+>
+  <Grid2
+    container
+    spacing={2} // Adds spacing between the grid items
+    justifyContent="center" // Centers the grid items within the container horizontally
+    alignItems="center" // Centers the grid items vertically
+    sx={{
+      maxWidth: '1200px', // Optional: Restrict max width of the content
+    }}
+  >
+    {/* First Grid item - Image on the right */}
+    <Grid2 size={{xs: 12, sm: 6}} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+      <Box
+        component="img"
+        src={apuseniLogo}
+        sx={{
+          display: 'block', // Makes the image a block-level element
+          marginTop: '15px',
+          maxHeight: '75px', // Restrict height for uniformity
+        }}
+      />
+    </Grid2>
 
+    {/* Second Grid item - Image on the left */}
+    <Grid2 size={{xs: 12, sm: 6}} sx={{ display: 'flex', justifyContent: 'flex-start' }}>
+      <Box
+        component="img"
+        src={salvaLogo}
+        sx={{
+          display: 'block', // Makes the image a block-level element
+          marginTop: '15px',
+          maxHeight: '75px',
+        }}
+      />
+    </Grid2>
+  </Grid2>
+</Box>
                     </Grid2>
+
+                </Grid2>
             </Box>
         </div>
     )
