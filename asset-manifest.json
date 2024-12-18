@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sub-biomon-ro-project/static/css/main.af943505.css",
-    "main.js": "/sub-biomon-ro-project/static/js/main.31d5df6a.js",
+    "main.js": "/sub-biomon-ro-project/static/js/main.752423ab.js",
     "static/js/453.714f154b.chunk.js": "/sub-biomon-ro-project/static/js/453.714f154b.chunk.js",
     "static/media/1000008595.jpg": "/sub-biomon-ro-project/static/media/1000008595.47b17bea748fc3cd3978.jpg",
     "static/media/1000010548.jpg": "/sub-biomon-ro-project/static/media/1000010548.79ad59db09636c435712.jpg",
@@ -30,7 +30,8 @@
     "static/media/news2.2.jpg": "/sub-biomon-ro-project/static/media/news2.2.660fc71757eaa982f136.jpg",
     "static/media/SubBioMon high.jpg": "/sub-biomon-ro-project/static/media/SubBioMon high.dc9926f8d5f60b93c47f.jpg",
     "static/media/catalina-haidau.jpg": "/sub-biomon-ro-project/static/media/catalina-haidau.ca1fe4336ffd2248f435.jpg",
-    "static/media/Romania_ISER_ARFCN_crop.png": "/sub-biomon-ro-project/static/media/Romania_ISER_ARFCN_crop.2944842d9a8e8d2c25d7.png",
+    "static/media/file.png": "/sub-biomon-ro-project/static/media/file.3e425bf0f4819ddb63ac.png",
+    "static/media/Romania_ISER_ARFCN_transparent_background.png": "/sub-biomon-ro-project/static/media/Romania_ISER_ARFCN_transparent_background.4609785020d9d9629919.png",
     "static/media/ruxandra bucur.jpg": "/sub-biomon-ro-project/static/media/ruxandra bucur.47190b17a0738f318da2.jpg",
     "static/media/elte-logo.svg": "/sub-biomon-ro-project/static/media/elte-logo.73b704c8b3065490f7ca410f8cecb8c0.svg",
     "static/media/biodiversa-logo.png.jpg": "/sub-biomon-ro-project/static/media/biodiversa-logo.png.d64f3bf1e312d2fc5896.jpg",
@@ -41,11 +42,11 @@
     "static/media/ulb-logo.avif": "/sub-biomon-ro-project/static/media/ulb-logo.7a4e0dbfabb4540f48b1.avif",
     "index.html": "/sub-biomon-ro-project/index.html",
     "main.af943505.css.map": "/sub-biomon-ro-project/static/css/main.af943505.css.map",
-    "main.31d5df6a.js.map": "/sub-biomon-ro-project/static/js/main.31d5df6a.js.map",
+    "main.752423ab.js.map": "/sub-biomon-ro-project/static/js/main.752423ab.js.map",
     "453.714f154b.chunk.js.map": "/sub-biomon-ro-project/static/js/453.714f154b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af943505.css",
-    "static/js/main.31d5df6a.js"
+    "static/js/main.752423ab.js"
   ]
 }
