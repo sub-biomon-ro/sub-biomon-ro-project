@@ -17,6 +17,7 @@ import logoBioMon from '../icons/SubBioMon high.jpg'
 import uefscdiLogo from '../icons/uefiscdi-logo.png'
 import apuseniLogo from '../icons/pna-logo.jpg'
 import salvaLogo from '../icons/salvaspeo-logo.png'
+import fig1 from '../icons/fig1.png'
 
 export default function Home() {
 
@@ -265,8 +266,7 @@ export default function Home() {
                                 >
                                     Biodiversa+ call: <a target="_blank"
                                         rel="noopener noreferrer"
-                                        href="https://www.biodiversa.eu/2024/04/15/sub-
-biomon/"
+                                        href="https://www.biodiversa.eu/2024/04/15/sub-biomon/"
                                         style={{ //color: "inherit", 
                                             fontSize: "0.65rem",
                                             fontWeight: "normal"
@@ -368,6 +368,99 @@ biomon/"
                         </Grid2>
                     </Grid2>
 
+                    {/* work package 4 */}
+                    <Grid2 size={12}>
+                    <Typography
+                                        variant="body1"
+                                        fontWeight={'bold'}
+
+                                        sx={{
+                                            wordWrap: "break-word",
+                                            fontSize: "0.7rem"
+                                        }}>
+                                        Work package 4 (Coordinator: Romania)  
+
+                                    </Typography>
+                    </Grid2>
+
+                    <Grid2 size={12}>
+                    <Typography
+                                        variant="body1"
+                                        fontWeight={'bold'}
+                                        color="GrayText"
+                                        sx={{
+                                            wordWrap: "break-word",
+                                            fontSize: "0.7rem"
+                                        }}>
+                                        Developing and testing the methodology for minimal standards of field work sampling
+  
+
+                    </Typography>
+                    </Grid2>
+                    
+                    <Grid2 size={12}>
+                        <Box sx={{
+                            paddingRight: {sm: 1, md: 25, xl: 60}
+                        }}>
+                        <Typography variant="body2" fontSize={"0.7rem"}>
+                            Because of geographic differences in karst complexity, biodiversity, and faunal composition, as well as different past experiences, developing a common methodology is a complex and challenging task. Within the official documents such as the Natura 2000 manual on EU habitats, the habitat <b>8310 Caves not open to the public</b> is described only very roughly, with some reference taxa mentioned, but there are no recommendations for a protocol and methods to monitor them. We will address this issue in a stepwise process. The Sub-BioMon project is defining and testing methods based on the novel paradigm for caves: distinction of caves as habitats or as windows into an extensive subterranean habitat, consisting of cavities and crevices inaccessible for humans (Fig. 1). 
+                        </Typography>
+                        </Box>
+                    </Grid2>
+
+                    <Grid2 size={12}>
+                        <Box
+                            marginRight={{sm: 1, md: 25, xl: 60}}
+                        > 
+                        <img
+                            src={fig1}
+                            alt="fig 1."
+                            style={{
+                                width: "100%",
+                                height: "100%",
+                                minHeight: "100px",
+                                maxHeight: "200px", 
+                                objectFit: "contain", 
+                                //objectPosition: "center",
+                                borderRadius: "5px",
+                                
+                            }}
+                        >
+                        </img>
+
+                        {/* fig caption */}
+                        </Box>
+                    </Grid2>
+                    
+                    <Grid2 size={12}>
+                        <Box sx={{
+                            paddingRight: {sm: 1, md: 25, xl: 60}
+                        }}>
+                            <Typography textAlign={"center"} fontSize={"0.7rem"} variant="subtitle1" sx={{
+                                hyphens: "none"
+                            }}> 
+                                Figure 1. New paradigm of caves: caves are habitats for some animal species (like cave crickets or bats during hibernation), but should be considered also a window into more extensive unreachable subterranean habitats. Only some individuals can be accessed and found in a cave (or springs, where subterranean waters come to surface), while the main part of the population lives in the system of crevices around the cave accessible to man 
+                            </Typography>
+                            <br></br>
+                            <Typography justifyContent={"center"} fontSize={"0.7rem"} textAlign={"center"} variant="subtitle1" sx={{
+                                marginLeft: "auto",
+                                marginRight: "auto"
+                            }}>
+                                (credit: Maja Zagmajster, Sub-BioMon)
+                            </Typography>
+                        </Box>
+                    </Grid2>
+
+                    <Grid2 size={12}>
+                        <Box sx={{
+                            paddingRight: {sm: 1, md: 25, xl: 60}
+                        }}>
+                        <Typography variant="body2" fontSize={"0.7rem"} fontWeight={"bold"}>
+                            Sub-BioMon is proposing to test a feasible protocol for monitoring subterranean fauna with focus on groundwater crustaceans, spiders, and beetles in selected karst caves and springs.
+                        </Typography>
+                        </Box>
+                    </Grid2>
+
                     {/* Map section */}
                     <Grid2
                         container
@@ -380,52 +473,60 @@ biomon/"
                             // justifyContent: 'center',
                             display: 'flex',
                             flexDirection: 'row',
-                            gap: 1,
+                            gap: 0,
                         }}
                     >
-                        <Grid2 container sx={{ marginTop: 0 }}>
+                        {/* <Grid2 container marginTop={{xs: 0, sm: -2}}> */}
+                           
+                                <Grid2 size={12}>
+                                    <Typography marginTop={0}
+                                        variant="body1"
+                                        fontWeight={'bold'}
 
-                            <Grid2 size={12}>
-                                <Typography marginTop={-2}
-                                    variant="body1"
-                                    fontWeight={'bold'}
-
-                                    sx={{
-                                        wordWrap: "break-word",
-                                        fontSize: "0.7rem"
-                                    }}>
-                                    Romanian funding agency
-                                </Typography>
-                            </Grid2>
-                            <Grid2 size={{ xs: 12, sm: 8 }} sx={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center"
-                            }}>
-                                <Typography textAlign={"justify"} fontSize={"0.8rem"}>
-                                    The Executive Unit for the Financing of Higher Education, Research, Development and Innovation
-                                </Typography>
-                            </Grid2>
-                            <Grid2 size={{ xs: 12, sm: 4 }}>
-                                <Box
-                                    component={"img"}
-                                    src={uefscdiLogo}
-                                    alt="uefscdi-logo"
-                                    sx={{
-                                        display: "block",
-                                        marginLeft: "auto",
-                                        marginRight: "auto",
-                                        minHeight: "100px",
-                                        maxHeight: "100px",
-                                        objectFit: "contain"
-                                    }}
-                                >
-                                </Box>
-                            </Grid2>
-                        </Grid2>
+                                        sx={{
+                                            wordWrap: "break-word",
+                                            fontSize: "0.7rem"
+                                        }}>
+                                        Romanian funding agency
+                                    </Typography>
+                                   
+                                </Grid2>
+                           
+                                <Grid2 size={{ xs: 12, sm: 8 }} sx={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    flexDirection: { xs: "column", md: "row" },
+                                }}>
+                                    <Typography fontSize={"0.8rem"}>
+                                        The Executive Unit for the Financing of Higher Education, Research, Development and Innovation
+                                    </Typography>
+                                </Grid2>
+                                <Grid2 size={{ xs: 12, sm: 4 }} sx={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center",
+                                    flexDirection: { xs: "column", md: "row" },
+                                }}>
+                                    <Box
+                                        component={"img"}
+                                        src={uefscdiLogo}
+                                        alt="uefscdi-logo"
+                                        sx={{
+                                            display: "block",
+                                            marginLeft: "auto",
+                                            marginRight: "auto",
+                                            minHeight: "100px",
+                                            maxHeight: "100px",
+                                            objectFit: "contain"
+                                        }}
+                                    >
+                                    </Box>
+                                </Grid2>
+                           
+                        {/* </Grid2> */}
 
                         <Grid2 size={12}>
-                            <Typography marginTop={"5%"}
+                            <Typography 
                                 variant="body1"
                                 fontWeight={'bold'}
                                 sx={{
@@ -433,12 +534,13 @@ biomon/"
                                     fontSize: "0.7rem"
                                 }}>Principal coordinator: </Typography>
                         </Grid2>
+                        
                         <Grid2 size={{ xs: 12, sm: 8 }} sx={{
                             display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center"
+                            alignItems: "center",
+                            flexDirection: { xs: "column", md: "row" },
                         }}>
-                            <Typography textAlign={"justify"} fontSize={"0.8rem"}>
+                            <Typography fontSize={"0.8rem"}>
 
                                 University of Ljubljana, Subterranean Biology Lab (SubBioLab)
 
@@ -451,17 +553,24 @@ biomon/"
                             src={partnersData[0].logo}
                             alt={partnersData[0].name}
                             sx={{
-                                width: 150,
-                                height: 150,
-                                marginRight: 2,
-                                objectFit: "contain"
+                              
+                                    display: "block",
+                                    marginLeft: "auto",
+                                    marginRight: "auto",
+                                    minHeight: "100px",
+                                    maxHeight: "100px",
+                                    objectFit: "contain"
+                               
                             }}
                         ></Box>
-                        <Grid2 size={12} marginTop={3}>
-                            <Typography variant="h6" fontSize={"0.7rem"} fontWeight={"bold"} component="div">Consortium: </Typography>
+                        <Grid2 size={12}>
+                            <Typography variant="h6" fontSize={"0.8rem"} fontWeight={"bold"} component="div">Consortium: </Typography>
+                        </Grid2>
+                        <Grid2 size={12}>
                             <Typography textAlign={"justify"} fontSize={"0.8rem"}>The Sub-BioMon team consists of researchers from 6 institutions in  European countries. Find out more here: <a href="https://www.sub-biomon.net">https://www.sub-biomon.net</a> </Typography>
                         </Grid2>
-                        <Grid2 container spacing={-7} marginTop={-1} justifyContent={"left"}>
+
+                        <Grid2 container spacing={-7} marginTop={0} justifyContent={"left"}>
 
                             {partnersData.map((partner, index) => (
                                 // index ? (<Grid2 size={{ xs: 12, sm: 1.5 }} key={index}>
@@ -528,50 +637,50 @@ biomon/"
                             </Typography>
                         </Grid2>
                         <Box
-  sx={{
-    display: 'flex', // Enables flexbox to center the grid horizontally
-    justifyContent: 'center', // Centers the grid horizontally
-    alignItems: 'center', // Optional: Center the grid vertically in the viewport
-    //height: '100vh', // Full viewport height for vertical centering
-    width: '85%', // Ensure full width for centering
-  }}
->
-  <Grid2
-    container
-    spacing={2} // Adds spacing between the grid items
-    justifyContent="center" // Centers the grid items within the container horizontally
-    alignItems="center" // Centers the grid items vertically
-    sx={{
-      maxWidth: '1200px', // Optional: Restrict max width of the content
-    }}
-  >
-    {/* First Grid item - Image on the right */}
-    <Grid2 size={{xs: 12, sm: 6}} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-      <Box
-        component="img"
-        src={apuseniLogo}
-        sx={{
-          display: 'block', // Makes the image a block-level element
-          marginTop: '15px',
-          maxHeight: '75px', // Restrict height for uniformity
-        }}
-      />
-    </Grid2>
+                            sx={{
+                                display: 'flex', // Enables flexbox to center the grid horizontally
+                                justifyContent: 'center', // Centers the grid horizontally
+                                alignItems: 'center', // Optional: Center the grid vertically in the viewport
+                                //height: '100vh', // Full viewport height for vertical centering
+                                width: '85%', // Ensure full width for centering
+                            }}
+                        >
+                            <Grid2
+                                container
+                                spacing={2} // Adds spacing between the grid items
+                                justifyContent="center" // Centers the grid items within the container horizontally
+                                alignItems="center" // Centers the grid items vertically
+                                sx={{
+                                    maxWidth: '1200px', // Optional: Restrict max width of the content
+                                }}
+                            >
+                                {/* First Grid item - Image on the right */}
+                                <Grid2 size={{ xs: 12, sm: 6 }} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+                                    <Box
+                                        component="img"
+                                        src={apuseniLogo}
+                                        sx={{
+                                            display: 'block', // Makes the image a block-level element
+                                            marginTop: '15px',
+                                            maxHeight: '75px', // Restrict height for uniformity
+                                        }}
+                                    />
+                                </Grid2>
 
-    {/* Second Grid item - Image on the left */}
-    <Grid2 size={{xs: 12, sm: 6}} sx={{ display: 'flex', justifyContent: 'flex-start' }}>
-      <Box
-        component="img"
-        src={salvaLogo}
-        sx={{
-          display: 'block', // Makes the image a block-level element
-          marginTop: '15px',
-          maxHeight: '75px',
-        }}
-      />
-    </Grid2>
-  </Grid2>
-</Box>
+                                {/* Second Grid item - Image on the left */}
+                                <Grid2 size={{ xs: 12, sm: 6 }} sx={{ display: 'flex', justifyContent: 'flex-start' }}>
+                                    <Box
+                                        component="img"
+                                        src={salvaLogo}
+                                        sx={{
+                                            display: 'block', // Makes the image a block-level element
+                                            marginTop: '15px',
+                                            maxHeight: '75px',
+                                        }}
+                                    />
+                                </Grid2>
+                            </Grid2>
+                        </Box>
                     </Grid2>
 
                 </Grid2>
