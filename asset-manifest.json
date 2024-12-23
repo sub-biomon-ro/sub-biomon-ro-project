@@ -1,25 +1,30 @@
 {
   "files": {
     "main.css": "/sub-biomon-ro-project/static/css/main.af943505.css",
-    "main.js": "/sub-biomon-ro-project/static/js/main.0731c720.js",
+    "main.js": "/sub-biomon-ro-project/static/js/main.f72b3eac.js",
     "static/js/453.714f154b.chunk.js": "/sub-biomon-ro-project/static/js/453.714f154b.chunk.js",
     "static/media/1000008595.jpg": "/sub-biomon-ro-project/static/media/1000008595.47b17bea748fc3cd3978.jpg",
     "static/media/1000010548.jpg": "/sub-biomon-ro-project/static/media/1000010548.79ad59db09636c435712.jpg",
-    "static/media/homeImg.jpg": "/sub-biomon-ro-project/static/media/homeImg.79ad59db09636c435712.jpg",
     "static/media/1000010575.jpg": "/sub-biomon-ro-project/static/media/1000010575.54b8d2e5b681e4f798e5.jpg",
     "static/media/1000012139.jpg": "/sub-biomon-ro-project/static/media/1000012139.e0b9eec9a702587e2f32.jpg",
+    "static/media/species.png": "/sub-biomon-ro-project/static/media/species.dea6494f813a3c1af4da.png",
     "static/media/1000012133.jpg": "/sub-biomon-ro-project/static/media/1000012133.d6552111a919e057b948.jpg",
     "static/media/1000012125.jpg": "/sub-biomon-ro-project/static/media/1000012125.037bb78b7709a4637142.jpg",
     "static/media/1000012235.jpg": "/sub-biomon-ro-project/static/media/1000012235.f893b03b5246a16642fd.jpg",
+    "static/media/home1.jpeg": "/sub-biomon-ro-project/static/media/home1.9ea69ebd07d3695fb06a.jpeg",
     "static/media/1000012581.jpg": "/sub-biomon-ro-project/static/media/1000012581.5d7b9ede71e41aab722b.jpg",
     "static/media/salvaspeo-logo.png": "/sub-biomon-ro-project/static/media/salvaspeo-logo.7f18f179ff7a856ceb45.png",
+    "static/media/home2.jpeg": "/sub-biomon-ro-project/static/media/home2.ca4a1bd2b8ff9fe4ef9e.jpeg",
     "static/media/sanda-iepure2.jpg": "/sub-biomon-ro-project/static/media/sanda-iepure2.526c28ffd9bc0b6d8880.jpg",
+    "static/media/uefiscdi-logo-transparent.png": "/sub-biomon-ro-project/static/media/uefiscdi-logo-transparent.c84ecdb1c8d8c94539e5.png",
     "static/media/fig1.png": "/sub-biomon-ro-project/static/media/fig1.a3026f16977614059132.png",
+    "static/media/ISER logo.png": "/sub-biomon-ro-project/static/media/ISER logo.83879dd551e17c29403c.png",
     "static/media/1000008529.jpg": "/sub-biomon-ro-project/static/media/1000008529.b95aea3c83563dcfe70a.jpg",
     "static/media/orest-sambor.jpeg": "/sub-biomon-ro-project/static/media/orest-sambor.db8a34c1e4ed0d21b88c.jpeg",
     "static/media/1000010668.jpg": "/sub-biomon-ro-project/static/media/1000010668.24438d5715e525ca5c5d.jpg",
     "static/media/news3.2.jpg": "/sub-biomon-ro-project/static/media/news3.2.91ea692ee2e0d1bd2419.jpg",
     "static/media/news3.1.jpg": "/sub-biomon-ro-project/static/media/news3.1.c0584fde633a69280386.jpg",
+    "static/media/ACAD_260 logo.png": "/sub-biomon-ro-project/static/media/ACAD_260 logo.793953e28b8285d95897.png",
     "static/media/cristian-sitar.jpg": "/sub-biomon-ro-project/static/media/cristian-sitar.b7012543198cebb08a44.jpg",
     "static/media/dragos-coada.jpg": "/sub-biomon-ro-project/static/media/dragos-coada.d7a28fffd97a494c66e9.jpg",
     "static/media/news1.1.jpg": "/sub-biomon-ro-project/static/media/news1.1.d7a28fffd97a494c66e9.jpg",
@@ -31,7 +36,6 @@
     "static/media/news2.2.jpg": "/sub-biomon-ro-project/static/media/news2.2.660fc71757eaa982f136.jpg",
     "static/media/SubBioMon high.jpg": "/sub-biomon-ro-project/static/media/SubBioMon high.dc9926f8d5f60b93c47f.jpg",
     "static/media/catalina-haidau.jpg": "/sub-biomon-ro-project/static/media/catalina-haidau.ca1fe4336ffd2248f435.jpg",
-    "static/media/file.png": "/sub-biomon-ro-project/static/media/file.3e425bf0f4819ddb63ac.png",
     "static/media/Romania_ISER_ARFCN_transparent_background.png": "/sub-biomon-ro-project/static/media/Romania_ISER_ARFCN_transparent_background.4609785020d9d9629919.png",
     "static/media/ruxandra bucur.jpg": "/sub-biomon-ro-project/static/media/ruxandra bucur.47190b17a0738f318da2.jpg",
     "static/media/elte-logo.svg": "/sub-biomon-ro-project/static/media/elte-logo.73b704c8b3065490f7ca410f8cecb8c0.svg",
@@ -40,14 +44,15 @@
     "static/media/UL_BF-logoENG-VER-CMYK_color_edited.avif": "/sub-biomon-ro-project/static/media/UL_BF-logoENG-VER-CMYK_color_edited.6652e68ff13951584c7f.avif",
     "static/media/pna-logo.jpg": "/sub-biomon-ro-project/static/media/pna-logo.c22e8b2c538d5899ffef.jpg",
     "static/media/udla-logo.avif": "/sub-biomon-ro-project/static/media/udla-logo.f42d6c898bd6733834d2.avif",
+    "static/media/euflag.png": "/sub-biomon-ro-project/static/media/euflag.35b0798e6ca1d8312d0e.png",
     "static/media/ulb-logo.avif": "/sub-biomon-ro-project/static/media/ulb-logo.7a4e0dbfabb4540f48b1.avif",
     "index.html": "/sub-biomon-ro-project/index.html",
     "main.af943505.css.map": "/sub-biomon-ro-project/static/css/main.af943505.css.map",
-    "main.0731c720.js.map": "/sub-biomon-ro-project/static/js/main.0731c720.js.map",
+    "main.f72b3eac.js.map": "/sub-biomon-ro-project/static/js/main.f72b3eac.js.map",
     "453.714f154b.chunk.js.map": "/sub-biomon-ro-project/static/js/453.714f154b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af943505.css",
-    "static/js/main.0731c720.js"
+    "static/js/main.f72b3eac.js"
   ]
 }
