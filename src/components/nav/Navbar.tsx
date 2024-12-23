@@ -75,7 +75,7 @@ export default function Navbar() {
                                     variant="h6"
                                     //noWrap
                                     sx={{
-                                        marginTop: "5px",
+                                        marginTop: "10px",
                                         color: "#dea712",
                                         fontSize: { xs: "1rem", sm: "1.25rem", md: "1.3rem" },
                                         letterSpacing: { xs: "0.1rem", sm: "0.1rem", md: "0.1rem" },

@@ -162,11 +162,11 @@ export default function Home() {
                     <Grid2 size={{ sm: 12, md: 8 }}>
                         {/* <Paper elevation={5} > */}
                             <Box
+                               
                                 sx={{
                                     width: "100%",
-                                    minHeight: 300,
+                                    //minHeight: 300,
                                     overflow: "hidden",
-                                    marginBottom: '-1rem'
                                     //marginBottom: '1rem'
                                 }}
                             >
@@ -181,7 +181,7 @@ export default function Home() {
                                         borderRadius: "5px"
                                     }}
                                 /> */}
-                                <Grid2 container spacing={1}>
+                                <Grid2 container height={"210px"} spacing={1}>
                                 {
                                     
                                     homePageImages.map((img, index) => (
@@ -206,7 +206,7 @@ export default function Home() {
                                 </Grid2>
                             </Box>
 
-                            <Box padding={1}>
+                            <Box>
                                 <Typography variant="h5" paddingBottom={1} fontWeight={"bold"}>Context</Typography>
                                 <Typography variant="body2" fontSize={"0.7rem"} sx={{ color: "GrayText" }}>
                                     The subterranean species of karst regions in Europe represent a unique and indispensable part of European biodiversity. Numerous specialized species are rare and highly endemic, bound to narrow geographical areas. At the same time, subterranean habitats are among the most challenging for biodiversity monitoring, due to difficult accessibility and the complexity of its exploration, which requires expertise and specialized equipment. Caves are rare points where humans can enter the subterranean domain and are often considered to be the main habitat for the subterranean species. They are protected as a special habitat type (8310 “Caves not open to the public”) in the EU Habitats Directive, which demands their monitoring at national and international level.
@@ -427,12 +427,12 @@ export default function Home() {
                     {/* work package 4 */}
                     <Grid2 size={12}>
                         <Typography
-                            variant="body1"
+                            variant="h5"
                             fontWeight={'bold'}
 
                             sx={{
                                 wordWrap: "break-word",
-                                fontSize: "0.7rem"
+                                //fontSize: "0.7rem"
                             }}>
                             Work package 4 (Coordinator: Romania)
 
@@ -520,12 +520,12 @@ export default function Home() {
                     {/* target species */}
                     <Grid2 size={12}>
                         <Typography
-                            variant="body1"
+                            variant="h5"
                             fontWeight={'bold'}
 
                             sx={{
                                 wordWrap: "break-word",
-                                fontSize: "0.7rem"
+                                //fontSize: "0.7rem"
                             }}>
                             Target species
                         </Typography>
@@ -559,12 +559,12 @@ export default function Home() {
 
                     <Grid2 size={12}>
                         <Typography
-                            variant="body1"
+                            variant="h5"
                             fontWeight={'bold'}
 
                             sx={{
                                 wordWrap: "break-word",
-                                fontSize: "0.7rem"
+                                //fontSize: "0.7rem"
                             }}>
                             Output
                         </Typography>
@@ -580,7 +580,7 @@ export default function Home() {
                         </Box>
                     </Grid2>
 
-                    <Grid2 size={12}>
+                    {/* <Grid2 size={12}>
                         <Typography
                             variant="body1"
                             fontWeight={'bold'}
@@ -591,9 +591,9 @@ export default function Home() {
                             }}>
                             Expected duration
                         </Typography>
-                    </Grid2>
+                    </Grid2> */}
 
-                    <Grid2 size={12}>
+                    {/* <Grid2 size={12}>
                         <Box sx={{
                             paddingRight: { sm: 1, md: 25, xl: 60 }
                         }}>
@@ -601,7 +601,7 @@ export default function Home() {
                                 April 2025 – 2027
                             </Typography>
                         </Box>
-                    </Grid2>
+                    </Grid2> */}
 
 
 
@@ -627,12 +627,12 @@ export default function Home() {
 
                         <Grid2 size={12}>
                             <Typography marginTop={0}
-                                variant="body1"
+                                variant="h5"
                                 fontWeight={'bold'}
 
                                 sx={{
                                     wordWrap: "break-word",
-                                    fontSize: "0.7rem"
+                                    //fontSize: "0.7rem"
                                 }}>
                                 Romanian funding agency
                             </Typography>
@@ -672,7 +672,7 @@ export default function Home() {
 
                         {/* </Grid2> */}
 
-                        <Grid2 size={12}>
+                        {/* <Grid2 size={12}>
                             <Typography
                                 variant="body1"
                                 fontWeight={'bold'}
@@ -694,8 +694,8 @@ export default function Home() {
                                 Department of Biology, Biotechnical Faculty SLOVENIA
 
                             </Typography>
-                        </Grid2>
-                        <Box
+                        </Grid2> */}
+                        {/* <Box
                             component="img"
                             src={partnersData[0].logo}
                             alt={partnersData[0].name}
@@ -709,9 +709,9 @@ export default function Home() {
                                 objectFit: "contain"
 
                             }}
-                        ></Box>
+                        ></Box> */}
                         <Grid2 size={12}>
-                            <Typography variant="h6" fontSize={"0.8rem"} fontWeight={"bold"} component="div">Consortium: </Typography>
+                            <Typography variant="h5"  fontWeight={"bold"} component="div">Consortium: </Typography>
                         </Grid2>
                         <Grid2 size={12}>
                             <Typography textAlign={"justify"} fontSize={"0.8rem"}>The Sub-BioMon team consists of researchers from 6 institutions in  European countries. Find out more here: <a href="https://www.sub-biomon.net">https://www.sub-biomon.net</a> </Typography>
@@ -800,6 +800,7 @@ export default function Home() {
                                 sx={{
                                     maxWidth: '1200px', // Optional: Restrict max width of the content
                                 }}
+                                marginBottom={"-5rem"}
                             >
                                 {/* First Grid item - Image on the right */}
                                 <Grid2 size={{ xs: 12, sm: 6 }} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
