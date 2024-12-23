@@ -75,6 +75,7 @@ export default function Navbar() {
                                     variant="h6"
                                     //noWrap
                                     sx={{
+                                        marginTop: "5px",
                                         color: "#dea712",
                                         fontSize: { xs: "1rem", sm: "1.25rem", md: "1.3rem" },
                                         letterSpacing: { xs: "0.1rem", sm: "0.1rem", md: "0.1rem" },
@@ -82,18 +83,7 @@ export default function Navbar() {
                                 >
                                     SUB-BIOMON-RO
                                 </Typography>
-                                <Typography
-                                    variant="subtitle2"
-                                    
-                                    //noWrap
-                                    sx={{
-                                        color: "white",
-                                        fontSize: { xs: "0.75rem", sm: "1rem" },
-                                        marginTop: '-10px'
-                                    }}
-                                >
-                                    Developing and testing approaches to monitor subterranean biodiversity in karst
-                                </Typography>
+                                
                             </Grid2>
 
                             <Grid2
