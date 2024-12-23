@@ -159,7 +159,7 @@ export default function Home() {
                     </Grid2>
                     
                     {/* Img grid */}
-                    <Grid2 size={{ sm: 12, md: 8 }}>
+                    <Grid2 container size={{ sm: 12, md: 8 }}>
                         {/* <Paper elevation={5} > */}
                             <Box
                                
@@ -216,6 +216,99 @@ export default function Home() {
                                     However, up to now, there is no standardized sampling method for monitoring subterranean species and habitats. The <b>Sub-BioMon</b> will reconsider the role of caves as either habitats or simply windows into an extensive subterranean habitat in a fractured rock, consisting of cavities and crevices inaccessible to humans. The project will provide a scientific basis for monitoring, which is relevant to a variety of stakeholders, such as governmental and conservation institutions, management authorities of natural parks and show caves, as well as the general public, all of which will be involved in the project.
                                 </Typography>
                             </Box>
+
+                            {/* work package 4 */}
+                    <Grid2 size={12}>
+                        <Typography
+                            variant="h5"
+                            fontWeight={'bold'}
+                            
+                            sx={{
+                                wordWrap: "break-word",
+                                //fontSize: "0.7rem"
+                            }}>
+                            Work package 4 (Coordinator: Romania)
+
+                        </Typography>
+                    </Grid2>
+
+                    <Grid2 size={12}>
+                        <Typography
+                            variant="body1"
+                            fontWeight={'bold'}
+                            color="GrayText"
+                            sx={{
+                                wordWrap: "break-word",
+                                fontSize: "0.7rem"
+                            }}>
+                            Developing and testing the methodology for minimal standards of field work sampling
+
+
+                        </Typography>
+                    </Grid2>
+
+                    <Grid2 size={12}>
+                        <Box sx={{
+                            //paddingRight: { sm: 1, md: 25, xl: 60 }
+                        }}>
+                            <Typography variant="body2" color="GrayText" fontSize={"0.7rem"}>
+                                Because of geographic differences in karst complexity, biodiversity, and faunal composition, as well as different past experiences, developing a common methodology is a complex and challenging task. Within the official documents such as the Natura 2000 manual on EU habitats, the habitat <b>8310 Caves not open to the public</b> is described only very roughly, with some reference taxa mentioned, but there are no recommendations for a protocol and methods to monitor them. We will address this issue in a stepwise process. The Sub-BioMon project is defining and testing methods based on the novel paradigm for caves: distinction of caves as habitats or as windows into an extensive subterranean habitat, consisting of cavities and crevices inaccessible for humans (Fig. 1).
+                            </Typography>
+                        </Box>
+                    </Grid2>
+
+                    <Grid2 size={12}>
+                        <Box
+                            //marginRight={{ sm: 1, md: 25, xl: 60 }}
+                        >
+                            <img
+                                src={fig1}
+                                alt="fig 1."
+                                style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    minHeight: "100px",
+                                    maxHeight: "200px",
+                                    objectFit: "contain",
+                                    //objectPosition: "center",
+                                    borderRadius: "5px",
+
+                                }}
+                            >
+                            </img>
+
+                            {/* fig caption */}
+                        </Box>
+                    </Grid2>
+
+                    <Grid2 size={12}>
+                        <Box sx={{
+                            //paddingRight: { sm: 1, md: 25, xl: 60 }
+                        }}>
+                            <Typography textAlign={"center"} fontSize={"0.5rem"} variant="subtitle1" sx={{
+                                hyphens: "none"
+                            }}>
+                                Figure 1. New paradigm of caves: caves are habitats for some animal species (like cave crickets or bats during hibernation), but should be considered also a window into more extensive unreachable subterranean habitats. Only some individuals can be accessed and found in a cave (or springs, where subterranean waters come to surface), while the main part of the population lives in the system of crevices around the cave accessible to man
+                            </Typography>
+                            <br></br>
+                            <Typography justifyContent={"center"} fontSize={"0.5rem"} textAlign={"center"} variant="subtitle1" sx={{
+                                marginLeft: "auto",
+                                marginRight: "auto"
+                            }}>
+                                (credit: Maja Zagmajster, Sub-BioMon)
+                            </Typography>
+                        </Box>
+                    </Grid2>
+
+                    <Grid2 size={12}>
+                        <Box sx={{
+                            //paddingRight: { sm: 1, md: 25, xl: 60 }
+                        }}>
+                            <Typography variant="body2" fontSize={"0.7rem"} fontWeight={"bold"}>
+                                Sub-BioMon is proposing to test a feasible protocol for monitoring subterranean fauna with focus on groundwater crustaceans, spiders, and beetles in selected karst caves and springs.
+                            </Typography>
+                        </Box>
+                    </Grid2>
                         {/* </Paper> */}
                     </Grid2>
 
@@ -424,98 +517,7 @@ export default function Home() {
                         </Grid2>
                     </Grid2>
 
-                    {/* work package 4 */}
-                    <Grid2 size={12}>
-                        <Typography
-                            variant="h5"
-                            fontWeight={'bold'}
-
-                            sx={{
-                                wordWrap: "break-word",
-                                //fontSize: "0.7rem"
-                            }}>
-                            Work package 4 (Coordinator: Romania)
-
-                        </Typography>
-                    </Grid2>
-
-                    <Grid2 size={12}>
-                        <Typography
-                            variant="body1"
-                            fontWeight={'bold'}
-                            color="GrayText"
-                            sx={{
-                                wordWrap: "break-word",
-                                fontSize: "0.7rem"
-                            }}>
-                            Developing and testing the methodology for minimal standards of field work sampling
-
-
-                        </Typography>
-                    </Grid2>
-
-                    <Grid2 size={12}>
-                        <Box sx={{
-                            paddingRight: { sm: 1, md: 25, xl: 60 }
-                        }}>
-                            <Typography variant="body2" fontSize={"0.7rem"}>
-                                Because of geographic differences in karst complexity, biodiversity, and faunal composition, as well as different past experiences, developing a common methodology is a complex and challenging task. Within the official documents such as the Natura 2000 manual on EU habitats, the habitat <b>8310 Caves not open to the public</b> is described only very roughly, with some reference taxa mentioned, but there are no recommendations for a protocol and methods to monitor them. We will address this issue in a stepwise process. The Sub-BioMon project is defining and testing methods based on the novel paradigm for caves: distinction of caves as habitats or as windows into an extensive subterranean habitat, consisting of cavities and crevices inaccessible for humans (Fig. 1).
-                            </Typography>
-                        </Box>
-                    </Grid2>
-
-                    <Grid2 size={12}>
-                        <Box
-                            marginRight={{ sm: 1, md: 25, xl: 60 }}
-                        >
-                            <img
-                                src={fig1}
-                                alt="fig 1."
-                                style={{
-                                    width: "100%",
-                                    height: "100%",
-                                    minHeight: "100px",
-                                    maxHeight: "200px",
-                                    objectFit: "contain",
-                                    //objectPosition: "center",
-                                    borderRadius: "5px",
-
-                                }}
-                            >
-                            </img>
-
-                            {/* fig caption */}
-                        </Box>
-                    </Grid2>
-
-                    <Grid2 size={12}>
-                        <Box sx={{
-                            paddingRight: { sm: 1, md: 25, xl: 60 }
-                        }}>
-                            <Typography textAlign={"center"} fontSize={"0.5rem"} variant="subtitle1" sx={{
-                                hyphens: "none"
-                            }}>
-                                Figure 1. New paradigm of caves: caves are habitats for some animal species (like cave crickets or bats during hibernation), but should be considered also a window into more extensive unreachable subterranean habitats. Only some individuals can be accessed and found in a cave (or springs, where subterranean waters come to surface), while the main part of the population lives in the system of crevices around the cave accessible to man
-                            </Typography>
-                            <br></br>
-                            <Typography justifyContent={"center"} fontSize={"0.5rem"} textAlign={"center"} variant="subtitle1" sx={{
-                                marginLeft: "auto",
-                                marginRight: "auto"
-                            }}>
-                                (credit: Maja Zagmajster, Sub-BioMon)
-                            </Typography>
-                        </Box>
-                    </Grid2>
-
-                    <Grid2 size={12}>
-                        <Box sx={{
-                            paddingRight: { sm: 1, md: 25, xl: 60 }
-                        }}>
-                            <Typography variant="body2" fontSize={"0.7rem"} fontWeight={"bold"}>
-                                Sub-BioMon is proposing to test a feasible protocol for monitoring subterranean fauna with focus on groundwater crustaceans, spiders, and beetles in selected karst caves and springs.
-                            </Typography>
-                        </Box>
-                    </Grid2>
+                    
 
                     {/* target species */}
                     <Grid2 size={12}>
