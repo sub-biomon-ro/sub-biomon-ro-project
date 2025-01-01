@@ -207,7 +207,7 @@ export default function Home() {
                         </Box>
 
                         <Box>
-                            <Typography variant="h5" paddingBottom={1} fontWeight={"bold"}>Context</Typography>
+                            <Typography variant="h5" paddingBottom={1} fontSize={"1rem"} fontWeight={"bold"}>Context</Typography>
                             <Typography variant="body2" fontSize={"0.7rem"} sx={{ color: "GrayText" }}>
                                 The subterranean species of karst regions in Europe represent a unique and indispensable part of European biodiversity. Numerous specialized species are rare and highly endemic, bound to narrow geographical areas. At the same time, subterranean habitats are among the most challenging for biodiversity monitoring, due to difficult accessibility and the complexity of its exploration, which requires expertise and specialized equipment. Caves are rare points where humans can enter the subterranean domain and are often considered to be the main habitat for the subterranean species. They are protected as a special habitat type (8310 “Caves not open to the public”) in the EU Habitats Directive, which demands their monitoring at national and international level.
                             </Typography>
@@ -222,7 +222,7 @@ export default function Home() {
                             <Typography
                                 variant="h5"
                                 fontWeight={'bold'}
-
+                                fontSize={"1rem"}
                                 sx={{
                                     wordWrap: "break-word",
                                     //fontSize: "0.7rem"
@@ -524,7 +524,7 @@ export default function Home() {
                             <Typography
                                 variant="h5"
                                 fontWeight={'bold'}
-
+                                fontSize={"1rem"}
                                 sx={{
                                     wordWrap: "break-word",
                                     //fontSize: "0.7rem"
@@ -563,7 +563,7 @@ export default function Home() {
                             <Typography
                                 variant="h5"
                                 fontWeight={'bold'}
-
+                                fontSize={"1rem"}
                                 sx={{
                                     wordWrap: "break-word",
                                     //fontSize: "0.7rem"
@@ -631,7 +631,7 @@ export default function Home() {
                                 <Typography marginTop={0}
                                     variant="h5"
                                     fontWeight={'bold'}
-
+                                    fontSize={"1rem"}
                                     sx={{
                                         wordWrap: "break-word",
                                         //fontSize: "0.7rem"
@@ -719,7 +719,7 @@ export default function Home() {
                         </Grid2>
 
                         <Grid2 size={12}>
-                            <Typography variant="h5" fontWeight={"bold"} component="div">Consortium: </Typography>
+                            <Typography variant="h5" fontWeight={"bold"} component="div" fontSize={"1rem"}>Consortium: </Typography>
                             {/* <br></br> */}
                             <Typography paddingTop={"7px"} textAlign={"justify"} fontSize={"0.8rem"}>The Sub-BioMon team consists of researchers from 6 institutions in  European countries. Find out more here: <a href="https://www.sub-biomon.net">https://www.sub-biomon.net</a> </Typography>
                         </Grid2>
