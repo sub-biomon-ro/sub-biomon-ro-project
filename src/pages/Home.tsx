@@ -143,7 +143,7 @@ export default function Home() {
                         </Box>
                     </Grid2>
 
-                    <Grid2>
+                    <Grid2 size={12}>
                         <Typography
                             variant="subtitle2"
 
@@ -156,7 +156,20 @@ export default function Home() {
                         >
                             <i>Developing and testing approaches to monitor subterranean biodiversity in karst</i>
                         </Typography>
+                        <Typography
+                        variant="subtitle2"
+
+                        //noWrap
+                        sx={{
+
+                            fontSize: { xs: "0.7rem", sm: "1rem" },
+                            textAlign: "right"
+                        }}>
+                            (ERANET nr. 26/2024, PN4-P8-235/01.04.2024)
+                        </Typography>
                     </Grid2>
+
+                    
 
                     {/* Img grid */}
                     <Grid2 container size={{ sm: 12, md: 8 }}>
@@ -239,9 +252,9 @@ export default function Home() {
                                 color="GrayText"
                                 sx={{
                                     wordWrap: "break-word",
-                                    fontSize: "0.7rem"
+                                    fontSize: "0.8rem"
                                 }}>
-                                Developing and testing the methodology for minimal standards of field work sampling
+                                Output: Developing and testing the methodology for minimal standards of field work sampling
 
 
                             </Typography>
@@ -251,7 +264,7 @@ export default function Home() {
                             <Box sx={{
                                 //paddingRight: { sm: 1, md: 25, xl: 60 }
                             }}>
-                                <Typography variant="body2" color="GrayText" fontSize={"0.7rem"}>
+                                <Typography textAlign={"justify"} variant="body2" color="GrayText" fontSize={"0.7rem"}>
                                     Because of geographic differences in karst complexity, biodiversity, and faunal composition, as well as different past experiences, developing a common methodology is a complex and challenging task. Within the official documents such as the Natura 2000 manual on EU habitats, the habitat <b>8310 Caves not open to the public</b> is described only very roughly, with some reference taxa mentioned, but there are no recommendations for a protocol and methods to monitor them. We will address this issue in a stepwise process. The Sub-BioMon project is defining and testing methods based on the novel paradigm for caves: distinction of caves as habitats or as windows into an extensive subterranean habitat, consisting of cavities and crevices inaccessible for humans (Fig. 1).
                                 </Typography>
                             </Box>
@@ -390,7 +403,10 @@ export default function Home() {
 
 
                             </Grid2>
-                            <Grid2 size={{ xs: 6, sm: 12 }} padding={0.5} sx={{ backgroundColor: "lightgray" }}>
+                            <Grid2 size={{ xs: 6, sm: 12 }} padding={0.5} sx={{ 
+                                backgroundColor: "lightgray", 
+                                minWidth: "100%"
+                                }}>
                                 <Typography
                                     marginTop={"5%"}
                                     variant="body1"
@@ -451,7 +467,8 @@ export default function Home() {
                                     fontWeight={'bold'}
                                     sx={{
                                         wordWrap: "break-word",
-                                        fontSize: "0.7rem"
+                                        fontSize: "0.7rem",
+                                        minWidth: "528px"
                                     }}>
                                     Romanian Lead beneficiary:
                                 </Typography>
@@ -460,7 +477,7 @@ export default function Home() {
                                         //display: "flex",
                                         alignItems: "center",
                                         justifyContent: "center",
-
+                                        padding: 1,
                                         marginBottom: { xs: 1, md: 0 },
 
                                     }}
@@ -475,7 +492,7 @@ export default function Home() {
                                             //maxWidth: "100%",
                                         }}
                                     />
-
+                                    <span>   </span>
                                     <img
                                         src={iser}
                                         alt="iser-logo"
@@ -543,9 +560,10 @@ export default function Home() {
                                 alt="fig 1."
                                 style={{
                                     //width: "100%",
+                                    maxWidth: "100%",
                                     height: "100%",
                                     //minHeight: "100px",
-                                    maxHeight: "78px",
+                                    //maxHeight: "78px",
                                     objectFit: "contain", 
 
                                     borderRadius: "5px",
@@ -558,8 +576,8 @@ export default function Home() {
 
                         {/* output */}
 
-
-                        <Grid2 size={12}>
+                        {/* scos pentru moment */}
+                        {/* <Grid2 size={12}>
                             <Typography
                                 variant="h5"
                                 fontWeight={'bold'}
@@ -580,7 +598,7 @@ export default function Home() {
                                     Field monitoring protocol for caves and springs; guidelines on monitoring biodiversity and target subterranean species developed; workflow from the lab to specimens’ identification promoted. The outputs of WP4 will support the activities from WP3 and WP5 (<a href="https://www.sub-biomon.net/about">https://www.sub-biomon.net/about</a>).
                                 </Typography>
                             </Box>
-                        </Grid2>
+                        </Grid2> */}
 
                             {/* <Grid2 size={12}>
                             <Typography
@@ -646,7 +664,7 @@ export default function Home() {
                                 alignItems: "center",
                                 //flexDirection: { xs: "column", md: "row" },
                             }}>
-                                <Typography fontSize={"0.8rem"}>
+                                <Typography textAlign={"justify"} variant="body2" color="GrayText" fontSize={"0.7rem"}>
                                     The Executive Unit for the Financing of Higher Education, Research, Development and Innovation
                                 </Typography>
                             </Grid2>
@@ -721,7 +739,7 @@ export default function Home() {
                         <Grid2 size={12}>
                             <Typography variant="h5" fontWeight={"bold"} component="div" fontSize={"1rem"}>Consortium: </Typography>
                             {/* <br></br> */}
-                            <Typography paddingTop={"7px"} textAlign={"justify"} fontSize={"0.8rem"}>The Sub-BioMon team consists of researchers from 6 institutions in  European countries. Find out more here: <a href="https://www.sub-biomon.net">https://www.sub-biomon.net</a> </Typography>
+                            <Typography paddingTop={"7px"} textAlign={"justify"} variant="body2" color="GrayText" fontSize={"0.7rem"}>The Sub-BioMon team consists of researchers from 6 institutions in  European countries. Find out more here: <a href="https://www.sub-biomon.net">https://www.sub-biomon.net</a> </Typography>
                         </Grid2>
                         <Grid2 container spacing={-7} marginTop={-2} justifyContent={"left"}>
 
@@ -776,7 +794,7 @@ export default function Home() {
                                 />
                             </Box>
                         </Grid2> */}
-                        <Grid2 size={12} marginTop={3} >
+                        <Grid2 size={12}>
                             <hr style={{
                                 border: 'none',
                                 minHeight: '2px',
@@ -806,6 +824,7 @@ export default function Home() {
                                 sx={{
                                     maxWidth: '1200px', // Optional: Restrict max width of the content
                                 }}
+                                marginTop={{xs: 0, sm: -5}}
                                 marginBottom={"-5rem"}
                             >
                                 {/* First Grid item - Image on the right */}
