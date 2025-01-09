@@ -125,7 +125,7 @@ const Footer = () => {
 
             <Grid2 size={{ xs: 12, md: 1 }}>
                 <Typography fontSize={"0.7rem"}>
-                    Co-funded by
+                    Co-funded by<br></br>
                     the European Union
 
                 </Typography>

@@ -76,17 +76,22 @@ export default function Home() {
 
     const homePageImages = [home1, home2];
 
+    var news3 = newsData[2];
+    newsData[2] = newsData[0];
+    newsData[0] = news3;
+
     return (
         <div className="Home">
             <Box sx={{
                 marginTop: 0,
                 marginLeft: { xs: 5, sm: 15, md: 30 },
                 marginRight: { xs: 5, sm: 15, md: 30 },
-                marginBottom: { xs: 5, sm: 15, md: 20 },
+                marginBottom: { xs: 5, sm: 15, md: 15 },
                 display: "flex",
                 justifyContent: "center",
             }}>
-                <Grid2 container spacing={{
+                <Grid2 container 
+                spacing={{
                     xs: 1,
                     sm: 2,
                     md: 3,
@@ -163,7 +168,7 @@ export default function Home() {
                         sx={{
 
                             fontSize: { xs: "0.7rem", sm: "1rem" },
-                            textAlign: "right"
+                            textAlign: "left"
                         }}>
                             (ERANET nr. 26/2024, PN4-P8-235/01.04.2024)
                         </Typography>
@@ -229,7 +234,8 @@ export default function Home() {
                                 However, up to now, there is no standardized sampling method for monitoring subterranean species and habitats. The <b>Sub-BioMon</b> will reconsider the role of caves as either habitats or simply windows into an extensive subterranean habitat in a fractured rock, consisting of cavities and crevices inaccessible to humans. The project will provide a scientific basis for monitoring, which is relevant to a variety of stakeholders, such as governmental and conservation institutions, management authorities of natural parks and show caves, as well as the general public, all of which will be involved in the project.
                             </Typography>
                         </Box>
-
+                        
+                        <Grid2 container spacing={1}>
                         {/* work package 4 */}
                         <Grid2 size={12}>
                             <Typography
@@ -244,7 +250,8 @@ export default function Home() {
 
                             </Typography>
                         </Grid2>
-
+                        
+                        <Grid2 container spacing={0}>
                         <Grid2 size={12}>
                             <Typography
                                 variant="body1"
@@ -259,6 +266,7 @@ export default function Home() {
 
                             </Typography>
                         </Grid2>
+                        </Grid2>
 
                         <Grid2 size={12}>
                             <Box sx={{
@@ -269,7 +277,8 @@ export default function Home() {
                                 </Typography>
                             </Box>
                         </Grid2>
-
+                        </Grid2>
+                        <Grid2 container spacing={0}>
                         <Grid2 size={12}>
                             <Box
                             //marginRight={{ sm: 1, md: 25, xl: 60 }}
@@ -311,6 +320,7 @@ export default function Home() {
                                     (credit: Maja Zagmajster, Sub-BioMon)
                                 </Typography>
                             </Box>
+                        </Grid2>
                         </Grid2>
 
                         {/* <Grid2 size={12}>
@@ -679,12 +689,11 @@ export default function Home() {
                                     src={uefscdiLogo}
                                     alt="uefscdi-logo"
                                     sx={{
-                                        display: "block",
-                                        marginLeft: "auto",
-                                        marginRight: "auto",
+                                        width: "100%",
+                                        height: "100%",
                                         minHeight: "100px",
                                         maxHeight: "100px",
-                                        objectFit: "contain"
+                                        objectFit: "contain",
                                     }}
                                 >
                                 </Box>
@@ -733,7 +742,7 @@ export default function Home() {
 
                         </Grid2>
 
-                        <Grid2></Grid2>
+                       
                         </Grid2>
 
                         <Grid2 size={12}>
@@ -818,17 +827,18 @@ export default function Home() {
                         >
                             <Grid2
                                 container
-                                spacing={2} // Adds spacing between the grid items
-                                justifyContent="center" // Centers the grid items within the container horizontally
-                                alignItems="center" // Centers the grid items vertically
+                                spacing={2} 
+                                justifyContent="center" 
+                                alignItems="center"
                                 sx={{
-                                    maxWidth: '1200px', // Optional: Restrict max width of the content
+                                    maxWidth: '1200px', 
+                                    minWidth: '600px'
                                 }}
                                 marginTop={{xs: 0, sm: -5}}
-                                marginBottom={"-5rem"}
+                                marginBottom={{sm:"-5rem"}}
                             >
                                 {/* First Grid item - Image on the right */}
-                                <Grid2 size={{ xs: 12, sm: 6 }} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+                                <Grid2 size={{sm: 6 }} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                                     <Box
                                         component="img"
                                         src={apuseniLogo}
@@ -841,12 +851,12 @@ export default function Home() {
                                 </Grid2>
 
                                 {/* Second Grid item - Image on the left */}
-                                <Grid2 size={{ xs: 12, sm: 6 }} sx={{ display: 'flex', justifyContent: 'flex-start' }}>
+                                <Grid2 size={{ sm: 6 }} sx={{ display: 'flex', justifyContent: 'flex-start' }}>
                                     <Box
                                         component="img"
                                         src={salvaLogo}
                                         sx={{
-                                            display: 'block', // Makes the image a block-level element
+                                            display: 'block', 
                                             marginTop: '15px',
                                             maxHeight: '75px',
                                         }}
