@@ -85,19 +85,11 @@ const Footer = () => {
             <Grid2 size={{ xs: 12, md: 3 }} marginRight={"30px"}>
                 <Grid2 size={12}>
                 <IconButton
-                    href="https://www.facebook.com/yourfacebookpage"
+                    href="https://www.facebook.com/profile.php?id=61560433427114"
                     target="_blank"
                     
                 >
                     {facebook}
-                </IconButton>
-
-                <IconButton
-                    href="https://www.instagram.com/"
-                    target="_blank"
-                    
-                >
-                    {instagram}
                 </IconButton>
 
                 <IconButton
