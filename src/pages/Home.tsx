@@ -24,6 +24,7 @@ import acad from '../icons/ACAD_260 logo.png'
 import home1 from '../images/home1.jpeg'
 import home2 from '../images/home2.jpeg'
 import home3 from '../images/home3.jpeg'
+import gallery4 from "../pozegallery/1000012125.jpg"
 
 export default function Home() {
 
@@ -74,7 +75,7 @@ export default function Home() {
 
     const moreLogos = [apuseniLogo, salvaLogo];
 
-    const homePageImages = [home1, home2];
+    const homePageImages = [home1, home2, gallery4];
 
     var news3 = newsData[2];
     newsData[2] = newsData[0];
