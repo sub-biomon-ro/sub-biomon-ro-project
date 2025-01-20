@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/sub-biomon-ro-project/static/css/main.af943505.css",
-    "main.js": "/sub-biomon-ro-project/static/js/main.d2a82e0c.js",
+    "main.js": "/sub-biomon-ro-project/static/js/main.7394bc2f.js",
     "static/js/453.714f154b.chunk.js": "/sub-biomon-ro-project/static/js/453.714f154b.chunk.js",
+    "static/media/homePage3.png": "/sub-biomon-ro-project/static/media/homePage3.4f3b6047e2dbfc2915a8.png",
     "static/media/1000008595.jpg": "/sub-biomon-ro-project/static/media/1000008595.47b17bea748fc3cd3978.jpg",
     "static/media/1000010548.jpg": "/sub-biomon-ro-project/static/media/1000010548.79ad59db09636c435712.jpg",
     "static/media/1000010575.jpg": "/sub-biomon-ro-project/static/media/1000010575.54b8d2e5b681e4f798e5.jpg",
@@ -47,11 +48,11 @@
     "static/media/ulb-logo.avif": "/sub-biomon-ro-project/static/media/ulb-logo.7a4e0dbfabb4540f48b1.avif",
     "index.html": "/sub-biomon-ro-project/index.html",
     "main.af943505.css.map": "/sub-biomon-ro-project/static/css/main.af943505.css.map",
-    "main.d2a82e0c.js.map": "/sub-biomon-ro-project/static/js/main.d2a82e0c.js.map",
+    "main.7394bc2f.js.map": "/sub-biomon-ro-project/static/js/main.7394bc2f.js.map",
     "453.714f154b.chunk.js.map": "/sub-biomon-ro-project/static/js/453.714f154b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af943505.css",
-    "static/js/main.d2a82e0c.js"
+    "static/js/main.7394bc2f.js"
   ]
 }
