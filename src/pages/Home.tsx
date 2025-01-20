@@ -24,7 +24,7 @@ import acad from '../icons/ACAD_260 logo.png'
 import home1 from '../images/home1.jpeg'
 import home2 from '../images/home2.jpeg'
 import home3 from '../images/home3.jpeg'
-import gallery4 from "../pozegallery/1000012125.jpg"
+import gallery4 from "../pozegallery/1000008595.jpg"
 
 export default function Home() {
 
@@ -211,6 +211,7 @@ export default function Home() {
                                             alt={`home-${index}`}
                                             style={{
                                                 maxWidth: "250px",
+                                                maxHeight: "315px",
                                                 margin: 'auto',
                                                 objectFit: "cover",
                                                 objectPosition: "center",
