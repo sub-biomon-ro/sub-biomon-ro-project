@@ -185,7 +185,7 @@ export default function Home() {
                             sx={{
                                 width: "100%",
                                 //minHeight: 300,
-                                overflow: "hidden",
+                                
                                 //marginBottom: '1rem'
                             }}
                         >
@@ -200,7 +200,7 @@ export default function Home() {
                                         borderRadius: "5px"
                                     }}
                                 /> */}
-                            <Grid2 container height={"210px"} spacing={1}>
+                            <Grid2 container spacing={1}>
                                 {
 
                                     homePageImages.map((img, index) => (
@@ -210,8 +210,8 @@ export default function Home() {
                                             src={img}
                                             alt={`home-${index}`}
                                             style={{
-                                                width: "160px",
-                                                height: "205px",
+                                                maxWidth: "250px",
+                                                margin: 'auto',
                                                 objectFit: "cover",
                                                 objectPosition: "center",
                                                 //borderRadius: "5px"
