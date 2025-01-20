@@ -25,6 +25,7 @@ import home1 from '../images/home1.jpeg'
 import home2 from '../images/home2.jpeg'
 import home3 from '../images/home3.jpeg'
 import gallery4 from "../pozegallery/1000008595.jpg"
+import homePage3 from "../images/homePage3.png"
 
 export default function Home() {
 
@@ -91,13 +92,13 @@ export default function Home() {
                 display: "flex",
                 justifyContent: "center",
             }}>
-                <Grid2 container 
-                spacing={{
-                    xs: 1,
-                    sm: 2,
-                    md: 3,
-                    lg: 4,
-                }}
+                <Grid2 container
+                    spacing={{
+                        xs: 1,
+                        sm: 2,
+                        md: 3,
+                        lg: 4,
+                    }}
                     sx={{
                         maxWidth: "1400px"
                     }}
@@ -163,19 +164,19 @@ export default function Home() {
                             <i>Developing and testing approaches to monitor subterranean biodiversity in karst</i>
                         </Typography>
                         <Typography
-                        variant="subtitle2"
+                            variant="subtitle2"
 
-                        //noWrap
-                        sx={{
+                            //noWrap
+                            sx={{
 
-                            fontSize: { xs: "0.7rem", sm: "1rem" },
-                            textAlign: "left"
-                        }}>
+                                fontSize: { xs: "0.7rem", sm: "1rem" },
+                                textAlign: "left"
+                            }}>
                             (ERANET nr. 26/2024, PN4-P8-235/01.04.2024)
                         </Typography>
                     </Grid2>
 
-                    
+
 
                     {/* Img grid */}
                     <Grid2 container size={{ sm: 12, md: 8 }}>
@@ -185,7 +186,7 @@ export default function Home() {
                             sx={{
                                 width: "100%",
                                 //minHeight: 300,
-                                
+
                                 //marginBottom: '1rem'
                             }}
                         >
@@ -200,29 +201,21 @@ export default function Home() {
                                         borderRadius: "5px"
                                     }}
                                 /> */}
-                            <Grid2 container spacing={1}>
-                                {
+                            <Grid2 size={12} sx={{
+                                display: "flex",
+                                justifyContent: "flex-start",
+                            }}>
 
-                                    homePageImages.map((img, index) => (
-
-                                        <img
-                                            key={index}
-                                            src={img}
-                                            alt={`home-${index}`}
-                                            style={{
-                                                maxWidth: "250px",
-                                                maxHeight: "315px",
-                                                margin: 'auto',
-                                                objectFit: "cover",
-                                                objectPosition: "center",
-                                                //borderRadius: "5px"
-                                            }}
-                                        >
-                                        </img>
-
-                                    ))
-
-                                }
+                                <img
+                                    src={homePage3}
+                                    alt="home-page-pictures"
+                                    style={{
+                                        maxWidth: "100%",
+                                        height: "100%",
+                                        objectFit: "contain",
+                                    }}
+                                >
+                                </img>
                             </Grid2>
                         </Box>
 
@@ -236,93 +229,93 @@ export default function Home() {
                                 However, up to now, there is no standardized sampling method for monitoring subterranean species and habitats. The <b>Sub-BioMon</b> will reconsider the role of caves as either habitats or simply windows into an extensive subterranean habitat in a fractured rock, consisting of cavities and crevices inaccessible to humans. The project will provide a scientific basis for monitoring, which is relevant to a variety of stakeholders, such as governmental and conservation institutions, management authorities of natural parks and show caves, as well as the general public, all of which will be involved in the project.
                             </Typography>
                         </Box>
-                        
+
                         <Grid2 container spacing={1}>
-                        {/* work package 4 */}
-                        <Grid2 size={12}>
-                            <Typography
-                                variant="h5"
-                                fontWeight={'bold'}
-                                fontSize={"1rem"}
-                                sx={{
-                                    wordWrap: "break-word",
-                                    //fontSize: "0.7rem"
-                                }}>
-                                Work package 4 (Coordinator: Romania)
+                            {/* work package 4 */}
+                            <Grid2 size={12}>
+                                <Typography
+                                    variant="h5"
+                                    fontWeight={'bold'}
+                                    fontSize={"1rem"}
+                                    sx={{
+                                        wordWrap: "break-word",
+                                        //fontSize: "0.7rem"
+                                    }}>
+                                    Work package 4 (Coordinator: Romania)
 
-                            </Typography>
-                        </Grid2>
-                        
-                        <Grid2 container spacing={0}>
-                        <Grid2 size={12}>
-                            <Typography
-                                variant="body1"
-                                fontWeight={'bold'}
-                                color="GrayText"
-                                sx={{
-                                    wordWrap: "break-word",
-                                    fontSize: "0.8rem"
-                                }}>
-                                Output: Developing and testing the methodology for minimal standards of field work sampling
-
-
-                            </Typography>
-                        </Grid2>
-                        </Grid2>
-
-                        <Grid2 size={12}>
-                            <Box sx={{
-                                //paddingRight: { sm: 1, md: 25, xl: 60 }
-                            }}>
-                                <Typography textAlign={"justify"} variant="body2" color="GrayText" fontSize={"0.7rem"}>
-                                    Because of geographic differences in karst complexity, biodiversity, and faunal composition, as well as different past experiences, developing a common methodology is a complex and challenging task. Within the official documents such as the Natura 2000 manual on EU habitats, the habitat <b>8310 Caves not open to the public</b> is described only very roughly, with some reference taxa mentioned, but there are no recommendations for a protocol and methods to monitor them. We will address this issue in a stepwise process. The Sub-BioMon project is defining and testing methods based on the novel paradigm for caves: distinction of caves as habitats or as windows into an extensive subterranean habitat, consisting of cavities and crevices inaccessible for humans (Fig. 1).
                                 </Typography>
-                            </Box>
-                        </Grid2>
+                            </Grid2>
+
+                            <Grid2 container spacing={0}>
+                                <Grid2 size={12}>
+                                    <Typography
+                                        variant="body1"
+                                        fontWeight={'bold'}
+                                        color="GrayText"
+                                        sx={{
+                                            wordWrap: "break-word",
+                                            fontSize: "0.8rem"
+                                        }}>
+                                        Output: Developing and testing the methodology for minimal standards of field work sampling
+
+
+                                    </Typography>
+                                </Grid2>
+                            </Grid2>
+
+                            <Grid2 size={12}>
+                                <Box sx={{
+                                    //paddingRight: { sm: 1, md: 25, xl: 60 }
+                                }}>
+                                    <Typography textAlign={"justify"} variant="body2" color="GrayText" fontSize={"0.7rem"}>
+                                        Because of geographic differences in karst complexity, biodiversity, and faunal composition, as well as different past experiences, developing a common methodology is a complex and challenging task. Within the official documents such as the Natura 2000 manual on EU habitats, the habitat <b>8310 Caves not open to the public</b> is described only very roughly, with some reference taxa mentioned, but there are no recommendations for a protocol and methods to monitor them. We will address this issue in a stepwise process. The Sub-BioMon project is defining and testing methods based on the novel paradigm for caves: distinction of caves as habitats or as windows into an extensive subterranean habitat, consisting of cavities and crevices inaccessible for humans (Fig. 1).
+                                    </Typography>
+                                </Box>
+                            </Grid2>
                         </Grid2>
                         <Grid2 container spacing={0}>
-                        <Grid2 size={12}>
-                            <Box
-                            //marginRight={{ sm: 1, md: 25, xl: 60 }}
-                            >
-                                <img
-                                    src={fig1}
-                                    alt="fig 1."
-                                    style={{
-                                        width: "100%",
-                                        height: "100%",
-                                        minHeight: "100px",
-                                        maxHeight: "200px",
-                                        objectFit: "contain",
-                                        //objectPosition: "center",
-                                        borderRadius: "5px",
-
-                                    }}
+                            <Grid2 size={12}>
+                                <Box
+                                //marginRight={{ sm: 1, md: 25, xl: 60 }}
                                 >
-                                </img>
+                                    <img
+                                        src={fig1}
+                                        alt="fig 1."
+                                        style={{
+                                            width: "100%",
+                                            height: "100%",
+                                            minHeight: "100px",
+                                            maxHeight: "200px",
+                                            objectFit: "contain",
+                                            //objectPosition: "center",
+                                            borderRadius: "5px",
 
-                                {/* fig caption */}
-                            </Box>
-                        </Grid2>
+                                        }}
+                                    >
+                                    </img>
 
-                        <Grid2 size={12}>
-                            <Box sx={{
-                                //paddingRight: { sm: 1, md: 25, xl: 60 }
-                            }}>
-                                <Typography textAlign={"center"} fontSize={"0.5rem"} variant="subtitle1" sx={{
-                                    hyphens: "none"
+                                    {/* fig caption */}
+                                </Box>
+                            </Grid2>
+
+                            <Grid2 size={12}>
+                                <Box sx={{
+                                    //paddingRight: { sm: 1, md: 25, xl: 60 }
                                 }}>
-                                    Figure 1. New paradigm of caves: caves are habitats for some animal species (like cave crickets or bats during hibernation), but should be considered also a window into more extensive unreachable subterranean habitats. Only some individuals can be accessed and found in a cave (or springs, where subterranean waters come to surface), while the main part of the population lives in the system of crevices around the cave accessible to man
-                                </Typography>
+                                    <Typography textAlign={"center"} fontSize={"0.5rem"} variant="subtitle1" sx={{
+                                        hyphens: "none"
+                                    }}>
+                                        Figure 1. New paradigm of caves: caves are habitats for some animal species (like cave crickets or bats during hibernation), but should be considered also a window into more extensive unreachable subterranean habitats. Only some individuals can be accessed and found in a cave (or springs, where subterranean waters come to surface), while the main part of the population lives in the system of crevices around the cave accessible to man
+                                    </Typography>
 
-                                <Typography justifyContent={"center"} fontSize={"0.5rem"} textAlign={"center"} variant="subtitle1" sx={{
-                                    marginLeft: "auto",
-                                    marginRight: "auto"
-                                }}>
-                                    (credit: Maja Zagmajster, Sub-BioMon)
-                                </Typography>
-                            </Box>
-                        </Grid2>
+                                    <Typography justifyContent={"center"} fontSize={"0.5rem"} textAlign={"center"} variant="subtitle1" sx={{
+                                        marginLeft: "auto",
+                                        marginRight: "auto"
+                                    }}>
+                                        (credit: Maja Zagmajster, Sub-BioMon)
+                                    </Typography>
+                                </Box>
+                            </Grid2>
                         </Grid2>
 
                         {/* <Grid2 size={12}>
@@ -415,10 +408,10 @@ export default function Home() {
 
 
                             </Grid2>
-                            <Grid2 size={{ xs: 6, sm: 12 }} padding={0.5} sx={{ 
-                                backgroundColor: "lightgray", 
+                            <Grid2 size={{ xs: 6, sm: 12 }} padding={0.5} sx={{
+                                backgroundColor: "lightgray",
                                 minWidth: "100%"
-                                }}>
+                            }}>
                                 <Typography
                                     marginTop={"5%"}
                                     variant="body1"
@@ -576,7 +569,7 @@ export default function Home() {
                                     height: "100%",
                                     //minHeight: "100px",
                                     //maxHeight: "78px",
-                                    objectFit: "contain", 
+                                    objectFit: "contain",
 
                                     borderRadius: "5px",
 
@@ -612,7 +605,7 @@ export default function Home() {
                             </Box>
                         </Grid2> */}
 
-                            {/* <Grid2 size={12}>
+                        {/* <Grid2 size={12}>
                             <Typography
                                 variant="body1"
                                 fontWeight={'bold'}
@@ -625,7 +618,7 @@ export default function Home() {
                             </Typography>
                         </Grid2> */}
 
-                            {/* <Grid2 size={12}>
+                        {/* <Grid2 size={12}>
                             <Box sx={{
                                 paddingRight: { sm: 1, md: 25, xl: 60 }
                             }}>
@@ -744,44 +737,44 @@ export default function Home() {
 
                         </Grid2>
 
-                       
-                        </Grid2>
 
-                        <Grid2 size={12}>
-                            <Typography variant="h5" fontWeight={"bold"} component="div" fontSize={"1rem"}>Consortium: </Typography>
-                            {/* <br></br> */}
-                            <Typography paddingTop={"7px"} textAlign={"justify"} variant="body2" color="GrayText" fontSize={"0.7rem"}>The Sub-BioMon team consists of researchers from 6 institutions in  European countries. Find out more here: <a href="https://www.sub-biomon.net">https://www.sub-biomon.net</a> </Typography>
-                        </Grid2>
-                        <Grid2 container spacing={-7} marginTop={-2} justifyContent={"left"}>
+                    </Grid2>
 
-                            {partnersData.map((partner, index) => (
-                                // index ? (<Grid2 size={{ xs: 12, sm: 1.5 }} key={index}>
-                                <Grid2 size={{ xs: 12, sm: 1 }} key={index}>
-                                    {/* <Box display="flex" alignItems="center"> */}
-                                    <Grid2>
-                                        <CardMedia
-                                            component="img"
-                                            image={partner.logo}
-                                            alt={partner.name}
-                                            sx={{
-                                                width: 100,
-                                                height: 100,
-                                                marginRight: 2,
-                                                objectFit: "contain"
-                                            }}
-                                        />
-                                    </Grid2>
-                                    <Box>
-                                        {/* <Typography variant="body1" fontWeight="bold" fontSize={"0.7rem"}>{partner.name}</Typography>
-                                            <Typography variant="body2">{partner.country}</Typography> */}
-                                    </Box>
-                                    {/* </Box> */}
+                    <Grid2 size={12}>
+                        <Typography variant="h5" fontWeight={"bold"} component="div" fontSize={"1rem"}>Consortium: </Typography>
+                        {/* <br></br> */}
+                        <Typography paddingTop={"7px"} textAlign={"justify"} variant="body2" color="GrayText" fontSize={"0.7rem"}>The Sub-BioMon team consists of researchers from 6 institutions in  European countries. Find out more here: <a href="https://www.sub-biomon.net">https://www.sub-biomon.net</a> </Typography>
+                    </Grid2>
+                    <Grid2 container spacing={-7} marginTop={-2} justifyContent={"left"}>
+
+                        {partnersData.map((partner, index) => (
+                            // index ? (<Grid2 size={{ xs: 12, sm: 1.5 }} key={index}>
+                            <Grid2 size={{ xs: 12, sm: 1 }} key={index}>
+                                {/* <Box display="flex" alignItems="center"> */}
+                                <Grid2>
+                                    <CardMedia
+                                        component="img"
+                                        image={partner.logo}
+                                        alt={partner.name}
+                                        sx={{
+                                            width: 100,
+                                            height: 100,
+                                            marginRight: 2,
+                                            objectFit: "contain"
+                                        }}
+                                    />
                                 </Grid2>
-                                // </Grid2>) : null
-                            ))}
-                        </Grid2>
+                                <Box>
+                                    {/* <Typography variant="body1" fontWeight="bold" fontSize={"0.7rem"}>{partner.name}</Typography>
+                                            <Typography variant="body2">{partner.country}</Typography> */}
+                                </Box>
+                                {/* </Box> */}
+                            </Grid2>
+                            // </Grid2>) : null
+                        ))}
+                    </Grid2>
 
-                        {/* <Grid2 size={12} sx={{
+                    {/* <Grid2 size={12} sx={{
                             justifyContent: 'center',
                             alignItems: 'center'
                         }}>
@@ -805,68 +798,68 @@ export default function Home() {
                                 />
                             </Box>
                         </Grid2> */}
-                        <Grid2 size={12}>
-                            <hr style={{
-                                border: 'none',
-                                minHeight: '2px',
-                                backgroundColor: 'blue'
-                            }} />
-                            <Typography variant="h5" fontSize={"0.9rem"} fontWeight={"bold"} color="GrayText" component="div" sx={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center"
-                            }}>Romanian collaborators of the project:
-                            </Typography>
-                        </Grid2>
-                        <Box
+                    <Grid2 size={12}>
+                        <hr style={{
+                            border: 'none',
+                            minHeight: '2px',
+                            backgroundColor: 'blue'
+                        }} />
+                        <Typography variant="h5" fontSize={"0.9rem"} fontWeight={"bold"} color="GrayText" component="div" sx={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center"
+                        }}>Romanian collaborators of the project:
+                        </Typography>
+                    </Grid2>
+                    <Box
+                        sx={{
+                            display: 'flex', // Enables flexbox to center the grid horizontally
+                            justifyContent: 'center', // Centers the grid horizontally
+                            alignItems: 'center', // Optional: Center the grid vertically in the viewport
+                            //height: '100vh', // Full viewport height for vertical centering
+                            width: '85%', // Ensure full width for centering
+                        }}
+                    >
+                        <Grid2
+                            container
+                            spacing={2}
+                            justifyContent="center"
+                            alignItems="center"
                             sx={{
-                                display: 'flex', // Enables flexbox to center the grid horizontally
-                                justifyContent: 'center', // Centers the grid horizontally
-                                alignItems: 'center', // Optional: Center the grid vertically in the viewport
-                                //height: '100vh', // Full viewport height for vertical centering
-                                width: '85%', // Ensure full width for centering
+                                maxWidth: '1200px',
+                                minWidth: '600px'
                             }}
+                            marginTop={{ xs: 0, sm: -5 }}
+                            marginBottom={{ sm: "-5rem" }}
                         >
-                            <Grid2
-                                container
-                                spacing={2} 
-                                justifyContent="center" 
-                                alignItems="center"
-                                sx={{
-                                    maxWidth: '1200px', 
-                                    minWidth: '600px'
-                                }}
-                                marginTop={{xs: 0, sm: -5}}
-                                marginBottom={{sm:"-5rem"}}
-                            >
-                                {/* First Grid item - Image on the right */}
-                                <Grid2 size={{sm: 6 }} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-                                    <Box
-                                        component="img"
-                                        src={apuseniLogo}
-                                        sx={{
-                                            display: 'block', // Makes the image a block-level element
-                                            marginTop: '15px',
-                                            maxHeight: '75px', // Restrict height for uniformity
-                                        }}
-                                    />
-                                </Grid2>
-
-                                {/* Second Grid item - Image on the left */}
-                                <Grid2 size={{ sm: 6 }} sx={{ display: 'flex', justifyContent: 'flex-start' }}>
-                                    <Box
-                                        component="img"
-                                        src={salvaLogo}
-                                        sx={{
-                                            display: 'block', 
-                                            marginTop: '15px',
-                                            maxHeight: '75px',
-                                        }}
-                                    />
-                                </Grid2>
+                            {/* First Grid item - Image on the right */}
+                            <Grid2 size={{ sm: 6 }} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+                                <Box
+                                    component="img"
+                                    src={apuseniLogo}
+                                    sx={{
+                                        display: 'block', // Makes the image a block-level element
+                                        marginTop: '15px',
+                                        maxHeight: '75px', // Restrict height for uniformity
+                                    }}
+                                />
                             </Grid2>
-                        </Box>
-                    
+
+                            {/* Second Grid item - Image on the left */}
+                            <Grid2 size={{ sm: 6 }} sx={{ display: 'flex', justifyContent: 'flex-start' }}>
+                                <Box
+                                    component="img"
+                                    src={salvaLogo}
+                                    sx={{
+                                        display: 'block',
+                                        marginTop: '15px',
+                                        maxHeight: '75px',
+                                    }}
+                                />
+                            </Grid2>
+                        </Grid2>
+                    </Box>
+
 
                 </Grid2>
             </Box>
