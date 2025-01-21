@@ -6,6 +6,7 @@ import logoInstitute from '../../icons/Romania_ISER_ARFCN_transparent_background
 import logoInstitutCrop from '../../icons/Romania_ISER_ARFCN_crop.png'
 import logoBioMon from '../../icons/SubBioMon high.jpg'
 import logoBioDiversa from '../../icons/biodiversa-logo.png.jpg'
+import acad from '../../icons/ACAD_260 logo.png'
 
 import styled from "@emotion/styled";
 import {
@@ -39,7 +40,7 @@ export default function Navbar() {
                         <Grid2 container size={12} >
 
                             <Grid2
-                                size={{ xs: 3, sm: 2 }}
+                                size={{ xs: 5, sm: 2 }}
                                 sx={{
                                     display: "flex",
                                     justifyContent: "start",
@@ -87,7 +88,7 @@ export default function Navbar() {
                             </Grid2>
 
                             <Grid2
-                                size={{ xs: 3, sm: 1.5 }}
+                                size={{ xs: 2, sm: 1.5 }}
                                 
                                 sx={{
                                     // display: "flex",
@@ -98,11 +99,12 @@ export default function Navbar() {
                             >
                                 <Box
                                     component={"img"}
-                                    src={logoBioMon}
+                                    src={acad}
                                     alt="BioMon logo"
                                     sx={{
                                      maxHeight: "45px",  
-                                     float: "right"
+                                     float: "right",
+                                     marginRight: {sm: 0, md: "10%"}
                                     }}
                                 ></Box>
                                 {/* <img

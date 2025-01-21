@@ -84,6 +84,20 @@ export default function Home() {
 
     return (
         <div className="Home">
+            {/* <Box>
+                    <img
+                        src={logoBioMon}
+                        alt="Left Logo"
+                        style={{
+                                //width: "100%",
+                                maxHeight: "100px",
+
+                                //height: "100px",
+                                //objectFit: "contain",
+                                // boxShadow: "5px 5px 5px gray",
+                            }}
+                        />
+            </Box> */}
             <Box sx={{
                 marginTop: 0,
                 marginLeft: { xs: 5, sm: 15, md: 30 },
@@ -103,6 +117,8 @@ export default function Home() {
                         maxWidth: "1400px"
                     }}
                 >
+
+
                     {/* Header */}
                     <Grid2 container spacing={0} size={12}>
                         <Box
