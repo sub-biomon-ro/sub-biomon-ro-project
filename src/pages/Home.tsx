@@ -130,7 +130,7 @@ export default function Home() {
 
                         <Grid2 container spacing={1} marginTop={2}>
 
-                            <Grid2 size={{xs: 3, sm: 2.75}} sx={{
+                            <Grid2 size={{ xs: 3, sm: 2.75 }} sx={{
                                 display: "flex",
                                 justifyContent: "flex-start",
                             }}>
@@ -147,20 +147,20 @@ export default function Home() {
                                 </img>
                             </Grid2>
 
-                            <Grid2 size={{xs: 9, sm: 9.25}}>
+                            <Grid2 size={{ xs: 9, sm: 9.25 }}>
 
 
                                 <Typography
                                     variant="body2"
 
                                     //noWrap
-                
+
                                     sx={{
                                         wordWrap: "unset",
                                         fontSize: { xs: "0.7rem", sm: "0.9rem" },
                                         // lineHeight: '17px',
                                         marginTop: '10px',
-                                        marginBottom: {md: "2%"}
+                                        marginBottom: { md: "2%" }
                                     }}
                                 >
                                     <i>Developing and testing approaches to monitor subterranean biodiversity in karst</i>
@@ -229,25 +229,55 @@ export default function Home() {
                             </Typography>
                         </Box>
                         {/* Main objective */}
-                        <Grid2 container spacing={1}>
+                        <Grid2 container spacing={1} size={12}>
                             <Typography variant="h5" paddingBottom={1} fontSize={"1rem"} fontWeight={"bold"}>Main objective</Typography>
                             <Typography variant="body2" fontSize={"0.7rem"} sx={{ color: "GrayText" }}>
                                 The <b>Sub-BioMon project</b> will provide standardised methods and protocols for monitoring subterranean biodiversity in European karst areas, with a focus on developing and testing novel approaches.
                             </Typography>
                         </Grid2>
                         {/* work packages */}
-                        <Grid2 container>
+                        <Grid2 container size={12}>
                             <Grid2>
                                 <Typography variant="h5" fontSize={"1rem"} fontWeight={"bold"}>Work packages</Typography>
                             </Grid2>
                             <Grid2>
-                            <Typography variant="body2" fontSize={"0.7rem"} sx={{ color: "GrayText" }}>
-                                The Sub-BioMon project is organized and described in five interrelated work packages (Fig. 2).
-                            </Typography>
+                                <Typography variant="body2" fontSize={"0.7rem"} sx={{ color: "GrayText" }}>
+                                    The Sub-BioMon project is organized and described in five interrelated work packages (Fig. 2).
+                                </Typography>
                             </Grid2>
                         </Grid2>
-                        
-                        <Grid2 container spacing={0}>
+
+
+                        <Grid2 container spacing={1} size={12}>
+                            {/* work package 1 */}
+                            <Grid2>
+                                <Typography
+                                    variant="h5"
+                                    fontWeight={'bold'}
+                                    fontSize={"1rem"}
+                                    sx={{
+                                        wordWrap: "break-word",
+                                        //fontSize: "0.7rem"
+                                    }}>
+                                    WP1:
+
+
+                                </Typography>
+                            </Grid2>
+                            <Typography
+                                variant="body1"
+                                fontWeight={'bold'}
+                                color="GrayText"
+                                sx={{
+                                    marginTop: "2px",
+                                    wordWrap: "break-word",
+                                    fontSize: "0.8rem"
+                                }}>
+                                Project management (Coordinator: Slovenia)
+                            </Typography>
+                        </Grid2>
+
+                        <Grid2 container spacing={0} size={12}>
                             <Grid2 size={12}>
                                 <Box
                                 //marginRight={{ sm: 1, md: 25, xl: 60 }}
@@ -268,67 +298,39 @@ export default function Home() {
                                     >
                                     </img>
 
-                                    
+
                                 </Box>
                             </Grid2>
                         </Grid2>
 
-                        <Grid2 container spacing={1}>
-                            {/* work package 1 */}
-                            <Grid2>
-                                <Typography
-                                    variant="h5"
-                                    fontWeight={'bold'}
-                                    fontSize={"1rem"}
-                                    sx={{
-                                        wordWrap: "break-word",
-                                        //fontSize: "0.7rem"
-                                    }}>
-                                    WP1:
-                           
 
-                                </Typography>
-                                </Grid2>
-                                    <Typography
-                                        variant="body1"
-                                        fontWeight={'bold'}
-                                        color="GrayText"
-                                        sx={{
-                                            marginTop: "2px",
-                                            wordWrap: "break-word",
-                                            fontSize: "0.8rem"
-                                        }}>
-                                        Project management (Coordinator: Slovenia)
-                                </Typography>
-                            </Grid2>
-
-                            <Grid2 container spacing={1}>
+                        <Grid2 container spacing={1} size={12}>
                             {/* work package 2 */}
-                                <Typography
-                                    variant="h5"
-                                    fontWeight={'bold'}
-                                    fontSize={"1rem"}
-                                    sx={{
-                                        wordWrap: "break-word",
-                                        //fontSize: "0.7rem"
-                                    }}>
-                                    WP2:
+                            <Typography
+                                variant="h5"
+                                fontWeight={'bold'}
+                                fontSize={"1rem"}
+                                sx={{
+                                    wordWrap: "break-word",
+                                    //fontSize: "0.7rem"
+                                }}>
+                                WP2:
 
-                                </Typography>
-                                    <Typography
-                                        variant="body1"
-                                        fontWeight={'bold'}
-                                        color="GrayText"
-                                        sx={{
-                                            marginTop: "2px",
-                                            wordWrap: "break-word",
-                                            fontSize: "0.8rem"
-                                        }}>
-                                        Defining subterranean biogeographical regions within karst (Coordinator: Italy)
-                                </Typography>
-                            </Grid2>
-                        
-                            <Grid2 container spacing={1}>
+                            </Typography>
+                            <Typography
+                                variant="body1"
+                                fontWeight={'bold'}
+                                color="GrayText"
+                                sx={{
+                                    marginTop: "2px",
+                                    wordWrap: "break-word",
+                                    fontSize: "0.8rem"
+                                }}>
+                                Defining subterranean biogeographical regions within karst (Coordinator: Italy)
+                            </Typography>
+                        </Grid2>
+
+                        <Grid2 container spacing={1} size={12}>
                             {/* work package 3 */}
                             <Grid2 size={1}>
                                 <Typography
@@ -344,23 +346,23 @@ export default function Home() {
                                 </Typography>
                             </Grid2>
                             <Grid2 size={11}>
-                                    <Typography
-                                        variant="body1"
-                                        fontWeight={'bold'}
-                                        color="GrayText"
-                                        sx={{
-                                            marginTop: "2px",
-                                            wordWrap: "break-word",
-                                            fontSize: "0.8rem",
-                                            alignItems: "flex-start"
-                                        }}>
-                                        Assessing the readiness of DNA information for routine species identification and implementation in (e)DNA-based assessments of subterranean communities (Coordinator: Luxemburg)
+                                <Typography
+                                    variant="body1"
+                                    fontWeight={'bold'}
+                                    color="GrayText"
+                                    sx={{
+                                        marginTop: "2px",
+                                        wordWrap: "break-word",
+                                        fontSize: "0.8rem",
+                                        alignItems: "flex-start"
+                                    }}>
+                                    Assessing the readiness of DNA information for routine species identification and implementation in (e)DNA-based assessments of subterranean communities (Coordinator: Luxemburg)
 
                                 </Typography>
                             </Grid2>
                         </Grid2>
 
-                        <Grid2 container spacing={1}>
+                        <Grid2 container spacing={1} size={12}>
                             {/* work package 4 */}
                             <Grid2 size={1}>
                                 <Typography
@@ -376,23 +378,23 @@ export default function Home() {
                                 </Typography>
                             </Grid2>
                             <Grid2 size={11}>
-                                    <Typography
-                                        variant="body1"
-                                        fontWeight={'bold'}
-                                        color="GrayText"
-                                        sx={{
-                                            marginTop: "2px",
-                                            wordWrap: "break-word",
-                                            fontSize: "0.8rem",
-                                            alignItems: "flex-start"
-                                        }}>
-                                        Developing and testing the methodology for minimal standards of field work sampling
+                                <Typography
+                                    variant="body1"
+                                    fontWeight={'bold'}
+                                    color="GrayText"
+                                    sx={{
+                                        marginTop: "2px",
+                                        wordWrap: "break-word",
+                                        fontSize: "0.8rem",
+                                        alignItems: "flex-start"
+                                    }}>
+                                    Developing and testing the methodology for minimal standards of field work sampling
 
                                 </Typography>
                             </Grid2>
                         </Grid2>
-                        
-                        <Grid2 container spacing={1}>
+
+                        <Grid2 container spacing={1} size={12}>
 
                             <Grid2 size={12}>
                                 <Box sx={{
@@ -404,7 +406,7 @@ export default function Home() {
                                 </Box>
                             </Grid2>
                         </Grid2>
-                        <Grid2 container spacing={0}>
+                        <Grid2 container spacing={0} size={12}>
                             <Grid2 size={12}>
                                 <Box
                                 //marginRight={{ sm: 1, md: 25, xl: 60 }}
@@ -449,37 +451,38 @@ export default function Home() {
                             </Grid2>
                         </Grid2>
 
-                        <Grid2 container spacing={1}>
+                        <Grid2 container spacing={1} size={12}>
                             {/* work package 5 */}
                             <Grid2 size={1}>
                                 <Typography
                                     variant="h5"
                                     fontWeight={'bold'}
                                     fontSize={"1rem"}
-                                    marginRight={1}
+                                    sx={{
+                                        wordWrap: "break-word",
+                                        //fontSize: "0.7rem"
+                                    }}
                                 >
                                     WP5:
                                 </Typography>
                             </Grid2>
                             <Grid2 size={11}>
-                                    <Typography
-                                        variant="body1"
-                                        fontWeight={'bold'}
-                                        color="GrayText"
-                                        sx={{
-                                            marginTop: "2px",
-                                            wordWrap: "break-word",
-                                            fontSize: "0.8rem",
-                                            alignItems: "flex-start",
-                                            marginLeft: 1
-                                        }}>
-                                        From science to practice: involving different stakeholders
-
+                                <Typography
+                                    variant="body1"
+                                    fontWeight={'bold'}
+                                    color="GrayText"
+                                    sx={{
+                                        marginTop: "2px",
+                                        wordWrap: "break-word",
+                                        fontSize: "0.8rem",
+                                        alignItems: "flex-start",
+                                    }}>
+                                    From science to practice: involving different stakeholders
                                 </Typography>
                             </Grid2>
                         </Grid2>
 
-                        <Grid2 container spacing={0}>
+                        <Grid2 container spacing={0} size={12}>
                             <Grid2 size={12}>
                                 <Box
                                 //marginRight={{ sm: 1, md: 25, xl: 60 }}
