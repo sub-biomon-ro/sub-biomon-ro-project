@@ -17,13 +17,10 @@ export const news2Imgs = [news21, news22, news23];
 export const newsData = [
      
     {
-        title: "2nd edition of Karst Science Days Symposium (KSD)",
-        date: "November 15, 2024",
-        description: `The <b>Sub-BioMon</b> project has been launched during the 2nd edition of Karst Science Days Symposium (KSD) that took place in November 15th, 2024 in Bucharest at the Romania at the Institute of Speleology Emil Racovita. The first results of karst springs monitoring have been also presented by Alexandra Olaru, a MSc Student at the University Babes Bolyai, Cluj Napoca.
-                      <br>
-                      KSD is a scientific event created to support young researchers on site and in hybrid format (<a href=>https://www.ksd.iser.ro/ </a>). The symposium is designed to showcase the scientific contributions of outstanding students (undergraduate, graduate, and postgraduate) in the fields of biospeleology and geology of karst landscapes. KSD aims to provide the opportunity to share information about current studies of young researcher’s, to discuss and exchange ideas, to debate theoretical and practical topics related to their scientific work, and to analyze perspectives and experiences in their research field.
-                     `,
-        images: [news21, news23, news22],
+        title: "26th International Conference of Subterranean Biology",
+        date: "13 September 2024",
+        description: `During the <b>26th International Conference of Subterranean Biology</b> held in Cagliari, Sardinia between 9-14 September 2024 the youngest member of the team presented data on cave ostracods from Movile Cave (Romania) <i>Life’s Toxic Sanctuary in Movile Cave (Dobrogea, Romania): insights into ostracod shell chemical composition, ultrastructure and epibionts</i>. The symposium was a good opportunity for meaningful discussions, learning from experts, and building networks.`,
+        images: [news31, news32]
     },
     {
         title: "A role for everyone",
@@ -32,12 +29,15 @@ export const newsData = [
         images: [news11, news12],
     },
     {
-        title: "26th International Conference of Subterranean Biology",
-        date: "13 September 2024",
-        description: `During the <b>26th International Conference of Subterranean Biology</b> held in Cagliari, Sardinia between 9-14 September 2024 the youngest member of the team presented data on cave ostracods from Movile Cave (Romania) <i>Life’s Toxic Sanctuary in Movile Cave (Dobrogea, Romania): insights into ostracod shell chemical composition, ultrastructure and epibionts</i>. The symposium was a good opportunity for meaningful discussions, learning from experts, and building networks.`,
-        images: [news31, news32]
-    }
-   
+        title: "2nd edition of Karst Science Days Symposium (KSD)",
+        date: "November 15, 2024",
+        description: `The <b>Sub-BioMon</b> project has been launched during the 2nd edition of Karst Science Days Symposium (KSD) that took place in November 15th, 2024 in Bucharest at the Romania at the Institute of Speleology Emil Racovita. The first results of karst springs monitoring have been also presented by Alexandra Olaru, a MSc Student at the University Babes Bolyai, Cluj Napoca.
+                      <br>
+                      KSD is a scientific event created to support young researchers on site and in hybrid format (<a href=>https://www.ksd.iser.ro/ </a>). The symposium is designed to showcase the scientific contributions of outstanding students (undergraduate, graduate, and postgraduate) in the fields of biospeleology and geology of karst landscapes. KSD aims to provide the opportunity to share information about current studies of young researcher’s, to discuss and exchange ideas, to debate theoretical and practical topics related to their scientific work, and to analyze perspectives and experiences in their research field.
+                     `,
+        images: [news21, news23, news22],
+    },
+     
 ];
 
 

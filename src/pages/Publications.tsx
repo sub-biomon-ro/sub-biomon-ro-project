@@ -1,4 +1,5 @@
 import { Box, Card, CardContent, Typography } from "@mui/material";
+import { title } from "process";
 import React from "react";
 
 export default function Publications() {
@@ -31,6 +32,13 @@ export default function Publications() {
             title: "Life’s Toxic Sanctuary in Movile Cave (Dobrogea, Romania): insights into ostracod shell chemical composition, ultrastructure and epibionts.",
             source: "26th International Conference on Subterranean Biology and 6th International Symposium on Anchialine Ecosystems Book of abstracts (Poster 47)",
             link: "",
+        },
+        {
+            author: "Di Lorenzo, T., A. Tabilio Di Camillo, S. Iepure, D. M. P. Galassi, N. Mori, T. Simčič",
+            year: 2025,
+            title: "Oxygen Consumption and Carbon Budget in Groundwater-Obligate and Surface-Dwelling Diacyclops Species (Crustacea, Copepoda, Cyclopoida) Under Temperature Variability",
+            source: "Environments 12(1), 32;",
+            link: " https://doi.org/10.3390/environments12010032"
         }
     ]
 

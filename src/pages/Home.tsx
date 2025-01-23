@@ -737,6 +737,7 @@ export default function Home() {
                                 fontSize={"1rem"}
                                 sx={{
                                     wordWrap: "break-word",
+                                    textAlign: "center"
                                     //fontSize: "0.7rem"
                                 }}>
                                 Target species
@@ -845,6 +846,7 @@ export default function Home() {
                                     fontSize={"1rem"}
                                     sx={{
                                         wordWrap: "break-word",
+                                        textAlign: "center"
                                         //fontSize: "0.7rem"
                                     }}>
                                     Romanian funding agency
@@ -852,15 +854,6 @@ export default function Home() {
 
                             </Grid2>
 
-                            <Grid2 size={{ xs: 12, md: 8 }} sx={{
-                                display: "flex",
-                                alignItems: "center",
-                                //flexDirection: { xs: "column", md: "row" },
-                            }}>
-                                <Typography textAlign={"justify"} variant="body2" color="GrayText" fontSize={"0.7rem"}>
-                                    The Executive Unit for the Financing of Higher Education, Research, Development and Innovation
-                                </Typography>
-                            </Grid2>
                             <Grid2 size={{ xs: 12, md: 4 }} sx={{
                                 display: "flex",
                                 alignItems: "center",
@@ -881,6 +874,66 @@ export default function Home() {
                                 >
                                 </Box>
                             </Grid2>
+
+                            <Grid2 size={{ xs: 12, md: 8 }} sx={{
+                                display: "flex",
+                                alignItems: "center",
+                                //flexDirection: { xs: "column", md: "row" },
+                            }}>
+                                <Typography textAlign={"justify"} variant="body2" color="GrayText" fontSize={"0.7rem"}>
+                                    The Executive Unit for the Financing of Higher Education, Research, Development and Innovation
+                                </Typography>
+                            </Grid2>
+
+
+                            <Grid2 size={12}>
+                                <Typography marginTop={0}
+                                    variant="h5"
+                                    fontWeight={'bold'}
+                                    fontSize={"1rem"}
+                                    sx={{
+                                        wordWrap: "break-word",
+                                        textAlign: "center"
+                                        //fontSize: "0.7rem"
+                                    }}>
+                                    Principal coordinator
+                                </Typography>
+
+                            </Grid2>
+
+
+                            <Grid2 size={{ xs: 12, md: 4 }} sx={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                //flexDirection: { xs: "", md: "row" },
+                            }}>
+                                <Box
+                                    component={"img"}
+                                    src={ljubljanaLogo}
+                                    alt="uefscdi-logo"
+                                    sx={{
+                                        width: "100%",
+                                        height: "100%",
+                                        minHeight: "100px",
+                                        maxHeight: "100px",
+                                        objectFit: "contain",
+                                    }}
+                                >
+                                </Box>
+                            </Grid2>
+
+                            <Grid2 size={{ xs: 12, md: 8 }} sx={{
+                                display: "flex",
+                                alignItems: "center",
+                                //flexDirection: { xs: "column", md: "row" },
+                            }}>
+                                <Typography textAlign={"justify"} variant="body2" color="GrayText" fontSize={"0.7rem"}>
+                                University of Ljubljana, Biotechnical Faculty, Slovenia
+
+                                </Typography>
+                            </Grid2>
+
 
                             {/* </Grid2> */}
 
@@ -928,38 +981,56 @@ export default function Home() {
 
                     </Grid2>
 
-                    <Grid2 size={12}>
-                        <Typography variant="h5" fontWeight={"bold"} component="div" fontSize={"1rem"}>Consortium: </Typography>
+                    <Grid2 container size={{ sm: 12, md: 8 }} >
+                        <Grid2 size={12}>
+                            <Typography variant="h5" fontWeight={"bold"} component="div" fontSize={"1rem"} sx={{
+                                textAlign: "center"
+                            }}
+                            >Consortium 
+                            </Typography>
+                        </Grid2>
                         {/* <br></br> */}
-                        <Typography paddingTop={"7px"} textAlign={"justify"} variant="body2" color="GrayText" fontSize={"0.7rem"}>The Sub-BioMon team consists of researchers from 6 institutions in  European countries. Find out more here: <a href="https://www.sub-biomon.net">https://www.sub-biomon.net</a> </Typography>
-                    </Grid2>
-                    <Grid2 container spacing={-7} marginTop={-2} justifyContent={"left"}>
+                        <Grid2 size={12}>
+                        <Typography paddingTop={"7px"} textAlign={"justify"} variant="body2" color="GrayText" fontSize={"0.7rem"} sx={{
+                            textAlign: "center",
+                            justifyContent: "center"
+                        }}>The Sub-BioMon team consists of researchers from 6 institutions in  European countries. Find out more here: <a href="https://www.sub-biomon.net">https://www.sub-biomon.net</a> </Typography>
+                        </Grid2>
+                        
+                        <Grid2  container size={12} marginTop={-2} 
+                                sx={{
+                                    alignItems: "center",
+                                    justifyContent: "center"
+                                }}
+                                //justifyContent={"left"}
+                        >
 
-                        {partnersData.map((partner, index) => (
-                            // index ? (<Grid2 size={{ xs: 12, sm: 1.5 }} key={index}>
-                            <Grid2 size={{ xs: 12, sm: 1 }} key={index}>
-                                {/* <Box display="flex" alignItems="center"> */}
-                                <Grid2>
-                                    <CardMedia
-                                        component="img"
-                                        image={partner.logo}
-                                        alt={partner.name}
-                                        sx={{
-                                            width: 100,
-                                            height: 100,
-                                            marginRight: 2,
-                                            objectFit: "contain"
-                                        }}
-                                    />
+                            {partnersData.map((partner, index) => (
+                                // index ? (<Grid2 size={{ xs: 12, sm: 1.5 }} key={index}>
+                                <Grid2 size={{ xs: 12, sm: 2 }} key={index}>
+                                    {/* <Box display="flex" alignItems="center"> */}
+                                    <Grid2>
+                                        <CardMedia
+                                            component="img"
+                                            image={partner.logo}
+                                            alt={partner.name}
+                                            sx={{
+                                                width: 100,
+                                                height: 100,
+                                                marginRight: 2,
+                                                objectFit: "contain"
+                                            }}
+                                        />
+                                    </Grid2>
+                                    <Box>
+                                        {/* <Typography variant="body1" fontWeight="bold" fontSize={"0.7rem"}>{partner.name}</Typography>
+                                                <Typography variant="body2">{partner.country}</Typography> */}
+                                    </Box>
+                                    {/* </Box> */}
                                 </Grid2>
-                                <Box>
-                                    {/* <Typography variant="body1" fontWeight="bold" fontSize={"0.7rem"}>{partner.name}</Typography>
-                                            <Typography variant="body2">{partner.country}</Typography> */}
-                                </Box>
-                                {/* </Box> */}
-                            </Grid2>
-                            // </Grid2>) : null
-                        ))}
+                                // </Grid2>) : null
+                            ))}
+                        </Grid2>
                     </Grid2>
 
                     {/* <Grid2 size={12} sx={{
@@ -986,18 +1057,21 @@ export default function Home() {
                                 />
                             </Box>
                         </Grid2> */}
-                    <Grid2 size={12}>
+                    <Grid2 size={{xs: 12, sm: 8}} sx={{
+                       
+                    }}>
                         <hr style={{
                             border: 'none',
                             minHeight: '2px',
                             backgroundColor: 'blue'
                         }} />
-                        <Typography variant="h5" fontSize={"0.9rem"} fontWeight={"bold"} color="GrayText" component="div" sx={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center"
-                        }}>Romanian collaborators of the project:
-                        </Typography>
+                        <Grid2 size={12}>
+                            <Typography variant="h5" fontWeight={"bold"} component="div" fontSize={"1rem"} sx={{
+                                textAlign: "center"
+                            }}
+                            >Romanian collaborators 
+                            </Typography>
+                        </Grid2>
                     </Grid2>
                     <Box
                         sx={{
@@ -1010,7 +1084,7 @@ export default function Home() {
                     >
                         <Grid2
                             container
-                            spacing={2}
+                            
                             justifyContent="center"
                             alignItems="center"
                             sx={{
@@ -1021,7 +1095,10 @@ export default function Home() {
                             marginBottom={{ sm: "-5rem" }}
                         >
                             {/* First Grid item - Image on the right */}
-                            <Grid2 size={{ sm: 6 }} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+                            <Grid2 size={{ sm: 4 }} 
+                            sx={{ display: 'flex', justifyContent: 'flex-end', }}
+                            paddingRight={"5%"}
+                            >
                                 <Box
                                     component="img"
                                     src={apuseniLogo}
@@ -1034,7 +1111,9 @@ export default function Home() {
                             </Grid2>
 
                             {/* Second Grid item - Image on the left */}
-                            <Grid2 size={{ sm: 6 }} sx={{ display: 'flex', justifyContent: 'flex-start' }}>
+                            <Grid2 size={{ sm:  8}} 
+                            // sx={{ display: 'flex', justifyContent: 'flex-start' }}
+                            >
                                 <Box
                                     component="img"
                                     src={salvaLogo}
