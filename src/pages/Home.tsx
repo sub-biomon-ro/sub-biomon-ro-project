@@ -493,8 +493,8 @@ export default function Home() {
                                         style={{
                                             width: "100%",
                                             height: "100%",
-                                            minHeight: "100px",
-                                            maxHeight: "200px",
+                                            minHeight: "150px",
+                                            maxHeight: "350px",
                                             objectFit: "contain",
                                             //objectPosition: "center",
                                             borderRadius: "5px",

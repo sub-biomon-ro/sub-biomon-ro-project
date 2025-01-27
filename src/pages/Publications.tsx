@@ -4,6 +4,16 @@ import React from "react";
 
 export default function Publications() {
 
+    const publications = [
+        {
+            author: "Di Lorenzo, T., A. Tabilio Di Camillo, S. Iepure, D. M. P. Galassi, N. Mori, T. Simčič",
+            year: 2025,
+            title: "Oxygen Consumption and Carbon Budget in Groundwater-Obligate and Surface-Dwelling Diacyclops Species (Crustacea, Copepoda, Cyclopoida) Under Temperature Variability",
+            source: "Environments 12(1), 32;",
+            link: " https://doi.org/10.3390/environments12010032"
+        },
+    ]
+
     const citations = [
         {
             author: "Zagmajster, M., Balázs, G., Biró, A., Bucur, R., Collard, O., Delić, T., Kos, A., Flot, J.F., Haidau, C., Herczeg, G., Iepure, S., Lippert. E., Lunghi, E., Mantoiu, D.S., Moldovan, O.T, Sambor, O., Sitar, C., Stoch, F., Zakšek, V., Weber, D., Weigand, A., Weigand, H.",
@@ -33,13 +43,7 @@ export default function Publications() {
             source: "26th International Conference on Subterranean Biology and 6th International Symposium on Anchialine Ecosystems Book of abstracts (Poster 47)",
             link: "",
         },
-        {
-            author: "Di Lorenzo, T., A. Tabilio Di Camillo, S. Iepure, D. M. P. Galassi, N. Mori, T. Simčič",
-            year: 2025,
-            title: "Oxygen Consumption and Carbon Budget in Groundwater-Obligate and Surface-Dwelling Diacyclops Species (Crustacea, Copepoda, Cyclopoida) Under Temperature Variability",
-            source: "Environments 12(1), 32;",
-            link: " https://doi.org/10.3390/environments12010032"
-        }
+        
     ]
 
     return (
@@ -52,9 +56,44 @@ export default function Publications() {
                     marginBottom: { xs: 5, sm: 15, md: 30 },
                 }}
             >
-                {/* Title Box with same maxWidth and alignment */}
                 <Box sx={{ maxWidth: "600px", margin: "auto", textAlign: "left", marginBottom: 2 }}>
-                    <Typography variant="h5" gutterBottom>
+                    <Typography variant="h6" gutterBottom>
+                        Publications
+                    </Typography>
+                </Box>
+
+                <Box display="flex" flexDirection="column" gap={2}>
+                    {publications.map((publication, index) => (
+                        <Card key={index} variant="outlined" sx={{ maxWidth: "600px", margin: "auto" }}>
+                            <CardContent>
+                                {/* Author and Year */}
+                                <Typography variant="body2" gutterBottom fontSize={"0.7rem"} sx={{color:"GrayText"}}>
+                                    {publication.author}({publication.year}).
+                                    <> </>
+                                    <em>
+                                        {publication.link ? (
+                                            <a
+                                                href={publication.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                style={{ textDecoration: "none", color: "inherit" }}
+                                            >
+                                                {publication.title}
+                                            </a>
+                                        ) : (
+                                            publication.title
+                                        )}
+                                    </em>
+                                    <> </>
+                                    {publication.source}
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    ))}
+                </Box>
+          
+                <Box sx={{ maxWidth: "600px", margin: "auto", textAlign: "left", marginBottom: 2 }}>
+                    <Typography variant="h6" gutterBottom>
                         Symposium Publications
                     </Typography>
                 </Box>
