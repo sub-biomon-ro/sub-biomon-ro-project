@@ -250,20 +250,19 @@ export default function Home() {
 
                         <Grid2 container spacing={1} size={12}>
                             {/* work package 1 */}
-                            <Grid2>
+                            <Grid2 spacing={1} size={{xs: 2, lg: 1}}>
                                 <Typography
                                     variant="h5"
                                     fontWeight={'bold'}
                                     fontSize={"1rem"}
                                     sx={{
-                                        wordWrap: "break-word",
+                                        whiteSpace: "nowrap",
                                         //fontSize: "0.7rem"
                                     }}>
                                     WP1:
-
-
                                 </Typography>
                             </Grid2>
+                            <Grid2 size={{xs:10, lg: 11}}>
                             <Typography
                                 variant="body1"
                                 fontWeight={'bold'}
@@ -275,6 +274,7 @@ export default function Home() {
                                 }}>
                                 Project management (Coordinator: Slovenia)
                             </Typography>
+                            </Grid2>
                         </Grid2>
 
                         <Grid2 container spacing={0} size={12}>
@@ -306,7 +306,8 @@ export default function Home() {
 
                         <Grid2 container spacing={1} size={12}>
                             {/* work package 2 */}
-                            <Typography
+                            <Grid2 spacing={1} size={{xs: 2, lg: 1}}>
+                                <Typography
                                 variant="h5"
                                 fontWeight={'bold'}
                                 fontSize={"1rem"}
@@ -317,35 +318,38 @@ export default function Home() {
                                 WP2:
 
                             </Typography>
-                            <Typography
-                                variant="body1"
-                                fontWeight={'bold'}
-                                color="GrayText"
-                                sx={{
-                                    marginTop: "2px",
-                                    wordWrap: "break-word",
-                                    fontSize: "0.8rem"
-                                }}>
-                                Defining subterranean biogeographical regions within karst (Coordinator: Italy)
-                            </Typography>
+                            </Grid2>
+                            <Grid2 size={{xs:10, lg: 11}}>
+                                <Typography
+                                    variant="body1"
+                                    fontWeight={'bold'}
+                                    color="GrayText"
+                                    sx={{
+                                        marginTop: "2px",
+                                        wordWrap: "break-word",
+                                        fontSize: "0.8rem"
+                                    }}>
+                                    Defining subterranean biogeographical regions within karst (Coordinator: Italy)
+                                </Typography>
+                            </Grid2>
                         </Grid2>
 
                         <Grid2 container spacing={1} size={12}>
                             {/* work package 3 */}
-                            <Grid2 size={1}>
+                            <Grid2 size={{xs: 2, lg: 1}}>
                                 <Typography
                                     variant="h5"
                                     fontWeight={'bold'}
                                     fontSize={"1rem"}
                                     sx={{
-                                        wordWrap: "break-word",
+                                        whiteSpace: "nowrap",
                                         //fontSize: "0.7rem"
                                     }}>
                                     WP3:
 
                                 </Typography>
                             </Grid2>
-                            <Grid2 size={11}>
+                            <Grid2 size={{xs: 10, lg: 11}}>
                                 <Typography
                                     variant="body1"
                                     fontWeight={'bold'}
@@ -364,7 +368,7 @@ export default function Home() {
 
                         <Grid2 container spacing={1} size={12}>
                             {/* work package 4 */}
-                            <Grid2 size={1}>
+                            <Grid2 spacing={1} size={{xs: 2, lg: 1}}>
                                 <Typography
                                     variant="h5"
                                     fontWeight={'bold'}
@@ -377,7 +381,7 @@ export default function Home() {
 
                                 </Typography>
                             </Grid2>
-                            <Grid2 size={11}>
+                            <Grid2 size={{xs:10, lg: 11}}>
                                 <Typography
                                     variant="body1"
                                     fontWeight={'bold'}
@@ -388,7 +392,7 @@ export default function Home() {
                                         fontSize: "0.8rem",
                                         alignItems: "flex-start"
                                     }}>
-                                    Developing and testing the methodology for minimal standards of field work sampling
+                                    Developing and testing the methodology for minimal standards of field work sampling (Coordinator: Romania)
 
                                 </Typography>
                             </Grid2>
@@ -396,7 +400,7 @@ export default function Home() {
 
                         <Grid2 container spacing={1} size={12}>
 
-                            <Grid2 size={12}>
+                        <Grid2 size={12}>
                                 <Box sx={{
                                     //paddingRight: { sm: 1, md: 25, xl: 60 }
                                 }}>
@@ -453,7 +457,7 @@ export default function Home() {
 
                         <Grid2 container spacing={1} size={12}>
                             {/* work package 5 */}
-                            <Grid2 size={1}>
+                            <Grid2 spacing={1} size={{xs: 2, lg: 1}}>
                                 <Typography
                                     variant="h5"
                                     fontWeight={'bold'}
@@ -466,7 +470,7 @@ export default function Home() {
                                     WP5:
                                 </Typography>
                             </Grid2>
-                            <Grid2 size={11}>
+                            <Grid2 size={{xs:10, lg: 11}}>
                                 <Typography
                                     variant="body1"
                                     fontWeight={'bold'}
@@ -477,7 +481,7 @@ export default function Home() {
                                         fontSize: "0.8rem",
                                         alignItems: "flex-start",
                                     }}>
-                                    From science to practice: involving different stakeholders
+                                    From science to practice: involving different stakeholders (Coordinator: Hungary)
                                 </Typography>
                             </Grid2>
                         </Grid2>

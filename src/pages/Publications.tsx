@@ -94,7 +94,7 @@ export default function Publications() {
           
                 <Box sx={{ maxWidth: "600px", margin: "auto", textAlign: "left", marginBottom: 2 }}>
                     <Typography variant="h6" gutterBottom>
-                        Symposium Publications
+                        Symposium & Workshops
                     </Typography>
                 </Box>
     
