@@ -304,7 +304,7 @@ export default function Home() {
                         </Grid2>
 
 
-                        <Grid2 container spacing={1} size={12}>
+                        <Grid2 container spacing={{xs: 3, sm: 1}} size={12}>
                             {/* work package 2 */}
                             <Grid2 spacing={1} size={{xs: 2, lg: 1}}>
                                 <Typography
@@ -334,7 +334,7 @@ export default function Home() {
                             </Grid2>
                         </Grid2>
 
-                        <Grid2 container spacing={1} size={12}>
+                        <Grid2 container spacing={{xs: 3, sm: 1}} size={12}>
                             {/* work package 3 */}
                             <Grid2 size={{xs: 2, lg: 1}}>
                                 <Typography
@@ -366,7 +366,7 @@ export default function Home() {
                             </Grid2>
                         </Grid2>
 
-                        <Grid2 container spacing={1} size={12}>
+                        <Grid2 container spacing={{xs: 3, sm: 1}} size={12}>
                             {/* work package 4 */}
                             <Grid2 spacing={1} size={{xs: 2, lg: 1}}>
                                 <Typography
@@ -457,7 +457,7 @@ export default function Home() {
 
                         <Grid2 container spacing={1} size={12}>
                             {/* work package 5 */}
-                            <Grid2 spacing={1} size={{xs: 2, lg: 1}}>
+                            <Grid2 spacing={{xs: 3, sm: 1}} size={{xs: 2, lg: 1}}>
                                 <Typography
                                     variant="h5"
                                     fontWeight={'bold'}
