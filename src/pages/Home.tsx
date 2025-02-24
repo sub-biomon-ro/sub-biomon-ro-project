@@ -250,7 +250,7 @@ export default function Home() {
 
                         <Grid2 container spacing={1} size={12}>
                             {/* work package 1 */}
-                            <Grid2 spacing={1} size={{xs: 2, lg: 1}}>
+                            <Grid2 size={{xs: 2, lg: 1}}>
                                 <Typography
                                     variant="h5"
                                     fontWeight={'bold'}
@@ -312,7 +312,7 @@ export default function Home() {
                                 fontWeight={'bold'}
                                 fontSize={"1rem"}
                                 sx={{
-                                    wordWrap: "break-word",
+                                    whiteSpace: "nowrap",
                                     //fontSize: "0.7rem"
                                 }}>
                                 WP2:
@@ -374,7 +374,7 @@ export default function Home() {
                                     fontWeight={'bold'}
                                     fontSize={"1rem"}
                                     sx={{
-                                        wordWrap: "break-word",
+                                        whiteSpace: "nowrap",
                                         //fontSize: "0.7rem"
                                     }}>
                                     WP4:
@@ -463,7 +463,7 @@ export default function Home() {
                                     fontWeight={'bold'}
                                     fontSize={"1rem"}
                                     sx={{
-                                        wordWrap: "break-word",
+                                        whiteSpace: "nowrap",
                                         //fontSize: "0.7rem"
                                     }}
                                 >
