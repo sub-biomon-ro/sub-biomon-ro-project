@@ -248,7 +248,7 @@ export default function Home() {
                         </Grid2>
 
 
-                        <Grid2 container spacing={{xs: 2, sm: 1}} size={12}>
+                        <Grid2 container spacing={{xs: 3, sm: 1}} size={12}>
                             {/* work package 1 */}
                             <Grid2 size={{xs: 2, lg: 1}}>
                                 <Typography
