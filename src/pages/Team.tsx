@@ -139,7 +139,7 @@ trained in cave terrestrial fauna monitoring and cave spiders taxonomy.`,
 
                     {/* Team Cards */}
                     <Grid2 container size={12} spacing={3}>
-                        {teamData.map((bio, index) => (
+                        {teamData.slice(0, -2).map((bio, index) => (
                             <Grid2 key={index} size={{ xs: 12, md: 6, lg: 6 }}>
                                 <Card
                                     sx={{
@@ -166,7 +166,43 @@ trained in cave terrestrial fauna monitoring and cave spiders taxonomy.`,
                                 </Card>
                             </Grid2>
                         ))}
+
+                        {/* Volunteers Section */}
+                        <Grid2 size={12} sx={{ marginTop: 5, textAlign: "center" }}>
+                            <Typography variant="h5" paddingBottom={1} fontSize={"1rem"} fontWeight={"bold"}>
+                                Volunteers
+                            </Typography>
+                        </Grid2>
+
+                        {teamData.slice(-2).map((bio, index) => (
+                            <Grid2 key={index} size={{ xs: 12, md: 6, lg: 6 }}>
+                                <Card
+                                    sx={{
+                                        maxWidth: 250,
+                                        margin: "auto"
+                                    }}
+                                >
+                                    {imgImports[teamData.length - 2 + index] ? (
+                                        <CardMedia
+                                            component="img"
+                                            height="250"
+                                            image={imgImports[teamData.length - 2 + index]}
+                                            alt={`${bio.name} photo`}
+                                        />
+                                    ) : null}
+                                    <CardContent>
+                                        <Typography variant="h6" gutterBottom>
+                                            {bio.name}
+                                        </Typography>
+                                        <Typography variant="body2" color="textSecondary" fontSize={"0.7rem"}
+                                            dangerouslySetInnerHTML={{ __html: bio.bio }}>
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                            </Grid2>
+                        ))}
                     </Grid2>
+
                 </Grid2>
             </Box>
 
